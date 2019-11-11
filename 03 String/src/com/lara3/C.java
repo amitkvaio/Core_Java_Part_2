@@ -1,0 +1,20 @@
+package com.lara3;
+
+public class C
+{
+	public static void main(String[] args)
+	{
+		String s1 = "java";
+		String s2 = "ja";
+		String s3 = s2.concat("va");
+		System.out.println(s1==s3);//f
+	}
+}
+
+/*
+
+where ever reference varibale is there it is using new operator to create the string object so
+object wil created in the non constant pool.
+
+
+*/
