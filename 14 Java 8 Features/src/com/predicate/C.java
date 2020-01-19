@@ -3,7 +3,7 @@ package com.predicate;
 import java.util.function.Predicate;
 
 //Write a predicate to check whether the given integer is greater than 10 or not. 
-
+//Using Predicate
 public class C {
 	public static void main(String[] args) {
 		Predicate<Integer> p = (n) -> n > 10;

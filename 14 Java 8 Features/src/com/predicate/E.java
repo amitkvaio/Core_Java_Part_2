@@ -10,7 +10,7 @@ import java.util.function.Predicate;
 //write a predicate to check whether the given collection is empty or not. 
 public class E {
 	public static void main(String[] args) {
-		Predicate<Collection> p = c->(c.isEmpty());
+		Predicate<Collection> p = (c) -> c.isEmpty();
 		List<String> list = new ArrayList<>();
 		Set<Integer> set = new HashSet<>();
 		set.add(12);

@@ -28,7 +28,7 @@ public interface A {
 }
 /*
 -- Inside functional interface in addition to single Abstract method(SAM).
--- We write any number of default and static methods. 
+-- We can  write any number of default and static methods. 
 -- like above
 -- More about default method
 https://dzone.com/articles/interface-default-methods-java

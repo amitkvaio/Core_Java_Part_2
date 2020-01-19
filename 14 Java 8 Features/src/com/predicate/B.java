@@ -1,6 +1,7 @@
 package com.predicate;
 // Write a predicate to check whether the given integer is greater than 10 or not. 
 public class B {
+	//Without using Predicate
 	public boolean test(Integer I) {
 		if (I > 10) {
 			return true;

@@ -14,7 +14,7 @@ public class TestSortingWith18 {
 		listDevs.forEach(developer->System.out.println(developer));
 
 		// sort by age
-		listDevs.sort((dev1,dev2)->dev1.getAge()-dev2.getAge());
+		listDevs.sort((dev1,dev2)->dev2.getAge()-dev1.getAge());
 		//or
 		//listDevs.sort((Developer dev1, Developer dev2)->dev1.getAge()-dev2.getAge());
 		

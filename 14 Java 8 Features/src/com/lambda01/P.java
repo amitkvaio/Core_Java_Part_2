@@ -3,13 +3,20 @@ package com.lambda01;
 
 public class P {
 	public static void main(String[] args) {
-		 Runnable run = ()->{
+		
+		
+		Runnable run = ()->{
 			 for (int i = 0; i <= 5; i++) {
 				System.out.println("from child thread");
 			}
 		 };
 		 Thread th = new Thread(run);
 		 th.start();
+		
+		 
+		 
+		 
+		 
 		 for (int i = 0; i <=10; i++) {
 			System.out.println("Main thread");
 		}
