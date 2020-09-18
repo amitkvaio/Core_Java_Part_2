@@ -1,11 +1,8 @@
 package com.lara6;
-
 import java.util.Date;
 
-public class G
-{
-	public static void main(String[] args)
-	{
+public class G {
+	public static void main(String[] args) {
 		Date d1 = new Date();
 		System.out.println(d1);
 		System.out.println(d1.getTime());

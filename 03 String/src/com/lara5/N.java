@@ -1,6 +1,3 @@
 package com.lara5;
-
-public class N
-{
-
+public class N {
 }

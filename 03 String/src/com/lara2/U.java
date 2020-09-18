@@ -1,15 +1,17 @@
 package com.lara2;
 
-public class U
-{
-	public static void main(String[] args)
-	{
+public class U {
+	public static void main(String[] args) {
 		String s1 = "abc xyz hello abc";
 		String s2 = s1.replaceAll("abc", "test");
+		String s3 = "String_Java Constructor";
+		String s4 = s3.replaceAll("[\\_' ']", "-");//Replacing underscore and blank space with -
+		
 		System.out.println(s1);
 		System.out.println(s2);
+		System.out.println(s4);
 	}
-	
+
 }
 /*
 Open Declaration String java.lang.String.replaceAll(String regex, String replacement)

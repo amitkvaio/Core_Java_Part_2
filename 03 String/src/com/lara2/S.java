@@ -1,9 +1,7 @@
 package com.lara2;
 
-public class S
-{
-	public static void main(String[] args)
-	{
+public class S {
+	public static void main(String[] args) {
 		String s1 = "hello to all";
 		System.out.println(s1.startsWith("hello"));
 		System.out.println(s1.startsWith("all"));
@@ -16,7 +14,7 @@ Open Declaration boolean java.lang.String.startsWith(String prefix)
 
 startsWith
 public boolean startsWith(String prefix)
-Tests if this string starts with the specified prefix.
+	Tests if this string starts with the specified prefix.
 Parameters:
 prefix - the prefix. 
 Returns:

@@ -1,16 +1,12 @@
 package com.lara6;
-
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class V
-{
-	public static void main(String[] args)
-	{
-		Calendar cal =  Calendar.getInstance();
+public class V {
+	public static void main(String[] args) {
+		Calendar cal = Calendar.getInstance();
 		cal.add(Calendar.MONTH, 3);
-		
 		Date d1 = cal.getTime();
 		
 		DateFormat df1 = DateFormat.getDateInstance(DateFormat.SHORT);
@@ -22,6 +18,5 @@ public class V
 		System.out.println(df2.format(d1));
 		System.out.println(df3.format(d1));
 		System.out.println(df4.format(d1));
-		
 	}
 }

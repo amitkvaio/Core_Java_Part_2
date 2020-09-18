@@ -23,19 +23,16 @@ public class Y
 		System.out.println("done");
 	}
 }
+/*
 
+The java string equals() method compares the two given strings based on the content of the string. 
+If any character is not matched, it returns false. If all characters are matched, it returns true.
 
+The String equals() method overrides the equals() method of Object class.
 
+Returns a hash code for this string. The hash code for a String object is computed as 
 
-
-
-
-
-
-
-
-
-
+*/
 
 /*
 

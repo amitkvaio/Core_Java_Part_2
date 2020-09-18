@@ -5,10 +5,9 @@ import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
 
-public class Z1
-{
-	public static void main(String[] args)
-	{
+public class Z1{
+	public static void main(String[] args){
+		
 		Calendar cal = Calendar.getInstance();
 		cal.add(Calendar.DATE, 20);
 		Date d0= cal.getTime();
@@ -28,15 +27,11 @@ public class Z1
 		
 		Date d2 = null;
 		
-		try
-		{
+		try{
 			d2=df1.parse(s1);
 			System.out.println(d2);
-		} 
-		catch (ParseException e)
-		{
+		}catch (ParseException e){
 			e.printStackTrace();
 		}
-		
 	}
 }

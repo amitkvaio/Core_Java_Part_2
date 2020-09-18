@@ -1,12 +1,9 @@
 package com.lara6;
-
 import java.util.Calendar;
 import java.util.Date;
 
-public class Q
-{
-	public static void main(String[] args)
-	{
+public class Q {
+	public static void main(String[] args) {
 		Calendar cal1 = Calendar.getInstance();
 		Calendar cal2 = Calendar.getInstance();
 		
