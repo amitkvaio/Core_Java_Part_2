@@ -9,5 +9,4 @@ class J {
 		I ref2 = I.test1;
 		System.out.println(ref2);
 	}
-
 }

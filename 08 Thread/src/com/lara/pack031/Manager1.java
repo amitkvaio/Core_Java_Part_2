@@ -3,19 +3,19 @@ package com.lara.pack031;
 class Shared {
 	void test1() {
 		for (int i = 0; i < 50; i++) {
-			System.out.println("Shared-first for loop test1->" + i);
+			System.out.println("Shared-first for loop test1->" + i + "  "+ Thread.currentThread().getName());
 			// simultaneous
 		}
 
 		synchronized (this) {
 			for (int i = 50; i < 100; i++) {
-				System.out.println("Shared-2nd for loop synchronized->" + i);
+				System.out.println("Shared-2nd for loop synchronized->" + i + "  "+ Thread.currentThread().getName());
 				// sequential
 			}
 
 		}
 		for (int i = 100; i < 150; i++) {
-			System.out.println("Shared- third for loop test1->" + i);
+			System.out.println("Shared- third for loop test1->" + i + "  "+ Thread.currentThread().getName());
 			// simultaneous
 		}
 	}

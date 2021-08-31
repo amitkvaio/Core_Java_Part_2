@@ -14,7 +14,7 @@ public class Manager4 {
 		Class c1 = Class.forName("getclass.E");
 
 		Object obj = c1.newInstance();
-		// E e1 = new E();
+		 E e1 = (E)obj;
 
 		Method m1 = c1.getDeclaredMethod("test");
 		m1.invoke(obj);// e1.test();

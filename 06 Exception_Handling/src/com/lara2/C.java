@@ -15,7 +15,9 @@ public class C
 
 /*
 Throw keyword:-
-All methods use the throw statement to throw an exception. The throw statement requires a single argument a throwable object. Throwable objects are instances of any subclass of the Throwable class.
+All methods use the throw statement to throw an exception. 
+	The throw statement requires a single argument a throwable object. 
+		Throwable objects are instances of any subclass of the Throwable class.
 It is possible to throw user defined exceptions or predefined exceptions by using throw keyword.
 
 Here's an example of a throw statement

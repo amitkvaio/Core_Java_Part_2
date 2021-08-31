@@ -1,16 +1,10 @@
 package com.lara;
-
-public class M
-{
-	public static void main(String[] args)
-	{
-		try
-		{
+public class M {
+	public static void main(String[] args) {
+		try {
 			int i = 10;
 			System.out.println(i);
-
-		} catch (ArithmeticException ex)
-		{
+		} catch (ArithmeticException ex) {
 			System.out.println(ex);
 			// System.out.println(i);
 			int j = 20;

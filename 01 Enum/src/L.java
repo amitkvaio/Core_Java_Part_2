@@ -8,8 +8,7 @@ class L {
 		System.out.println(k1);
 		K k2 = K.t1;
 		System.out.println(k2);
-		//K k3=K.test5;
+		// K k3=K.test5;
 		// System.out.println(k3);
 	}
-
 }

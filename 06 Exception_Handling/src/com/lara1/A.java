@@ -29,13 +29,13 @@ public class A
 	CTS
 	*/
 	
-//	int test3(boolean flag)
-//	{
-//		if(flag)
-//		{
-//			return 10;
-//		}
-//	}
+	/*int test3(boolean flag)
+	{
+		if(flag)
+		{
+			return 10;
+		}
+	}*/
 	
 	/*
 	 IF THE FLAG IS TRUE THEN TEST3() RETURN 10 BUT 

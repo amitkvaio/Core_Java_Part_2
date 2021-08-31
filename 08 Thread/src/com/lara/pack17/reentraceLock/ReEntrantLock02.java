@@ -3,7 +3,7 @@
 package com.lara.pack17.reentraceLock;
 
 class Display {
-	public  void wish(String name) { // remove synchronized //than add it
+	public synchronized  void wish(String name) { // remove synchronized //than add it
 		for(int i=0;i<4;i++) {
 			System.out.println("Good Morning :"+name);
 			try {

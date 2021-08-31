@@ -1,17 +1,11 @@
-enum B 
-{
-	
-}
-class C
-{
-	
+enum B {
 }
 
-interface D
-{
-	
+class C {
 }
-@interface E
-{
-	
+
+interface D {
+}
+
+@interface E {
 }

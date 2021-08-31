@@ -17,7 +17,7 @@ public class B
 /* x is the integer type array of size 3 which can accommodate 3 integer values
  * every index of the array is having the initialized with default value according to there 
  * data type
- * if the array size is 3 then we can access only the 1,2,3 index of the array values
+ * if the array size is 3 then we can access only the 0,1,2 index of the array values
  * otherwise it compile gives the ArrayIndexoutofbounexception 
  * int x[]=is the only declaration
  * new int[3]= is the definition

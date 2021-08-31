@@ -1,37 +1,32 @@
 //176.1
 package com03.lara;
 import java.io.*;
-class D implements Serializable
-{
+
+class D implements Serializable {
 	int i;
 	static int j;
- }
-public class Manager04 
-{
-	public static void main(String[] args)throws Exception
-	{
+}
+
+public class Manager04 {
+	public static void main(String[] args) throws Exception {
 		serialize();
 		deSerialize();
 	}
-
-	private static void serialize()throws Exception
-	{
-		D d1=new D();
-		d1.i=10;
-		d1.j=20;
-		FileOutputStream fout= new FileOutputStream("test3.txt");
-		ObjectOutputStream out= new ObjectOutputStream(fout);
+	private static void serialize() throws Exception {
+		D d1 = new D();
+		d1.i = 10;
+		d1.j = 20;
+		FileOutputStream fout = new FileOutputStream("test3.txt");
+		ObjectOutputStream out = new ObjectOutputStream(fout);
 		out.writeObject(d1);
 		System.out.println("wrinting is done");
 	}
-
-	private static void deSerialize() throws Exception
-	{
-		FileInputStream fin=new FileInputStream("test3.txt");
-		ObjectInputStream in=new ObjectInputStream(fin);
-		D d1=(D)in.readObject();
+	private static void deSerialize() throws Exception {
+		FileInputStream fin = new FileInputStream("test3.txt");
+		ObjectInputStream in = new ObjectInputStream(fin);
+		D d1 = (D) in.readObject();
 		System.out.println(d1.i);
-		System.out.println("Static:"+d1.j);
+		System.out.println("Static:" + d1.j);
 	}
 }
 /*

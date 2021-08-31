@@ -6,6 +6,7 @@ import java.util.WeakHashMap;
 public class WeakHashMapDemoManager01 {
 	public static void main(String[] args) throws InterruptedException {
 		//hashMap();
+		System.out.println("************************");
 		weekHashMap();
 	}
 	

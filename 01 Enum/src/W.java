@@ -12,6 +12,7 @@ class W
 	{
 		//V v1 = V.C3;
 		System.out.println(V.C1);
+		System.out.println(V.C2);
 	}
 }
 /*

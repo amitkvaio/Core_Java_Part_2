@@ -1,18 +1,12 @@
-class Prac01
-{
-	enum PP
-	{
-		A,B,C,D,E,F,G,H,I,J,K;
+class Prac01 {
+	enum PP {
+		A, B, C, D, E, F, G, H, I, J, K;
 	}
-	
-	public static void main(String[] args)
-	{
+
+	public static void main(String[] args) {
 		PP[] p = PP.values();
-		for(PP r:p)
-		{
+		for (PP r : p) {
 			System.out.println(r);
 		}
-		
 	}
-	
 }
