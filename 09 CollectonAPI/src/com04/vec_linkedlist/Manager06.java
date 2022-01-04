@@ -1,31 +1,28 @@
 //82 - FIFO - FIRST IN FIRST OUT
 // Through the linkedList we can achieve the LIFO AND FIFO
 package com04.vec_linkedlist;
+
 import java.util.LinkedList;
-class Queue
-{
+
+class Queue {
 	private LinkedList list = new LinkedList();
 
-	public void add(Object obj)
-	{
+	public void add(Object obj) {
 		list.add(obj);
 	}
 
-	public Object processElements()
-	{
+	public Object processElements() {
 		return list.removeFirst();
 	}
 
-	public String toString()
-	{
+	public String toString() {
 		return list.toString();
 	}
 
 }
-public class Manager06
-{
-	public static void main(String[] args)
-	{
+
+public class Manager06 {
+	public static void main(String[] args) {
 		Queue q1 = new Queue();
 		q1.add("abc");
 		q1.add("avx");
@@ -46,5 +43,5 @@ public class Manager06
 	}
 }
 /*
-   E removeFirst() It removes and returns the first element from a list.
+ * E removeFirst() It removes and returns the first element from a list.
  */

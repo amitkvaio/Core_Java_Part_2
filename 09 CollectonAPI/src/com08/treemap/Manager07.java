@@ -4,8 +4,7 @@ package com08.treemap;
 import java.util.Comparator;
 import java.util.TreeMap;
 
-class D implements Comparable
-{
+class D implements Comparable {
 	int i;
 
 	D(int i) {
@@ -14,32 +13,29 @@ class D implements Comparable
 	}
 
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return " " + i;
 	}
+
 	@Override
-	public int hashCode()
-	{
+	public int hashCode() {
 		return Integer.toString(i).hashCode();
 	}
+
 	@Override
-	public boolean equals(Object obj)
-	{
-		return this.i==((D)obj).i;
+	public boolean equals(Object obj) {
+		return this.i == ((D) obj).i;
 	}
-	
+
 	@Override
-	public int compareTo(Object obj)
-	{
-		return this.i-((D)obj).i;
+	public int compareTo(Object obj) {
+		return this.i - ((D) obj).i;
 	}
-	
+
 }
-public class Manager07
-{
-	public static void main(String[] args)
-	{
+
+public class Manager07 {
+	public static void main(String[] args) {
 		TreeMap map = new TreeMap();
 		map.put(new D(9), "abc1");
 		map.put(new D(9), "abc2");

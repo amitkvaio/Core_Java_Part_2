@@ -6,10 +6,8 @@ import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.Vector;
 
-public class Manager01
-{
-	public static void main(String[] args)
-	{
+public class Manager01 {
+	public static void main(String[] args) {
 		Vector vt = new Vector();
 		vt.add(90);
 		vt.add(910);
@@ -19,13 +17,12 @@ public class Manager01
 		System.out.println(vt);
 
 		Iterator it = vt.iterator();
-		 
-		while(it.hasNext()) {
+
+		while (it.hasNext()) {
 			it.remove();
 			System.out.println(it.next());
-			
 		}
-		
+
 		/*Enumeration enum1 = vt.elements();
 		System.out.println("Iterating through the Enumeration");
 		while (enum1.hasMoreElements())
@@ -55,7 +52,7 @@ Vector:- (legacy class introduced in 1.0 version)
 	3) Duplicate objects are allowed.
 	4) Null insertion is possible.
 	5) Insertion order is preserved.
-	6) The under laying data structure is growable array.
+	6) The under laying data structure is grow able array.
 	7) Vector all the methods are synchronized by default.
 	8) Applicable cursors are Iterator,Enumeration,ListIterator.
 

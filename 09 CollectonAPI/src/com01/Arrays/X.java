@@ -3,10 +3,8 @@ package com01.Arrays;
 
 import java.util.Arrays;
 
-public class X
-{
-	public static void main(String[] args)
-	{
+public class X {
+	public static void main(String[] args) {
 		int[] x = { 10, 20, 30, 40, 4, 25 };
 		Arrays.sort(x);
 		System.out.println(Arrays.toString(x));
@@ -38,6 +36,6 @@ public class X
 //>40=-7
 
 /*
- x is the reference of the array, and 25 is value if this value is available then it gives the
-index of the array  
+ * x is the reference of the array, and 25 is value if this value is available
+ * then it gives the index of the array
  */

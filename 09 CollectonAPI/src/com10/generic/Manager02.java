@@ -1,15 +1,12 @@
 //132
 package com10.generic;
 
-class C<X>
-{
-	  X i;
+class C<X> {
+	X i;
 }
 
-class Manager02
-{
-	public static void main(String[] args)
-	{
+class Manager02 {
+	public static void main(String[] args) {
 		C<String> c1 = new C<String>();
 		c1.i = "abc";
 

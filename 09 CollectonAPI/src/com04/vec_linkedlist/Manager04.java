@@ -3,11 +3,9 @@ package com04.vec_linkedlist;
 
 import java.util.LinkedList;
 
-public class Manager04
-{
-	public static void main(String[] args)
-	{
-		LinkedList list=new LinkedList();
+public class Manager04 {
+	public static void main(String[] args) {
+		LinkedList list = new LinkedList();
 		list.add(10);
 		list.add(910);
 		list.add(920);
@@ -16,18 +14,18 @@ public class Manager04
 		list.add("10");
 		list.add("java");
 		System.out.println(list);
-		
+
 		list.addFirst("first");
 		list.addLast("last");
-		System.out.println("After adding ::"+list);
-		
-		Object o1=list.removeFirst();
+		System.out.println("After adding ::" + list);
+
+		Object o1 = list.removeFirst();
 		System.out.println(o1);
-		Object o2=list.removeLast();
+		Object o2 = list.removeLast();
 		System.out.println(o2);
-		
-		System.out.println("After removing first and last object ::"+list);
-		
+
+		System.out.println("After removing first and last object ::" + list);
+
 	}
 }
 /*

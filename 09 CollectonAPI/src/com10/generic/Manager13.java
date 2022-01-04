@@ -1,20 +1,18 @@
 //143
 package com10.generic;
-class TT<A>
-{
+
+class TT<A> {
 	A a1;
 }
-public class Manager13
-{
-	public static void main(String[] args)
-	{
+
+public class Manager13 {
+	public static void main(String[] args) {
 		TT<?> t1 = null;
-		t1=new TT<Integer>();
-		t1=new TT<Number>();
-		t1=new TT<Object>();
-		t1=new TT<String>();
+		t1 = new TT<Integer>();
+		t1 = new TT<Number>();
+		t1 = new TT<Object>();
+		t1 = new TT<String>();
 		t1 = new TT<S>();
-		
 		
 		TT<? extends Number> t2 = null;
 		t2 = new TT<Integer>();

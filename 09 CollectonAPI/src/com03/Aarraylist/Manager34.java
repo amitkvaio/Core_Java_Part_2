@@ -12,8 +12,8 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Manager34 {
 	public static void main(String[] args) {
-		failFastIterator();
-		// failSafeIterator();
+		//failFastIterator();
+		 failSafeIterator();
 	}
 
 	public static void failFastIterator() {
@@ -24,9 +24,9 @@ public class Manager34 {
 		System.out.println(list);
 		while (it.hasNext()) {
 			System.out.println(it.next());
-			//list.add(99); //concurrentmodificationException - fail-fast
-			 list.remove(new Integer(90));
-			 System.out.println(it.next());
+			// list.add(99); //concurrentmodificationException - fail-fast
+			//list.remove(new Integer(90));
+			System.out.println(it.next());
 		}
 		list.add("amit");
 		System.out.println(list);

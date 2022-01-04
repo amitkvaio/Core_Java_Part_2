@@ -12,9 +12,7 @@ class L {
 		this.j = j;
 	}
 
-	public String toString()
-
-	{
+	public String toString() {
 		return "(" + i + "," + j + ")";
 	}
 

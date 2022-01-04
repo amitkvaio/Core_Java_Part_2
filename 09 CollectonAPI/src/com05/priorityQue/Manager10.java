@@ -3,16 +3,14 @@ package com05.priorityQue;
 
 import java.util.PriorityQueue;
 
-public class Manager10
-{
-	public static void main(String[] args)
-	{
-		PriorityQueue q=new PriorityQueue();
+public class Manager10 {
+	public static void main(String[] args) {
+		PriorityQueue q = new PriorityQueue();
 		q.add(10);
-		q.add(null);//nullpoiter exception
-		q.add(4);                 
+		q.add(null);// nullpoiter exception
+		q.add(4);
 		System.out.println(q);
-     }
+	}
 }
 
 /*

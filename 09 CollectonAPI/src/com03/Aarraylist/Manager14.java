@@ -5,8 +5,7 @@ import java.util.ArrayList;
 
 public class Manager14 extends ArrayList
 {
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// ArrayList list=new ArrayList();
 		Manager14 list = new Manager14();
 		list.add(2);

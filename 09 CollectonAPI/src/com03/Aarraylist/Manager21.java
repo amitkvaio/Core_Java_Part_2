@@ -4,8 +4,7 @@ package com03.Aarraylist;
 import java.util.ArrayList;
 import java.util.Collections;
 
-class Aa
-{
+class Aa {
 	int i;
 
 	Aa(int i) {
@@ -13,10 +12,8 @@ class Aa
 	}
 }
 
-public class Manager21
-{
-	public static void main(String[] args)
-	{
+public class Manager21 {
+	public static void main(String[] args) {
 		ArrayList list = new ArrayList();
 		list.add(90);
 		list.add("abc");
@@ -25,6 +22,12 @@ public class Manager21
 		System.out.println(list);
 	}
 }
+
+
+
+
+
+
 /*
 we are not overriding the toString() method in the Aa class
 so it will print the memory address.

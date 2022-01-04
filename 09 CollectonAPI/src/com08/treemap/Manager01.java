@@ -4,10 +4,8 @@ package com08.treemap;
 import java.util.HashMap;
 import java.util.TreeMap;
 
-public class Manager01
-{
-	public static void main(String[] args)
-	{
+public class Manager01 {
+	public static void main(String[] args) {
 		HashMap map1 = new HashMap<>();
 		map1.put("key", 2000);
 		map1.put("abc", 2300);
@@ -16,11 +14,11 @@ public class Manager01
 		map1.put("check", 9190);
 		map1.put("test", 9030);
 		map1.put("java", 9091);
-		System.out.println("Map:"+map1);
-		
+		System.out.println("Map:" + map1);
+
 		TreeMap map2 = new TreeMap(map1);
-		System.out.println("Map2:"+map2);
-		
+		System.out.println("Map2:" + map2);
+
 	}
 }
 /*

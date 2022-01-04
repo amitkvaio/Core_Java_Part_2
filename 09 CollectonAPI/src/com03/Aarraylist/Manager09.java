@@ -3,10 +3,8 @@ package com03.Aarraylist;
 
 import java.util.ArrayList;
 
-public class Manager09
-{
-	public static void main(String[] args)
-	{
+public class Manager09 {
+	public static void main(String[] args) {
 		ArrayList list1 = new ArrayList();
 		list1.add(0);
 		list1.add(3);
@@ -15,7 +13,6 @@ public class Manager09
 		list1.add("op");
 		list1.add(345);
 		System.out.println(list1);
-
 		Object obj = list1.remove(3);
 		System.out.println("3rd index element of the list is=" + obj);
 		System.out.println(list1);

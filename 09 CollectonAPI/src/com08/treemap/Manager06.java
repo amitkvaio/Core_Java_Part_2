@@ -4,8 +4,7 @@ package com08.treemap;
 import java.util.Comparator;
 import java.util.TreeMap;
 
-class C
-{
+class C {
 	int i, j;
 
 	C(int i, int j) {
@@ -19,27 +18,21 @@ class C
 		return "(" + i + "," + j + ")";
 	}
 
-	static class D implements Comparator
-	{
-		public int compare(Object obj1, Object obj2)
-		{
+	static class D implements Comparator {
+		public int compare(Object obj1, Object obj2) {
 			return ((C) obj1).i - ((C) obj2).i;
 		}
 	}
 
-	static class E implements Comparator
-	{
-		public int compare(Object obj1, Object obj2)
-		{
+	static class E implements Comparator {
+		public int compare(Object obj1, Object obj2) {
 			return ((C) obj1).j - ((C) obj2).j;
 		}
 	}
 }
 
-public class Manager06
-{
-	public static void main(String[] args)
-	{
+public class Manager06 {
+	public static void main(String[] args) {
 		TreeMap map1 = new TreeMap(new C.D());
 		map1.put(new C(9, 1), 9);
 		map1.put(new C(0, 10), 19);

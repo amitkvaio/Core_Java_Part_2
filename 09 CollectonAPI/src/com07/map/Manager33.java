@@ -3,11 +3,8 @@ package com07.map;
 
 import java.util.HashMap;
 
-public class Manager33
-{
-	public static void main(String[] args)
-	{
-		
+public class Manager33 {
+	public static void main(String[] args) {
 		HashMap map = new HashMap();
 		map.put("abc", 9000);
 		System.out.println(1 + ":" + map);

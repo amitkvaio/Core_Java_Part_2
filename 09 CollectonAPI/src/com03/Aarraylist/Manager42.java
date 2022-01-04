@@ -4,10 +4,8 @@ package com03.Aarraylist;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Manager42
-{
-	public static void main(String[] args)
-	{
+public class Manager42 {
+	public static void main(String[] args) {
 		String[] str = { "amit", "kumar", "khushboo" };
 		ArrayList<String> al = new ArrayList<String>(Arrays.asList(str));
 		al.add("rakesh");

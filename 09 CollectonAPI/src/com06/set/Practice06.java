@@ -3,10 +3,8 @@ package com06.set;
 //basic operations on TreeSet.
 import java.util.TreeSet;
 
-public class Practice06
-{
-	public static void main(String[] args)
-	{
+public class Practice06 {
+	public static void main(String[] args) {
 		TreeSet<Integer> t = new TreeSet<Integer>();
 		t.add(50);
 		t.add(20);

@@ -3,10 +3,8 @@ package com06.set;
 
 import java.util.HashSet;
 
-public class Manager18
-{
-	public static void main(String[] args)
-	{
+public class Manager18 {
+	public static void main(String[] args) {
 		HashSet set1 = new HashSet();
 		set1.add("abc");
 		set1.add("abc");// avoiding duplicate
@@ -29,8 +27,8 @@ public class Manager18
 		System.out.println(set4);
 
 		HashSet set5 = new HashSet();
-		
-		set5.add(new A(10));//not avoiding duplicate set5.add(new A(10));
+
+		set5.add(new A(10));// not avoiding duplicate set5.add(new A(10));
 		set5.add(new A(10));
 		System.out.println(set5);
 

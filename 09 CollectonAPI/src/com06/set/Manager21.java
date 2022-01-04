@@ -3,8 +3,7 @@ package com06.set;
 
 import java.util.HashSet;
 
-class G
-{
+class G {
 	int i, j;
 
 	G(int i, int j) {
@@ -12,8 +11,7 @@ class G
 		this.j = j;
 	}
 
-	public int hashCode()
-	{
+	public int hashCode() {
 		String s1 = Integer.toString(i);
 		String s2 = Integer.toString(j);
 		int i = s1.hashCode();
@@ -21,22 +19,18 @@ class G
 		return i;
 	}
 
-	public String toString()
-	{
+	public String toString() {
 		return "(" + i + "," + j + ")";
 	}
 
-	public boolean equals(Object obj)
-	{
+	public boolean equals(Object obj) {
 		System.out.println("equals");
-		return (i == ((G) obj).i && j == ((G) obj).j);
+		return (this.i == ((G) obj).i && this.j == ((G) obj).j);
 	}
 }
 
-public class Manager21
-{
-	public static void main(String[] args)
-	{
+public class Manager21 {
+	public static void main(String[] args) {
 		HashSet set = new HashSet();
 		set.add(new G(1, 1));
 		set.add(new G(1, 1));
@@ -49,10 +43,10 @@ public class Manager21
 }
 
 /*
--- comparing first hash number with the second hash number, if both are same or equal
---  than it is calling equal method if it is returning true then it will not add if it false
-	than it will add the object to the HashSet.
---  if the objects are different on the hash number than no need to call the equal method
-	it will add the respective object or elements successful.
-
-*/
+ * -- comparing first hash number with the second hash number, if both are same
+ * or equal -- than it is calling equal method if it is returning true then it
+ * will not add if it false than it will add the object to the HashSet. -- if
+ * the objects are different on the hash number than no need to call the equal
+ * method it will add the respective object or elements successful.
+ * 
+ */

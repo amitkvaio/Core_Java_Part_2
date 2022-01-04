@@ -3,10 +3,8 @@ package com07.map;
 
 import java.util.HashMap;
 
-public class Manager34
-{
-	public static void main(String[] args)
-	{
+public class Manager34 {
+	public static void main(String[] args) {
 		HashMap map = new HashMap();
 		map.put(null, null);
 		map.put(null, "navi");

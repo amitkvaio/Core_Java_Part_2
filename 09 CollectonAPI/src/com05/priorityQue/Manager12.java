@@ -5,8 +5,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.PriorityQueue;
 
-class B
-{
+class B {
 	int i, j;
 
 	B(int i, int j) {
@@ -14,34 +13,27 @@ class B
 		this.j = j;
 	}
 
-	public String toString()
-	{
+	public String toString() {
 		return "(" + i + "," + j + ")";
 	}
 }
 
-class C implements Comparator<Object>
-{
-	public int compare(Object obj1, Object obj2)
-	{
+class C implements Comparator<Object> {
+	public int compare(Object obj1, Object obj2) {
 		return ((B) obj1).i - ((B) obj2).i;
 	}
 
 }
 
-class D implements Comparator<Object>
-{
-	public int compare(Object obj1, Object obj2)
-	{
+class D implements Comparator<Object> {
+	public int compare(Object obj1, Object obj2) {
 		return ((B) obj1).j - ((B) obj2).j;
 	}
 
 }
 
-public class Manager12
-{
-	public static void main(String[] args)
-	{
+public class Manager12 {
+	public static void main(String[] args) {
 		PriorityQueue<B> pq = new PriorityQueue<B>(10, new C());// Sorting based on i values
 		pq.add(new B(1, 2));
 		pq.add(new B(10, 0));
@@ -49,14 +41,14 @@ public class Manager12
 		pq.add(new B(14, 2));
 		pq.add(new B(5, 34));
 		System.out.println(pq);
-		
+
 		Iterator it = pq.iterator();
-		while(it.hasNext()) {
+		while (it.hasNext()) {
 			System.out.println(pq.poll());
 			System.out.println(pq);
 		}
 		System.out.println("----------------");
-		
+
 		PriorityQueue<B> pq1 = new PriorityQueue<B>(10, new D());
 		pq1.add(new B(9, 1));
 		pq1.add(new B(12, 3));
@@ -65,9 +57,9 @@ public class Manager12
 		pq1.add(new B(5, 8));
 		pq1.add(new B(78, 34));
 		System.out.println(pq1);
-		
+
 		Iterator it1 = pq1.iterator();
-		while(it1.hasNext()) {
+		while (it1.hasNext()) {
 			System.out.println(pq1.poll());
 			System.out.println(pq1);
 		}

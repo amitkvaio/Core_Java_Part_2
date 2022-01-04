@@ -4,10 +4,8 @@ package com06.set;
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class Manager23
-{
-	public static void main(String[] args)
-	{
+public class Manager23 {
+	public static void main(String[] args) {
 		HashSet set = new HashSet();
 		set.add(123);
 		set.add("23");
@@ -18,8 +16,7 @@ public class Manager23
 		System.out.println(set);
 		Iterator it = set.iterator();
 		System.out.println("----------");
-		while (it.hasNext())
-		{
+		while (it.hasNext()) {
 			System.out.print(it.next() + ",");
 		}
 		System.out.println();

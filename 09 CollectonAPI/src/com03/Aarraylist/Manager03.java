@@ -3,10 +3,8 @@ package com03.Aarraylist;
 
 import java.util.ArrayList;
 
-public class Manager03
-{
-	public static void main(String[] args)
-	{
+public class Manager03 {
+	public static void main(String[] args) {
 		ArrayList list = new ArrayList();
 		list.add(90);
 		list.add("abc");
@@ -26,8 +24,7 @@ public class Manager03
 		System.out.println("...................");
 		System.out.println("iterating all the element of the list");
 
-		for (int i = 0; i < list.size(); i++)
-		{
+		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}
 	}

@@ -3,24 +3,20 @@ package com03.Aarraylist;
 
 import java.util.ArrayList;
 
-class Ba
-{
+class Ba {
 	int i;
 
 	Ba(int i) {
 		this.i = i;
 	}
 
-	public String toString()
-	{
+	public String toString() {
 		return " " + i;
 	}
 }
 
-public class Manager22
-{
-	public static void main(String[] args)
-	{
+public class Manager22 {
+	public static void main(String[] args) {
 		ArrayList list = new ArrayList();
 		list.add(new Ba(90));// calling toString() of the Ba class.
 		list.add(new Ba(100));
@@ -30,6 +26,12 @@ public class Manager22
 		System.out.println(list);
 	}
 }
+
+
+
+
+
+
 /*
 we are  overriding the toString() method in the Ba class
 so it will print the content of the Ba object.

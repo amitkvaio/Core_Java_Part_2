@@ -3,10 +3,8 @@ package com01.Arrays;
 
 import java.util.Arrays;
 
-public class S
-{
-	public static void main(String[] args)
-	{
+public class S {
+	public static void main(String[] args) {
 		int[] x = { 10, 20, 100, 30, 65 };
 		System.out.println(x);
 		System.out.println(Arrays.toString(x));// calling toString() of the Arrays class

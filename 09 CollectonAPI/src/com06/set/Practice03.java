@@ -8,8 +8,7 @@ import java.util.TreeSet;
 
 class D implements Comparator{
 	@Override
-	public int compare(Object obj1, Object obj2)
-	{
+	public int compare(Object obj1, Object obj2) {
 		String str1 = obj1.toString();
 		String str2 = obj2.toString();
 		return str1.compareTo(str2);
@@ -26,10 +25,8 @@ class D implements Comparator{
 	}
 }
 
-public class Practice03
-{
-	public static void main(String[] args)
-	{
+public class Practice03 {
+	public static void main(String[] args) {
 		TreeSet t = new TreeSet(new D());
 		t.add("ratan");
 		t.add(new StringBuffer("sravya"));

@@ -1,9 +1,7 @@
 //4
 package com01.Arrays;
-public class D
-{
-	public static void main(String[] args)
-	{
+public class D {
+	public static void main(String[] args) {
 		int[] x = new int[2];
 		int[] y = new int[2];
 		int z[] = new int[2];

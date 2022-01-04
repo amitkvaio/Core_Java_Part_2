@@ -3,10 +3,8 @@ package com04.vec_linkedlist;
 
 import java.util.LinkedList;
 
-public class Manager02
-{
-	public static void main(String[] args)
-	{
+public class Manager02 {
+	public static void main(String[] args) {
 		LinkedList l1 = new LinkedList();
 		l1.add("abc");
 		l1.add(90);

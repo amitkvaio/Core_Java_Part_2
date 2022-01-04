@@ -3,7 +3,6 @@ package com10.generic;
 
 interface J<A> {
 	void test1(A a1);
-
 	A test2(A a1, int i);// return type of test2() is generic type,int i is fixed.
 }
 

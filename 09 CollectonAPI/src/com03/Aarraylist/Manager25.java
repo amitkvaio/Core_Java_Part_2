@@ -4,8 +4,7 @@ package com03.Aarraylist;
 import java.util.ArrayList;
 import java.util.Collections;
 
-class E implements Comparable
-{
+class E implements Comparable {
 	int i, j;
 
 	E(int i, int j) {
@@ -13,22 +12,18 @@ class E implements Comparable
 		this.j = j;
 	}
 
-	public String toString()
-	{
+	public String toString() {
 		return " " + i + "|" + j;
 	}
 
-	public int compareTo(Object obj)
-	{
+	public int compareTo(Object obj) {
 		return i - ((E) obj).i;
 	}
 
 }
 
-public class Manager25
-{
-	public static void main(String[] args)
-	{
+public class Manager25 {
+	public static void main(String[] args) {
 		ArrayList list = new ArrayList();
 		list.add(new E(10, 2));
 		list.add(new E(12, 5));

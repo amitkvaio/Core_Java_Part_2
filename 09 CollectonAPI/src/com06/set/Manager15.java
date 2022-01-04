@@ -5,10 +5,8 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class Manager15
-{
-	public static void main(String[] args)
-	{
+public class Manager15 {
+	public static void main(String[] args) {
 		HashSet set = new HashSet();
 		set.add(90);
 		set.add(9);
@@ -21,10 +19,9 @@ public class Manager15
 		set.add(3);
 		set.add(4);
 		System.out.println(set);
-	 
+
 		Iterator it = set.iterator();
-		while (it.hasNext())
-		{
+		while (it.hasNext()) {
 			System.out.print(it.next() + ",");
 		}
 	}

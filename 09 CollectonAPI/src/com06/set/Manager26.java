@@ -4,10 +4,8 @@ package com06.set;
 import java.util.Collections;
 import java.util.TreeSet;
 
-public class Manager26
-{
-	public static void main(String[] args)
-	{
+public class Manager26 {
+	public static void main(String[] args) {
 		TreeSet set = new TreeSet(Collections.reverseOrder());
 		set.add(1.9);
 		set.add(1.0);
@@ -17,7 +15,8 @@ public class Manager26
 		set.add(5.3);
 		set.add(9.2);
 		set.add(2.4);
-		//set.add(1); //all elements must be of same type to compare also null value not allowed
+		// set.add(1); //all elements must be of same type to compare also null value
+		// not allowed
 		System.out.println(set);
 	}
 }

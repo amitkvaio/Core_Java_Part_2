@@ -1,10 +1,7 @@
 //2
 package com01.Arrays;
-
-public class B
-{
-	public static void main(String[] args)
-	{
+public class B {
+	public static void main(String[] args) {
 		int x[] = new int[3];
 		x[0] = 10;
 		x[1] = 20;

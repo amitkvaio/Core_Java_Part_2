@@ -3,13 +3,11 @@ package com10.generic;
 
 interface M<X> {
 	void test1(X x1);
-
 	X test2(X x1);
 }
 
 class N<X> implements M<X> {
 	public void test1(X y1) {
-
 	}
 
 	public X test2(X y1) {

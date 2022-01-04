@@ -3,10 +3,8 @@ package com03.Aarraylist;
 
 import java.util.ArrayList;
 
-public class Manager06
-{
-	public static void main(String[] args)
-	{
+public class Manager06 {
+	public static void main(String[] args) {
 		ArrayList list = new ArrayList();
 		list.add(9);
 		list.add(0);
@@ -23,5 +21,4 @@ public class Manager06
 		System.out.println(list);
 		System.out.println(list1);
 	}
-
 }

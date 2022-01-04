@@ -5,10 +5,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class Manager28
-{
-	public static void main(String[] args)
-	{
+public class Manager28 {
+	public static void main(String[] args) {
 		ArrayList list = new ArrayList();
 		list.add(20);
 		list.add(23);

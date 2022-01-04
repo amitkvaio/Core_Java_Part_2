@@ -4,10 +4,8 @@ package com03.Aarraylist;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Manager17
-{
-	public static void main(String[] args)
-	{
+public class Manager17 {
+	public static void main(String[] args) {
 		ArrayList list = new ArrayList();
 		list.add(90);
 		list.add(20);

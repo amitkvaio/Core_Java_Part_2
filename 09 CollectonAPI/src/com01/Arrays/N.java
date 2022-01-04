@@ -1,10 +1,8 @@
-//13
+ //13
 package com01.Arrays;
 
-public class N
-{
-	public static void main(String[] args)
-	{
+public class N {
+	public static void main(String[] args) {
 		int[] x = new int[2];
 		x[0] = 10;
 		Object y = x;

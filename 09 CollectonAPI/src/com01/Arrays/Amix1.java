@@ -1,11 +1,8 @@
 package com01.Arrays;
 
-public class Amix1
-{
+public class Amix1 {
 	int i = 10;
-
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		Amix1 a = new Amix1();
 		System.out.println(a.toString());
 		System.out.println(a.i);

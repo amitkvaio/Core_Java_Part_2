@@ -3,10 +3,8 @@ package com06.set;
 
 import java.util.HashSet;
 
-public class Manager17
-{
-	public static void main(String args[])
-	{
+public class Manager17 {
+	public static void main(String args[]) {
 		HashSet set = new HashSet();
 		set.add("abc");
 		set.add(10);

@@ -3,8 +3,7 @@ package com06.set;
 
 import java.util.HashSet;
 
-class F
-{
+class F {
 	int i, j;
 
 	F(int i, int j) {
@@ -13,9 +12,8 @@ class F
 	}
 
 	@Override
-	public int hashCode()
-	{
-		//System.out.println("From the hashCode()");
+	public int hashCode() {
+		// System.out.println("From the hashCode()");
 		String s1 = Integer.toString(i);
 		String s2 = Integer.toString(j);
 		int hash = s1.hashCode() + s2.hashCode();
@@ -23,24 +21,19 @@ class F
 	}
 
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return "(" + i + "," + j + ")";
 	}
 
 	@Override
-	public boolean equals(Object obj)
-	{
-		//System.out.println("from the equal method");
+	public boolean equals(Object obj) {
+		// System.out.println("from the equal method");
 		return (obj instanceof F && i == ((F) obj).i && j == ((F) obj).j);
 	}
-
 }
 
-public class Manager20
-{
-	public static void main(String[] args)
-	{
+public class Manager20 {
+	public static void main(String[] args) {
 		HashSet set = new HashSet();
 		set.add(new F(1, 2));
 		set.add(new F(1, 2));

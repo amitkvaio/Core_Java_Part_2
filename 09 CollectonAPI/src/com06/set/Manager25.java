@@ -3,17 +3,15 @@ package com06.set;
 
 import java.util.TreeSet;
 
-public class Manager25
-{
-	public static void main(String[] args)
-	{
+public class Manager25 {
+	public static void main(String[] args) {
 		TreeSet set = new TreeSet();
 		set.add("add");
 		set.add("abc");
 		set.add("test");
 		set.add("done");
 		set.add("praveen");
-		//set.add(null);
+		// set.add(null);
 		System.out.println(set);
 	}
 }

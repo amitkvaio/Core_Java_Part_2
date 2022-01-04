@@ -1,15 +1,12 @@
 //142
 package com10.generic;
 
-class U<A extends Number>
-{
+class U<A extends Number> {
 
 }
 
-public class Manager12
-{
-	public static void main(String[] args)
-	{
+public class Manager12 {
+	public static void main(String[] args) {
 		U<Byte> u1 = new U<Byte>();
 		U<Short> u2 = new U<Short>();
 		U<Integer> u3 = new U<Integer>();
@@ -17,7 +14,7 @@ public class Manager12
 		U<Float> u5 = new U<Float>();
 		U<Double> u6 = new U<Double>();
 
-		//U<String> u7 = new U<String>();
+		// U<String> u7 = new U<String>();
 		System.out.println("done");
 	}
 }

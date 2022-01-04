@@ -7,10 +7,8 @@ package com03.Aarraylist;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Manager43
-{
-	public static void main(String[] args)
-	{
+public class Manager43 {
+	public static void main(String[] args) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		list.add(90);
 		list.add(0);
@@ -18,10 +16,10 @@ public class Manager43
 		list.add(91);
 		list.add(8);
 		list.add(7);
-		System.out.println("Printing ArrayList :"+list);
-		
-		Integer[] st =new Integer[list.size()];
+		System.out.println("Printing ArrayList :" + list);
+
+		Integer[] st = new Integer[list.size()];
 		list.toArray(st);
-		System.out.println("Printing Integer Arrasy : "+Arrays.toString(st));
+		System.out.println("Printing Integer Arrasy : " + Arrays.toString(st));
 	}
 }

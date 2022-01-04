@@ -3,25 +3,20 @@ package com07.map;
 
 import java.util.HashMap;
 
-class M
-{
+class M {
 	int i;
 
 	M(int i) {
 		this.i = i;
 	}
 
-	public String toString()
-	{
+	public String toString() {
 		return "i :" + i;
 	}
 }
 
-public class Manager37
-{
-	public static void main(String[] args)
-
-	{
+public class Manager37 {
+	public static void main(String[] args) {
 		HashMap map = new HashMap();
 		map.put(10, "abc");
 		map.put(10, "xyz");

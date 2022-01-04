@@ -4,21 +4,18 @@ package com06.set;
 import java.util.Comparator;
 import java.util.TreeSet;
 
-class B implements Comparator<String>
-{
+class B implements Comparator<String> {
 	@Override
-	public int compare(String st1, String st2)
-	{
-		return st1.compareTo(st2); //[apple, banana, cucumber, orange, papaya]
-		//return st2.compareTo(st1);//[papaya, orange, cucumber, banana, apple] - reverse order
+	public int compare(String st1, String st2) {
+		return st1.compareTo(st2); // [apple, banana, cucumber, orange, papaya]
+		// return st2.compareTo(st1);//[papaya, orange, cucumber, banana, apple] -
+		// reverse order
 
 	}
 }
 
-public class Practice01
-{
-	public static void main(String[] args)
-	{
+public class Practice01 {
+	public static void main(String[] args) {
 		TreeSet<String> t = new TreeSet<String>(new B());
 		t.add("orange");
 		t.add("banana");

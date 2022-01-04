@@ -41,7 +41,6 @@ public class Manager19 {
 		set.add(new E(5));
 		set.add(new E(5));
 		System.out.println(set);
-
 	}
 }
 /*

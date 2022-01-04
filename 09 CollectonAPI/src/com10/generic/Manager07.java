@@ -5,7 +5,6 @@ class H<X> {
 	X i; // i is the generic type
 
 	H() {
-
 	}
 
 	H(X i) {

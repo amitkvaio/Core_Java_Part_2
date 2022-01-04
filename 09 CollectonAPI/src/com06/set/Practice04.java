@@ -1,4 +1,4 @@
-//Example:- passing sortedset object to TreeSet constructor.
+//Example:- passing sorted set object to TreeSet constructor.
 package com06.set;
 
 import java.util.SortedSet;
@@ -13,7 +13,7 @@ public class Practice04 {
 		t.add(30);
 		System.out.println(t); // 10 20 30 40
 
-		SortedSet s = t.headSet(30);
+		SortedSet s = t.headSet(40);
 		System.out.println("S-->" + s);
 		TreeSet tt = new TreeSet(s);
 		System.out.println(tt); // 10 20

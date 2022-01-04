@@ -1,16 +1,22 @@
 package com01.Arrays;
-
-public class Amix2
-{
-
-	public static void main(String[] args)
-	{
+public class Amix2 {
+	public static void main(String[] args) {
 		int x[] = new int[10];
 		x[0] = 10;
 		x[3] = 20;
 		System.out.println(x);
 	}
 }
+
+
+
+
+
+
+
+
+
+
 //com.lara.Amix1@2e5f8245
 //[I@1c8825a5
 //JRE is internally using one system class for integer array as new object is created

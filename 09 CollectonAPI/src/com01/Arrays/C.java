@@ -1,9 +1,8 @@
 //3
 package com01.Arrays;
-public class C
-{
-	public static void main(String[] args)
-	{
+
+public class C {
+	public static void main(String[] args) {
 		int[] x;// array declaration
 		x = new int[3];// array definition
 		System.out.println(x[0]);

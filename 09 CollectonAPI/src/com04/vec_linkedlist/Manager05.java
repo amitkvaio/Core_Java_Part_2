@@ -3,10 +3,8 @@ package com04.vec_linkedlist;
 
 import java.util.LinkedList;
 
-public class Manager05
-{
-	public static void main(String[] args)
-	{
+public class Manager05 {
+	public static void main(String[] args) {
 		LinkedList list = new LinkedList();
 		list.add(90);
 		list.add(9);
@@ -16,18 +14,18 @@ public class Manager05
 		list.add(40);
 		list.add(12);
 		System.out.println(list);
-		
+
 		System.out.println("Using peek method");
 		list.peek();
 		list.peekFirst();
 		list.peekLast();
-		System.out.println("After peek activity :"+list);
-		
+		System.out.println("After peek activity :" + list);
+
 		System.out.println("Using poll method");
 		list.poll();
 		list.pollFirst();
 		list.pollLast();
-		System.out.println("After poll activity :"+list);
+		System.out.println("After poll activity :" + list);
 	}
 }
 /*

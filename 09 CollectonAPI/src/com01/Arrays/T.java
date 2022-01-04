@@ -3,10 +3,8 @@ package com01.Arrays;
 
 import java.util.Arrays;
 
-public class T
-{
-	public static void main(String[] args)
-	{
+public class T {
+	public static void main(String[] args) {
 		int[] x = { 10, 5, 0, 40 };
 		System.out.println(Arrays.toString(x));
 		Arrays.sort(x);

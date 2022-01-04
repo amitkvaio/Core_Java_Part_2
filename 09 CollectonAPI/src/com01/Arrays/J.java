@@ -1,10 +1,8 @@
 //9
 package com01.Arrays;
 
-public class J
-{
-	public static void main(String[] args)
-	{
+public class J {
+	public static void main(String[] args) {
 		int x[] = new int[2];
 		int y[] = x;// where x is pointing y is also pointing same array object
 		int z[] = y;// similarly

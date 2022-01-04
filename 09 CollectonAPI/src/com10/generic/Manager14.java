@@ -1,38 +1,30 @@
 //144
 package com10.generic;
 
-class V<A>
-{
+class V<A> {
 	A i;
 }
 
-public class Manager14
-{
-	static void test1(V<?> obj)
-	{	
+public class Manager14 {
+	static void test1(V<?> obj) {
+	}
+
+	static void test2(V<? extends Number> obj) {
+	}
+
+	static void test3(V<? super Number> obj) {
+	}
+
+	static void test4(V<?> obj) {
+	}
+
+	static void test5(V<? extends Q> obj) {
+	}
+
+	static void test6(V<? super Q> obj) {
 	}
 	
-	static void test2(V<? extends Number> obj)
-	{	
-	}
-	
-	static void test3(V<? super Number> obj)
-	{	
-	}
-	
-	static void test4(V<?> obj)
-	{	
-	}
-	
-	static void test5(V<? extends Q> obj)
-	{
-	}
-	static void test6(V<? super Q> obj)
-	{	
-	}
-	
-	public static void main(String[] args)
-	{
+	public static void main(String[] args){
 		test1(new V<Object>());
 		test1(new V<Integer>());
 		test1(new V<P>());
@@ -66,7 +58,6 @@ public class Manager14
 //		test6(new V<R>());
 		
 		System.out.println("done");
-		
 	}
 }
 /*

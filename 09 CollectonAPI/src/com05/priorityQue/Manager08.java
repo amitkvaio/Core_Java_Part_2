@@ -4,10 +4,8 @@ package com05.priorityQue;
 import java.util.Iterator;
 import java.util.PriorityQueue;
 
-public class Manager08
-{
-	public static void main(String[] args)
-	{
+public class Manager08 {
+	public static void main(String[] args) {
 		PriorityQueue q1 = new PriorityQueue();
 		q1.add(9);
 		q1.add(91);
@@ -18,10 +16,10 @@ public class Manager08
 		q1.add(39);
 		q1.add(3);
 		System.out.println(q1);
-		
+
 		Iterator it = q1.iterator();
-		
-		while(it.hasNext()) {
+
+		while (it.hasNext()) {
 			System.out.println(q1.poll());
 			System.out.println(q1);
 		}

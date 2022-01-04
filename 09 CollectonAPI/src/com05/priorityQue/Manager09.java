@@ -3,10 +3,8 @@ package com05.priorityQue;
 
 import java.util.PriorityQueue;
 
-public class Manager09
-{
-	public static void main(String[] args)
-	{
+public class Manager09 {
+	public static void main(String[] args) {
 		PriorityQueue pq = new PriorityQueue();
 		pq.add("abc");
 		pq.add("xyz");

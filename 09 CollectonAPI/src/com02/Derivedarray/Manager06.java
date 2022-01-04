@@ -3,29 +3,27 @@ package com02.Derivedarray;
 
 import java.util.Arrays;
 
-class E implements Comparable
-{
-	int i,j;
-	E(int i,int j){
-		this.i=i;
-		this.j=j;
+class E implements Comparable {
+	int i, j;
+
+	E(int i, int j) {
+		this.i = i;
+		this.j = j;
 	}
-	public String toString()
-	{
-		return "i ="+i+" j ="+j;
+
+	@Override
+	public String toString() {
+		return "E [i=" + i + ", j=" + j + "]";
 	}
-	public int compareTo(Object obj)
-	{
-		E e1=(E)obj;
-		//shorting happen based on the j values
-		return j-e1.j;
+
+	public int compareTo(Object obj) {
+		E e1 = (E) obj;
+		// shorting happen based on the j values
+		return this.j - e1.j;
 	}
-	
 }
-public class Manager06
-{
-	public static void main(String[] args)
-	{
+public class Manager06{
+	public static void main(String[] args)	{
 		E x[]={
 				new E(20,30),
 				new E(90,23),
@@ -37,5 +35,4 @@ public class Manager06
 		Arrays.sort(x);
 		System.out.println(Arrays.toString(x));
 	}
-
 }

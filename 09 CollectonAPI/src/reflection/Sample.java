@@ -1,17 +1,15 @@
 package reflection;
 
-public class Sample
-{
+public class Sample {
 
 }
-class Test
-{  
-	 public static void main(String args[])throws Exception
-	 {  
-		 Class c=Class.forName("reflection.Sample"); 
-		 String s1 = c.getName();
-		 System.out.println(c);  
-	 }  
+
+class Test {
+	public static void main(String args[]) throws Exception {
+		Class c = Class.forName("reflection.Sample");
+		String s1 = c.getName();
+		System.out.println(c);
+	}
 }
 /*
 for every class there is a java.lang.Class object . this is a static

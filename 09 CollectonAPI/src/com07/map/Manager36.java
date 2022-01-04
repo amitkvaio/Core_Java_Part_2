@@ -3,10 +3,8 @@ package com07.map;
 
 import java.util.Hashtable;
 
-public class Manager36
-{
-	public static void main(String[] args)
-	{
+public class Manager36 {
+	public static void main(String[] args) {
 		Hashtable tab = new Hashtable();
 		tab.put("k1", "e1");
 		tab.put("k2", "e2");

@@ -6,47 +6,37 @@ import java.util.Arrays;
 class D implements Comparable
 //Comparable interface is containing one unimplemented method
 //Comparable is in java.lang package
-//it contain one copareTo() method
+//it contain one copareTo(Object obj) method
 {
 	int i;
-	D(int i)
-	{
-		this.i=i;
-	}
-	
-	public String toString()
-	{
-		//System.out.println("i=" + i);
-		return " "+i;
-	}
-	
-	public int compareTo(Object obj)//internally it uses the bubble sort operation
-	{
-		D d1=(D)obj;
-		//return i-d1.i;
-		return this.i-d1.i;
-	} 
-}
-public class Manager04
-{
-	public static void main(String[] args) 
-	{
-		D x[]={
-				new D(9),
-				new D(90),
-				new D(19),
-				new D(29),
-				new D(13),
-				new D(33),
-				};
-		
-		System.out.println("Before shorting-"+Arrays.toString(x));
-		Arrays.sort(x);         //internally call the compareTo method ...
-		
-		System.out.println(" After shorting-"+Arrays.toString(x));
-		System.out.println(x.length);
+
+	D(int i) {
+		this.i = i;
 	}
 
+	@Override
+	public String toString() {
+		return "D [i=" + i + "]";
+	}
+	 
+	@Override
+	public int compareTo(Object obj) {
+		D d = (D)obj;
+		return this.i-d.i;
+	}
+	
+}
+
+public class Manager04 {
+	public static void main(String[] args) {
+		D x[] = { new D(9), new D(90), new D(19), new D(29), new D(13), new D(33), };
+
+		System.out.println("Before shorting-" + Arrays.toString(x));
+		Arrays.sort(x); // internally call the compareTo method ...
+
+		System.out.println(" After shorting-" + Arrays.toString(x));
+		System.out.println(x.length);
+	}
 }
 
 /*
@@ -55,6 +45,5 @@ calling an reference of an array taking the first element calling CompareTo() me
 passing 1 element
 passing 2 element
 passing 3 element
-
 
 */

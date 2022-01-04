@@ -3,7 +3,6 @@ package com10.generic;
 
 class F<Test> {
 	Test i;//
-
 	void method1(Test t) {
 		System.out.println("From method1 : " + t + " i:" + i);
 	}
