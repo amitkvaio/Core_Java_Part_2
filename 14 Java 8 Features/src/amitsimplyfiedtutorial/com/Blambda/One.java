@@ -1,6 +1,6 @@
 package amitsimplyfiedtutorial.com.Blambda;
 @FunctionalInterface
-interface Two{
+interface One{
 	public void testOne();
 }
 
