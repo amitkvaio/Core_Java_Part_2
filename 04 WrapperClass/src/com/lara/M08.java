@@ -1,9 +1,7 @@
 package com.lara;
 
-public class M08
-{
-	public static void main(String[] args)
-	{
+public class M08 {
+	public static void main(String[] args) {
 		String s1 = "true";
 		String s2 = "gh";
 		String s3 = "abc";

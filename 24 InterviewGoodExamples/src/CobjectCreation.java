@@ -1,6 +1,11 @@
 import java.lang.reflect.Constructor;
 
 public class CobjectCreation {
+
+	public CobjectCreation() {
+		System.out.println("Constructor()");
+	}
+
 	public void test1() {
 		System.out.println("From test1() method!!");
 	}
@@ -10,5 +15,21 @@ public class CobjectCreation {
 		CobjectCreation object = constructor.newInstance();
 		object.test1();
 		System.out.println("Done");
+		
+		
+		Constructor<Amit> amitObj = Amit.class.getConstructor();
+		Amit amit =amitObj.newInstance();
+		amit.callme();
 	}
+}
+
+class Amit {
+	public Amit() {
+		System.out.println("Default constructor");
+	}
+
+	public void callme() {
+		System.out.println("Hi Please call me.");
+	}
+
 }

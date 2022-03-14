@@ -1,9 +1,7 @@
 package com.lara;
 
-public class M16
-{
-	public static void main(String[] args)
-	{
+public class M16 {
+	public static void main(String[] args) {
 		String s1 = "45";
 		byte b1 = Byte.parseByte(s1);
 		int i = Integer.parseInt(s1);

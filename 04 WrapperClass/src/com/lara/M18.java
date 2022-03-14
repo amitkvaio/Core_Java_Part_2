@@ -1,9 +1,7 @@
 package com.lara;
 
-public class M18
-{
-	public static void main(String[] args)
-	{
+public class M18 {
+	public static void main(String[] args) {
 		String s1 = "abe";
 		String s2 = "true";
 		boolean b1 = Boolean.parseBoolean(s1);

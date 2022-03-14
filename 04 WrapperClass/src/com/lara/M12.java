@@ -1,9 +1,7 @@
 package com.lara;
 
-public class M12
-{
-	public static void main(String[] args)
-	{
+public class M12 {
+	public static void main(String[] args) {
 		boolean b1 = false;
 		String s1 = "true";
 		String s2 = "abc";

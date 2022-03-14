@@ -1,19 +1,15 @@
 package com.lara;
 
-public class M41
-{
-	static void test()
-	{
+public class M41 {
+	static void test() {
 		System.out.println("test()");
 	}
 
-	static void test(int... amit)
-	{
+	static void test(int... amit) {
 		System.out.println("test(var-args)");
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		test();
 		test(10);
 		test(10, 30);

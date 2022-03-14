@@ -8,7 +8,5 @@ public class GG {
 			System.out.print("i= " + i + " j= " + j +"-->");
 			System.out.println(i==j);
 		}
-		
-		 
 	}
 }

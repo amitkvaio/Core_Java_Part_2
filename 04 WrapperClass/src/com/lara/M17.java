@@ -1,9 +1,7 @@
 package com.lara;
 
-public class M17
-{
-	public static void main(String[] args)
-	{
+public class M17 {
+	public static void main(String[] args) {
 		String s1 = "9.8";
 		float f1 = Float.parseFloat(s1);
 
@@ -13,9 +11,9 @@ public class M17
 		System.out.println(f1);
 		System.out.println(d1);
 		System.out.println("---------");
-		
+
 		int i = Integer.parseInt(s1);
-		//unable to parse string 9.8 to integer 
+		// unable to parse string 9.8 to integer
 		System.out.println("done");
 	}
 }

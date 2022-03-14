@@ -1,9 +1,7 @@
 package com.lara;
 
-public class M20
-{
-	public static void main(String[] args)
-	{
+public class M20 {
+	public static void main(String[] args) {
 
 		int i = 20;
 		double j = i;
@@ -12,5 +10,4 @@ public class M20
 		System.out.println("done");
 
 	}
-
 }

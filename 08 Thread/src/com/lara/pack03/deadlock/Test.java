@@ -5,30 +5,26 @@ import java.lang.management.ThreadInfo;
 import java.lang.management.ThreadMXBean;
 
 class AA{
-	
-	public void method1() {
-		System.out.println("From method 1");
+
+	public void method2() {
 		synchronized (String.class) {
-			System.out.println("taken the lock of string class from method1");
+			System.out.println("From method2 holding the class lock of String!!");
 			synchronized (Integer.class) {
-				System.out.println("Looking for interger class lock from method1");
+				System.out.println("From method2 holding the Integer lock");
 			}
 		}
-		
+	}
+
+	public void method1() {
+		synchronized (Integer.class) {
+			System.out.println("From method1 holding the class lock of Integer!!");
+			synchronized (String.class) {
+				System.out.println("From method1 holding the String lock");
+			}
+		}
 	}
 	
-	public void method2() {
-		System.out.println("From method 2");
-		synchronized (String.class) {
-			System.out.println("taken the lock of interger class from method 2");
-			synchronized (Integer.class) {
-				System.out.println("Looking for String class lock from method2 ");
-			}
-		}
-		
-	}	
 }
-
 class BB extends Thread{
 	AA aa ;
 	public BB(AA aa) {

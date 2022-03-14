@@ -1,9 +1,7 @@
 package com.lara;
 
-public class M15
-{
-	public static void main(String[] args)
-	{
+public class M15 {
+	public static void main(String[] args) {
 		int i = 10;
 		String s2 = Double.toString(i);
 		// String s2=(String)Double.toString(i);

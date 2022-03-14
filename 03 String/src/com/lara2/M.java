@@ -1,9 +1,12 @@
 package com.lara2;
 
+import java.util.Arrays;
+
 public class M {
 	public static void main(String[] args) {
 		String s1 = "abc;xyz;hello;123";
 		String[] x = s1.split(";");
+		System.out.println(Arrays.toString(x));
 		for (String str : x) {
 			System.out.println(str);
 		}

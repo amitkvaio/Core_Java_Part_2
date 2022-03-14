@@ -23,7 +23,7 @@ public final class StudentClone {
 		AddressClone ad = null;
 		try {
 			ad = address.clone();
-		} catch (CloneNotSupportedException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return ad;

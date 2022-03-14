@@ -36,3 +36,4 @@ public class Produser implements Runnable {
 		}
 	}
 }
+//http://tutorials.jenkov.com/java-concurrency/index.html

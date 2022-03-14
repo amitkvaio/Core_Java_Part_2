@@ -24,8 +24,8 @@ class B implements Serializable
 public class Manager02
 {
 	public static void main(String[] args) throws Exception {
-		//SerializationDemo();
-		deSerializationDemo();
+		SerializationDemo();
+		//deSerializationDemo();
 	}
 
 	public static void SerializationDemo() throws Exception {
