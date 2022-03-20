@@ -3,33 +3,30 @@ package com03.lara;
 
 import java.io.*;
 
-class E implements Serializable
-{
+class E implements Serializable {
 	int i;
-	
+
 }
 
-class F implements Serializable
-{
+class F implements Serializable {
 	E e1;
 	int j;
 }
 
-public class Manager05
-{
+public class Manager05 {
 	public static void main(String[] args) throws Exception {
-		//serialize();
+		 //serialize();
 		deSerialize();
 	}
 
 	private static void serialize() throws Exception {
 		E e1 = new E();
-		e1.i = 200; 
-		
+		e1.i = 200;
+
 		F f1 = new F();
 		f1.j = 40;
 		f1.e1 = e1;
-		
+
 		FileOutputStream fout = new FileOutputStream("test4.txt");
 		ObjectOutputStream out = new ObjectOutputStream(fout);
 		out.writeObject(f1);
@@ -46,5 +43,6 @@ public class Manager05
 }
 
 /*
--- 	to Serialize F object, E class should be implements Serializable interface.
-*/
+ * -- to Serialize F object, E class should be implements Serializable
+ * interface.
+ */

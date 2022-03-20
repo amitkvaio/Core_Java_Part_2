@@ -3,13 +3,11 @@ package com03.lara;
 
 import java.io.*;
 
-class J implements Serializable
-{
+class J implements Serializable {
 	int x;
 }
 
-public class Manager08
-{
+public class Manager08 {
 
 	public static void main(String[] args) throws Exception {
 		J j1 = new J();

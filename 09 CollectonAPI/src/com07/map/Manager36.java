@@ -14,6 +14,7 @@ public class Manager36 {
 		System.out.println(tab);
 		System.out.println(tab.get("k2"));
 		System.out.println(tab.get("k4"));
+		System.out.println("+1".concat("123456789"));
 	}
 }
 /*

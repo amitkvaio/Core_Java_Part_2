@@ -3,20 +3,17 @@ package com03.lara;
 
 import java.io.*;
 
-class M implements Serializable
-{
+class M implements Serializable {
 	int i;
 
 }
 
-class N implements Serializable
-{
+class N implements Serializable {
 	M m1;
 	int j;
 }
 
-public class Manager11
-{
+public class Manager11 {
 	public static void main(String[] args) throws Exception {
 		M m1 = new M();
 		m1.i = 10;

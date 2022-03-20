@@ -3,8 +3,7 @@ package com03.lara;
 
 import java.io.*;
 
-class P
-{
+class P {
 	int i = 10;
 
 	P() {
@@ -13,8 +12,7 @@ class P
 	}
 }
 
-class Q extends P
-{
+class Q extends P {
 	int j = 20;
 
 	Q() {
@@ -23,8 +21,7 @@ class Q extends P
 	}
 }
 
-class R extends Q implements Serializable
-{
+class R extends Q implements Serializable {
 	int k = 30;
 
 	R() {
@@ -33,8 +30,7 @@ class R extends Q implements Serializable
 	}
 }
 
-public class Manager12
-{
+public class Manager12 {
 
 	public static void main(String[] args) throws Exception {
 		R r1 = new R();
