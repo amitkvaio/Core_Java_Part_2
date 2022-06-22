@@ -15,11 +15,11 @@ public class FConsumer extends Thread {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-
-		}
+		
 		int productSize = this.prod.sharedQueue.size();
 		for (int i = 0; i < productSize; i++)
 			System.out.println("Consumed : " + this.prod.sharedQueue.remove(0) + " ");
+		}
 	}
 }
 /*

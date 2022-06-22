@@ -12,7 +12,7 @@ public class FilterTestJava84 {
 		List<Person> personList = Arrays.asList(perArray);
 		Person per	= personList.stream()
 						.filter(person->{
-							if("Amit1".equals(person.getName()) && person.getAge()==28){
+							if("Amit".equals(person.getName()) && person.getAge()==28){
 								return true;
 								// if the if condition become true
 								// means required object is available otherwise not

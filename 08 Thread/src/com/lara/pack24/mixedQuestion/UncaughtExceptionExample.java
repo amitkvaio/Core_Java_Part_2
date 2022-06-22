@@ -4,6 +4,14 @@ public class UncaughtExceptionExample {
 	public static void main(String[] args) {
 		Task task = new Task();
 		Thread thread = new Thread(task);
+		
+		
+		Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+			@Override
+			public void uncaughtException(Thread t, Throwable e) {
+				System.out.println(t.getName() + " has thrown-- " + e);
+			}
+		});
 		thread.start();
 	}
 }

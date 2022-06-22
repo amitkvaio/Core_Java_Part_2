@@ -12,6 +12,8 @@ public class Manager03 {
 		noteLst.add(new Notes(2, "dd", 34));
 		noteLst.add(new Notes(5, "zz", 32));
 
-		noteLst.stream().map(note -> note.getTagName().toUpperCase()).forEach(note -> System.out.println(note));
+		noteLst.stream()
+		.map(note -> note.getTagName().toUpperCase())
+		.forEach(note -> System.out.println(note));
 	}
 }

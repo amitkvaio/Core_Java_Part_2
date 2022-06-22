@@ -19,6 +19,7 @@ public class C implements Runnable {
 		Thread t = new Thread(obj, "Thread-1");
 		t.start();
 
+		
 		System.out.println("press enter");
 		System.in.read();
 		t.interrupt();

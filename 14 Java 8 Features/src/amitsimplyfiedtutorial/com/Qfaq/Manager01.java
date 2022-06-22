@@ -3,7 +3,6 @@ package amitsimplyfiedtutorial.com.Qfaq;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
 // How to check if list is empty in Java 8 using Optional, if not null iterate through the 
@@ -22,7 +21,8 @@ public class Manager01 {
 		Optional.ofNullable(notes)
 		.orElseGet(Collections::emptyList)
 		.stream()
-		.filter(Objects::nonNull)
-		.forEach(System.out::printf);
+		.filter(str->str!=null)
+		.forEach(System.out::println);
+		System.out.println("Main Finished");
 	}
 }

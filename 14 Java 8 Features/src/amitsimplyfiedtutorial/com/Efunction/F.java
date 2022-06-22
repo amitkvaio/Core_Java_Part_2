@@ -4,13 +4,13 @@ import java.util.function.Function;
 
 public class F {
 	public static void main(String[] args) {
-		Function<Integer, Integer> times2 = e -> e * 2;
+		Function<Integer, Integer> caller = e -> e * 2;
 		Function<Integer, Integer> squared = e -> e * e;
 
-		int andThen=times2.andThen(squared).apply(4);  
+		int andThen=caller.andThen(squared).apply(4);  
 		System.out.println("Result with andThen: " + andThen);
 		
-		int compose = times2.compose(squared).apply(4); 
+		int compose = caller.compose(squared).apply(4); 
 		System.out.println("Result with compose: " + compose);
 	}
 }

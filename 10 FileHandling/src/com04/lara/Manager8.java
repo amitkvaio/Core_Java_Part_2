@@ -9,132 +9,98 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutput;
 import java.io.ObjectOutputStream;
 
-class Person implements Externalizable
-{
+class Person implements Externalizable {
 	String name;
 	int age;
 	double weight;
+
 	@Override
-	public void writeExternal(ObjectOutput out)throws IOException
-	{
+	public void writeExternal(ObjectOutput out) throws IOException {
 		out.writeUTF(name);
 		out.writeInt(age);
 		out.writeDouble(weight);
 	}
-	
-	
+
 	@Override
-	public void readExternal(ObjectInput in) throws IOException,
-			ClassNotFoundException
-	{
+	public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
 		name = in.readUTF();
 		age = in.readInt();
 		weight = in.readDouble();
-		
+
 	}
 }
 
-public class Manager8
-{
-	public static void main(String[] args)
-	{
+public class Manager8 {
+	public static void main(String[] args) {
 		externalize();
 		deExternalize();
 	}
-	
-	private static void externalize()
-	{
-		Person p1= new Person();
-		p1.name="amit";
-		p1.age=22;
-		p1.weight=45.909;
+
+	private static void externalize() {
+		Person p1 = new Person();
+		p1.name = "amit";
+		p1.age = 22;
+		p1.weight = 45.909;
 		FileOutputStream fout = null;
 		ObjectOutputStream out = null;
-		try
-		{
+		try {
 			fout = new FileOutputStream("test7.txt");
 			out = new ObjectOutputStream(fout);
-		}
-		catch(IOException e)
-		{
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		finally
-		{
-			try
-			{
-				if(out!=null)
-				{
+
+		finally {
+			try {
+				if (out != null) {
 					out.flush();
 					out.close();
 				}
-			}
-			catch (IOException e2)
-			{
+			} catch (IOException e2) {
 				e2.printStackTrace();
 			}
-			
-			try
-			{
-				if(fout!=null)
-				{
+
+			try {
+				if (fout != null) {
 					fout.flush();
 					fout.close();
 				}
-			} 
-			catch (IOException e2)
-			{
+			} catch (IOException e2) {
 				e2.printStackTrace();
 			}
 		}
 	}
-	
-	private static void deExternalize()
-	{
+
+	private static void deExternalize() {
 		Person p1 = new Person();
 		FileInputStream fin = null;
 		ObjectInputStream in = null;
-		try
-		{
+		try {
 			fin = new FileInputStream("test7.txt");
 			in = new ObjectInputStream(fin);
 			p1.readExternal(in);
-		}
-		catch (IOException e)
-		{
+		} catch (IOException e) {
 			e.printStackTrace();
-		}
-		catch(ClassNotFoundException e1)
-		{
+		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
 		}
-		
-		finally
-		{
-			try
-			{
-				if(in!=null)
-				{
+
+		finally {
+			try {
+				if (in != null) {
 					in.close();
-					in= null;
+					in = null;
 				}
-			}
-			catch (IOException e)
-			{
+			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			
-			try
-			{
-				if(fin!=null)
-				{
+
+			try {
+				if (fin != null) {
 					fin.close();
-					fin=null;
+					fin = null;
 				}
-			}
-			catch (IOException e)
-			{
+			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}

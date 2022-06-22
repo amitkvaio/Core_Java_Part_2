@@ -6,11 +6,12 @@ class E {
 		this.i = i;
 		this.j = j;
 	}
-	public String toString()// gives the attribute value.
-	{
-		// System.out.println("toString()");
-		return "i = " + i + " & j=" + j;
+
+	@Override
+	public String toString() {
+		return "E [i=" + i + ", j=" + j + "]";
 	}
+	
 }
 
 public class Manager05 {

@@ -33,6 +33,7 @@ public class Practice03 {
 		t.add("anu");
 		t.add(new StringBuffer("suneelbabu"));
 		t.add("sri");
+		t.add(null);
 		System.out.println(t);
 	}
 }

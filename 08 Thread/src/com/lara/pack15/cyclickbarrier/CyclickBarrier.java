@@ -8,7 +8,7 @@ public class CyclickBarrier {
 	public static void main(String[] args) {
 		// 3 threads are part of the barrier, ServiceOne, ServiceTwo and this main
 		// thread calling them.
-		final CyclicBarrier barrier = new CyclicBarrier(3);
+		final CyclicBarrier barrier = new CyclicBarrier(2);
 
 		ServiceOne one = new ServiceOne(barrier);
 		ServiceTwo two = new ServiceTwo(barrier);

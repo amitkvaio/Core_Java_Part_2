@@ -1,4 +1,5 @@
 package coma.tostring;
+
 class D {
 	int i;
 

@@ -14,7 +14,7 @@ public class EProducer implements Runnable {
 	public void run() {
 
 		synchronized (this) {
-			for (int i = 1; i <= 3; i++) { // Producer will produce 10 products
+			for (int i = 1; i <= 10; i++) { // Producer will produce 10 products
 				sharedQueue.add(i);
 				System.out.println("Producer is still Producing, Produced : " + i);
 				try {

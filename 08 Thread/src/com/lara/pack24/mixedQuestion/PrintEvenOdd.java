@@ -10,7 +10,7 @@ class C {
 			String thName = Thread.currentThread().getName();
 			synchronized (this) {
 				//System.out.println("num%2:" + num % 2 + "-->" + (num % 2 != remainder) + " :" + thName + " " + num);
-				while (num % 2 != remainder) { // wait for numbers other than remainder
+				if (num % 2 != remainder) { // wait for numbers other than remainder
 					try {
 						//System.out.println(thName + " start-->  " + num);
 						Thread.sleep(1000);

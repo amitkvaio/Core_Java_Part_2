@@ -21,6 +21,7 @@ public class C implements Cloneable {
 	public static void main(String[] args) throws CloneNotSupportedException {
 		C c1 = new C(20, 2.8, "abc", 45);
 		C c2 = (C) c1.clone();
+		System.out.println("C1 Original=" + c1);
 		c2.i = 40;
 		c2.d = 200.909;
 		c2.s1 = "amit";

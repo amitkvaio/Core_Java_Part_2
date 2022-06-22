@@ -7,7 +7,7 @@ public class B implements Cloneable
 	public static void main(String[] args) throws CloneNotSupportedException
 	{
 		B b1 = new B();
-		b1.i=10;
+		//b1.i=10;
 		B b2 = (B)b1.clone();
 		System.out.println("b2.i="+ b2.i);
 		b2.i= 20;

@@ -2,6 +2,7 @@ package amitsimplyfiedtutorial.com.Hstream;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 //Ex: Program for map() and collect() Method 
@@ -15,6 +16,10 @@ public class D {
 		list.add("rakesh");
 		list.add("niraj");
 		list.add("devansh");
+		
+		Function<String, String> fun = (str)->str.toUpperCase();
+		List<String> listUpperCash1=list.stream().map(x->fun.apply(x)).collect(Collectors.toList());
+		System.out.println("UpperCash List Name : "+listUpperCash1);
 		
 		List<String> listUpperCash=list.stream().map(s->(s.toUpperCase())).collect(Collectors.toList());
 		System.out.println("Given List Name : "+list);

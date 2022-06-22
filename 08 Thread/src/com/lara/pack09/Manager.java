@@ -1,27 +1,22 @@
 //Thread LOCAL
 package com.lara.pack09;
-class Util
-{
-	static void sleep(long millis)
-	{
-		try
-		{
+
+class Util {
+	static void sleep(long millis) {
+		try {
 			Thread.sleep(millis);
-		} catch (InterruptedException e)
-		{
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
 }
 
-class Test
-{
+class Test {
 	int i;
 
 }
 
-class A extends Thread
-{
+class A extends Thread {
 	Test t;
 
 	A(Test t) {
@@ -29,8 +24,7 @@ class A extends Thread
 	}
 
 	@Override
-	public void run()
-	{
+	public void run() {
 		System.out.println("1:" + t.i);
 		t.i = 10;
 		Util.sleep(500);
@@ -45,8 +39,7 @@ class A extends Thread
 	}
 }
 
-class B extends Thread
-{
+class B extends Thread {
 	Test t;
 
 	B(Test t) {
@@ -54,8 +47,7 @@ class B extends Thread
 	}
 
 	@Override
-	public void run()
-	{
+	public void run() {
 		System.out.println("5:" + t.i);
 		t.i = 50;
 		Util.sleep(500);
@@ -70,21 +62,19 @@ class B extends Thread
 	}
 }
 
-public class Manager
-{
-	public static void main(String[] args)
-	{
+public class Manager {
+	public static void main(String[] args) {
 		Test t1 = new Test();
 		t1.i = 90;
-		
+
 		A a1 = new A(t1);
 		a1.start();
 		Util.sleep(1500);
-		
+
 		B b1 = new B(t1);
 		b1.start();
 		Util.sleep(30000);
-		
+
 		System.out.println("9:" + t1.i);
 		System.out.println("done");
 	}

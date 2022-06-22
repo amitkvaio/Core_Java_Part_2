@@ -16,6 +16,7 @@ public class CobjectCreation {
 		object.test1();
 		System.out.println("Done");
 		
+		//int 89amit=123;
 		
 		Constructor<Amit> amitObj = Amit.class.getConstructor();
 		Amit amit =amitObj.newInstance();

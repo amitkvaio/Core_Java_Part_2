@@ -10,5 +10,6 @@ public class F extends Thread {
 		f.start();
 		f.stop();
 		f.start();
+		System.out.println("Finished");
 	}
 }

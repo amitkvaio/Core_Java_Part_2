@@ -27,7 +27,7 @@ public class Manager1 {
 
 		for (Method m1 : methods) {
 			System.out.println("NAME:" + m1.getName());
-			System.out.println("MODIFIER:"+m1.toGenericString());
+			System.out.println("MODIFIER:" + m1.toGenericString());
 			System.out.println("TOsTRING=" + m1.toString());
 			System.out.println("Method return type:" + m1.getReturnType());
 			System.out.println(m1.getDefaultValue());

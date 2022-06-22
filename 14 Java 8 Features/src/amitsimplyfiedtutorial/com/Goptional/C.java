@@ -11,6 +11,7 @@ public class C {
 		
 		Optional<Car> opt2 = Optional.ofNullable(c2);
 		System.out.println(opt2);
+		System.out.println(opt2.isPresent());
 	}
 }
 

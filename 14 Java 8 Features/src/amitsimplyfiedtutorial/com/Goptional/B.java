@@ -6,6 +6,7 @@ public class B {
 	public static void main(String[] args) {
 		Car car = new Car("50000");
 		Optional<Car> opt = Optional.of(car); 
+		System.out.println(opt.isPresent());
 	}
 }
 

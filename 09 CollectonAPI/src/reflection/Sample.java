@@ -15,7 +15,7 @@ class Test {
 for every class there is a java.lang.Class object . this is a static
 class. it is created only once
 
-whenever a class is laoded to the memory all static members loaded to the memory at that 
+whenever a class is loaded to the memory all static members loaded to the memory at that 
 time itself one object is created i.e Class object which is develop by the sun people , 
 and it is created in storing in the static memory of class A.
 

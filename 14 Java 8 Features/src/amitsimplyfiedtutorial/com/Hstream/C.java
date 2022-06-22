@@ -16,6 +16,8 @@ public class C {
 		List<Integer> oddNumberList = list.stream().filter(i -> (i % 2 != 0)).collect(Collectors.toList());
 		System.out.println("Even Number List : "+evenNumberList);
 		System.out.println("Odd Number List : "+oddNumberList);
+		list.stream().filter(i -> i % 2 == 0).collect(Collectors.toList());
+		list.stream().sorted().filter(x->x%2==0).collect(Collectors.toList());
 	}
 }
 /*

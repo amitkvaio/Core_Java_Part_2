@@ -13,6 +13,8 @@ public class Manager01 {
 		System.out.println("toString()=" + a1.toString());
 	}
 }
+
+
 /*
 internally(a1)compiler  called the toString() method of the Object class
 i.e a1.toString();

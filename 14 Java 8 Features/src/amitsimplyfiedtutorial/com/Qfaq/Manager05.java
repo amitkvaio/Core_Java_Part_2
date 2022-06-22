@@ -10,9 +10,9 @@ import java.util.stream.Collectors;
 public class Manager05 {
 	public static void main(String[] args) {
 		List<String> names = Arrays.asList("AA", "BB", "AA", "CC");
-		Map<String, Long> namesMap=names.stream()
-		.filter(x->Collections.frequency(names, x)>1)
-		.collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+		Map<String, Long> namesMap = names.stream()
+				.filter(x -> Collections.frequency(names, x) > 1)
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 		System.out.println(namesMap);
 	}
 }

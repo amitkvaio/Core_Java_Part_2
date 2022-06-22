@@ -6,10 +6,12 @@ class C {
 		this.i = i;
 		// System.out.println(this.i = i);
 	}
+
+	@Override
 	public String toString() {
-		// System.out.println("tostring()");
-		return "i=" + i;
+		return "C [i=" + i + "]";
 	}
+	
 }
 
 public class Manager03 {
