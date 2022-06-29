@@ -12,3 +12,8 @@ public class StudentAddress01 {
 		System.out.println("St After :"+st);
 	}
 }
+
+/*
+Here Address object is getting changes so - Address object is not immutable.
+
+*/

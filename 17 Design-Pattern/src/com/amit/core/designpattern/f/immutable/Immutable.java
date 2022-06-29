@@ -1,33 +1,29 @@
 package com.amit.core.designpattern.f.immutable;
-final class SingleP
-{
+
+final class SingleP {
 	private final String name;
 	private final int roll;
-	
-	public SingleP(final String name,final int roll)
-	{
-		this.name=name;
-		this.roll=roll;
+
+	public SingleP(final String name, final int roll) {
+		this.name = name;
+		this.roll = roll;
 	}
-	
-	public String getName()
-	{
+
+	public String getName() {
 		return name;
 	}
-	public int getRoll()
-	{
+
+	public int getRoll() {
 		return roll;
 	}
 }
 
-public class Immutable
-{
-	public static void main(String[] args)
-	{
+public class Immutable {
+	public static void main(String[] args) {
 		SingleP s1 = new SingleP("amit", 101);
 		System.out.println(s1.getName());
 		System.out.println(s1.getRoll());
-		System.out.println("Name--");	
+		System.out.println("Name--");
 	}
 }
 /*

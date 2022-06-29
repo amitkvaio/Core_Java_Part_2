@@ -2,6 +2,6 @@ package com.amit.core.designpattern.d.adaptor;
 
 public interface WeatherFinder {
 
-	int find(String city);
+	int findTemprature(String city);
 
 }

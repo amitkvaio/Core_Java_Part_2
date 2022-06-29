@@ -59,8 +59,8 @@ class A implements Runnable{
 	}
 	@Override
 	public void run() {
-		b.method1();
-		//b.method2();
+		//b.method1();
+		b.method2();
 	}
 }
 

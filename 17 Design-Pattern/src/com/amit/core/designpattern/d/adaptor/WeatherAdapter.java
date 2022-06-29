@@ -7,7 +7,7 @@ public class WeatherAdapter {
 			city = "Ranchi";
 		}
 		WeatherFinder finder = new WeatherFinderImpl();
-		int temperature = finder.find(city);
+		int temperature = finder.findTemprature(city);
 		return temperature;
 	}
 }

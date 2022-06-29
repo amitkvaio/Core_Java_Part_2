@@ -10,6 +10,5 @@ public class CustomerClient1 {
 }
 
 /*
- 		orders are not being loaded so will use the customerproxy for this.
- 
+	orders are not being loaded so will use the customerproxy for this. 
 */

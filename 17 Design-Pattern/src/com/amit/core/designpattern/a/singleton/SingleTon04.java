@@ -19,6 +19,7 @@ public class SingleTon04 {
 /*
 
 Imagine two threads concurrently
+********************************
 accessing the class, thread t1 gives the first call to the getInstance() method, 
 it checks if the static variable st is null and then gets interrupted due to some reason. 
 

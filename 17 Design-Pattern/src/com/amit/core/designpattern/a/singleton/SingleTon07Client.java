@@ -34,7 +34,7 @@ HashCode : singleTon : 865113938
 HashCode : singleTwo : 1442407170
 
 Tow different object being created - so it destroy the single ton property.
-
+***************************************************************************
 To overcome issue raised by reflection, enums are used because java ensures internally that 
 enum value is instantiated only once. Since java Enums are globally accessible, 
 they can be used for singletons. Its only drawback is that it is not flexible i.e 
