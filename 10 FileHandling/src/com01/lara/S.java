@@ -4,11 +4,10 @@ package com01.lara;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 
-public class S
-{
-	public static void main(String[] args) throws IOException
-	{
+public class S {
+	public static void main(String[] args) throws IOException {
 		File f1 = new File("test.txt");
 		FileReader in = new FileReader(f1);
 		long size = f1.length();
@@ -17,6 +16,7 @@ public class S
 		char[] x = new char[(int) size];
 		in.read(x);
 		in.close();
+		System.out.println(Arrays.toString(x));
 		String s1 = new String(x);
 		System.out.println(s1);
 

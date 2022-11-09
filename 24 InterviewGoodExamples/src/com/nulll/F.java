@@ -1,11 +1,10 @@
 package com.nulll;
 
 public class F {
-	public static void main(String args[])
-    {
-       System.out.println(null==null);
-       System.out.println(null!=null);
-    }
+	public static void main(String args[]) {
+		System.out.println(null == null);
+		System.out.println(null != null);
+	}
 }
 /*
 vii. == and != Operator

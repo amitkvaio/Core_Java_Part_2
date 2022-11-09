@@ -12,7 +12,7 @@ public class E {
 		list.add("niraj");
 		list.add("devansh");
 		
-		long count=list.stream().count();
+		 long count = list.stream().count();
 		System.out.println("Total number of elements are in above list is : "+count);
 	}
 }

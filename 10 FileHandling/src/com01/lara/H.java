@@ -3,11 +3,8 @@ package com01.lara;
 
 import java.io.File;
 
-public class H
-{
-
-	public static void main(String[] args)
-	{
+public class H {
+	public static void main(String[] args) {
 		File f1 = new File("F:/helloo");
 		System.out.println(f1.exists());
 		boolean b1 = f1.mkdir();

@@ -2,6 +2,7 @@ package amitsimplyfiedtutorial.com.Hstream;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 //To collect only even numbers from the array list  - with using stream.
@@ -12,7 +13,8 @@ public class C {
 			list.add(i);
 		}
 		
-		List<Integer> evenNumberList = list.stream().filter(i -> (i % 2 == 0)).collect(Collectors.toList());
+		Predicate<Integer> pred = i -> (i % 2) == 0;
+		List<Integer> evenNumberList = list.stream().filter(x->pred.test(x)).collect(Collectors.toList());
 		List<Integer> oddNumberList = list.stream().filter(i -> (i % 2 != 0)).collect(Collectors.toList());
 		System.out.println("Even Number List : "+evenNumberList);
 		System.out.println("Odd Number List : "+oddNumberList);

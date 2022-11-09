@@ -6,8 +6,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class D
-{
+public class D {
 	public static void main(String[] args) {
 		File f1 = new File("test1.txt");
 		FileReader fin = null;

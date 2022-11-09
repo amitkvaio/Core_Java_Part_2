@@ -1,41 +1,31 @@
 //67
 package com.lara.pack07;
-class Thread1 extends Thread
-{
-	public synchronized void run()
-	{
+
+class Thread1 extends Thread {
+	public synchronized void run() {
 		System.out.println("run-begin");
-		try
-		{
+		try {
 			wait();
 			System.out.println("run-end");
-		} 
-		catch (InterruptedException e)
-		{
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
 }
-public class Manager7
-{
-	public static void main(String[] args)
-	{
+
+public class Manager7 {
+	public static void main(String[] args) {
 		Thread1 t1 = new Thread1();
 		t1.start();
-		try
-		{
+		try {
 			Thread.sleep(20000);
-		}
-		catch (InterruptedException e)
-		{
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 // notify the waiting stage thread through the synchnonized block
-		synchronized(t1)
-		{
+		synchronized (t1) {
 			t1.notify();
 		}
 	}
-	
-	
+
 }

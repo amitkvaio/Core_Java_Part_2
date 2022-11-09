@@ -4,10 +4,8 @@ package com01.lara;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class R
-{
-	public static void main(String[] args) throws IOException
-	{
+public class R {
+	public static void main(String[] args) throws IOException {
 		FileWriter out = new FileWriter("test1.txt");
 		out.write("hello to all11");
 		out.write("\nhello to all111");

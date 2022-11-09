@@ -1,7 +1,9 @@
 package amitsimplyfiedtutorial.com.Alambda;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 //Iterating Map in Java 8 using Lambda expression
 public class IterateMapUsingLambda {
@@ -13,10 +15,9 @@ public class IterateMapUsingLambda {
 		mapPrices.put("Banana", 10);
 		mapPrices.put("Grapes", 40);
 		mapPrices.put("Papaya", 50);
-
+		
 		mapPrices.forEach((key, values) -> {
 			System.out.println(key + " " + values);
 		});
-
 	}
 }

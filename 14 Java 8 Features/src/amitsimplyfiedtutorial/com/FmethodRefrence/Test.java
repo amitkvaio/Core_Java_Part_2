@@ -8,6 +8,7 @@ public class Test {
 	public static void main(String[] args) {
 		Fun f = ()->{return 10;};
 		Fun ff=f::test;
+		
 		System.out.println(f.test());
 		System.out.println(ff.test());
 	}

@@ -1,14 +1,16 @@
 package amitsimplyfiedtutorial.com.Blambda;
 @FunctionalInterface
 public interface E {
-	public abstract void method1();
+	public abstract void reg();
 }
 
-//@FunctionalInterface
+@FunctionalInterface
 interface F extends E{
-	
 }
 
+interface Stu extends E{}
+interface CEO extends E{}
+interface Employee111 extends E{}
 
 
 
@@ -19,3 +21,13 @@ interface F extends E{
 --	contain any abstract method then child interface is also FunctionalInterface 
 
 */
+
+class IBMEmpl implements Employee111{
+
+	@Override
+	public void reg() {
+		 
+		
+	}
+	
+}

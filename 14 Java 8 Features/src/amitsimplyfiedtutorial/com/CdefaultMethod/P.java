@@ -6,5 +6,5 @@ public interface P {
 	}
 }
 /*
---	From 1.8version onwards we can write main()method inside interface.
+--	From 1.8 version onwards we can write main()method inside interface.
 */

@@ -1,14 +1,11 @@
 package aic;
 
-class D
-{
-	public D()
-	{
+class D {
+	public D() {
 		System.out.println("D()");
 	}
 
-	D(int i)
-	{
+	D(int i) {
 		System.out.println("D(int)");
 	}
 
@@ -17,12 +14,9 @@ class D
 	}
 }
 
-public class Manager15
-{
-	public static void main(String[] args)
-	{
-		D d1 = new D()
-		{
+public class Manager15 {
+	public static void main(String[] args) {
+		D d1 = new D() {
 			{
 				System.out.println("AIC-IIB");
 			}
@@ -30,8 +24,7 @@ public class Manager15
 
 		System.out.println("..............");
 
-		D d2 = new D(10)
-		{
+		D d2 = new D(10) {
 			{
 				System.out.println("AIC-IIB");
 			}

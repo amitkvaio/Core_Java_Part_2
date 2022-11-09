@@ -11,6 +11,9 @@ public class AreaOfACircle implements Callable<Double> {
 
 	@Override
 	public Double call() throws Exception {
+		String thName = Thread.currentThread().getName();
+		System.out.println("**********From AreaOfACircle@call**********"+thName);
+		Client.sleep(5000);
 		return Math.PI * rad * rad;
 	}
 

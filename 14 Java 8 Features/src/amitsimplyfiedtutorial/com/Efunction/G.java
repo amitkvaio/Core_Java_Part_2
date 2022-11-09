@@ -13,7 +13,10 @@ public class G {
 			return std.getName();
 		};
 		List<String> namesList = getStdNamesList(stdList, stdPred);
+		
 		namesList.forEach((names) -> System.out.println(names));
+		//String stdName = stdPred.apply(new Student(101, "kALYANI", "F", 20));
+		//System.out.println(stdName);
 	}
 
 	public static List<String> getStdNamesList(List<Student> stdList, Function<Student, String> stdFun) {

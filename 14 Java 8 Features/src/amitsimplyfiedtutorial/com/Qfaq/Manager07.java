@@ -22,7 +22,7 @@ public class Manager07 {
 		
 		Map<String, Long> noteListMap=
 		noteLst.stream()
-		.sorted(Comparator.comparingLong(Notes::getTagId).reversed())
+		.sorted(Comparator.comparingLong(Notes::getTagId))
 		.collect(Collectors.toMap(Notes::getTagName, Notes::getTagId, (oldV,newV)->oldV,
 				LinkedHashMap::new));
 		System.out.println(noteListMap);

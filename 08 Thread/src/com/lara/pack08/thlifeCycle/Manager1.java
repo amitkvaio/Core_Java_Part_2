@@ -1,17 +1,14 @@
 //68
 package com.lara.pack08.thlifeCycle;
 
-public class Manager1
-{
-	public static void main(String[] args)
-	{
-		Thread.State states[]=Thread.State.values();
-		//State is the inner enum in the Thread class
-		for (Thread.State s1 : states)
-		{
+public class Manager1 {
+	public static void main(String[] args) {
+		Thread.State states[] = Thread.State.values();
+		// State is the inner enum in the Thread class
+		for (Thread.State s1 : states) {
 			System.out.println(s1);
 		}
-		
+
 	}
 }
 /*

@@ -1,8 +1,7 @@
 package aic;
 
-interface C
-{
+interface C {
 	void test1();
+
 	void test2();
-	
 }

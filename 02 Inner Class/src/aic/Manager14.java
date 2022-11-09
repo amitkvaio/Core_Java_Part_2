@@ -1,42 +1,38 @@
 package aic;
-interface Switch
-{
+
+interface Switch {
 	void on();
+
 	void off();
 }
-class Fan
-{
+
+class Fan {
 	private boolean runningStatus;
-	public Switch getSwithc()
-	{
-		return new Switch()
-		{
-			
+
+	public Switch getSwithc() {
+		return new Switch() {
+
 			@Override
-			public void on()
-			{
+			public void on() {
 				runningStatus = true;
-				
+
 			}
-			
+
 			@Override
-			public void off()
-			{
-				runningStatus=false;
-				
+			public void off() {
+				runningStatus = false;
+
 			}
 		};
 	}
-	public boolean getRunningStatus()
-	{
+
+	public boolean getRunningStatus() {
 		return runningStatus;
 	}
 }
 
-public class Manager14
-{
-	public static void main(String[] args)
-	{
+public class Manager14 {
+	public static void main(String[] args) {
 		Fan f1 = new Fan();
 		Switch s1 = f1.getSwithc();
 		s1.on();

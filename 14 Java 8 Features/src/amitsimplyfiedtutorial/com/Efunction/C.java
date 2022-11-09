@@ -7,6 +7,6 @@ public class C {
 
 		Function<Integer, Double> half = a -> a / 2.0;
 		// apply the function to get the result
-		System.out.println(half.apply(10));
+		System.out.println(half.apply(11));
 	}
 }

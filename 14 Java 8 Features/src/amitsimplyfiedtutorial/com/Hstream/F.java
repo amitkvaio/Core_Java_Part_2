@@ -14,7 +14,7 @@ public class F {
 		list.add("niraj");
 		list.add("devansh");
 		
-		List<String> nameList=list.stream().filter(s->s.length()==5).collect(Collectors.toList());
+		 List<String> nameList = list.stream().filter(s->s.length()==5).collect(Collectors.toList());
 		System.out.println("Name of list which haivng the length is 5 : "+nameList);
 	}
 }

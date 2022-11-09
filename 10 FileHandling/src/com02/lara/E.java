@@ -8,13 +8,14 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class E
 {
 	public static void main(String[] args) {
-		File f1 = new File("D:\\smu.jpeg");
+		File f1 = new File("D:\\h.png");
 
-		File f2 = new File("amit.jpeg");
+		File f2 = new File("amit.png");
 
 		FileInputStream fin = null;
 		FileOutputStream fout = null;
@@ -31,6 +32,7 @@ public class E
 			// Creating the byte arrays by passing the length of the file in byte - it is empty byte arrays
 			bin.read(b);
 			// Reads up to byte.length bytes of data from this input stream [bin] into an array of bytes[b]
+			System.out.println(Arrays.toString(b));
 			fout = new FileOutputStream(f2);
 
 			bout = new BufferedOutputStream(fout);

@@ -4,32 +4,24 @@ package com01.lara;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class U
-{
-	public static void main(String[] args)
-	{
+public class U {
+	public static void main(String[] args) {
 		FileWriter out = null;
-		try
-		{
+		try {
 			// FileWriter out = null;
 			out = new FileWriter("test.txt");
 			out.write("hello123\njava and");
 			System.out.println("done");
-		} catch (IOException e)
-		{
+		} catch (IOException e) {
 			e.printStackTrace();
-		} finally
-		{
-			try
-			{
-				if (out != null)
-				{
+		} finally {
+			try {
+				if (out != null) {
 					out.flush();
 					out.close();
 					out = null;
 				}
-			} catch (IOException e2)
-			{
+			} catch (IOException e2) {
 				e2.printStackTrace();
 			}
 		}

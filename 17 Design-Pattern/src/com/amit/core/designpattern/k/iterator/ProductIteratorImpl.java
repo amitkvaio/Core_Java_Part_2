@@ -1,11 +1,11 @@
 package com.amit.core.designpattern.k.iterator;
 
-public class ProductIterator implements Iterator {
+public class ProductIteratorImpl implements Iterator {
 
 	Product[] products;
 	int pos = 0;
 
-	public ProductIterator(Product[] products) {
+	public ProductIteratorImpl(Product[] products) {
 		this.products = products;
 	}
 

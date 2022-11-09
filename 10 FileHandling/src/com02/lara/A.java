@@ -5,10 +5,8 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class A
-{
-	public static void main(String[] args) throws IOException
-	{
+public class A {
+	public static void main(String[] args) throws IOException {
 		FileWriter fw = new FileWriter("test.txt");
 		BufferedWriter bw = new BufferedWriter(fw);
 		bw.write("hello to all");
@@ -19,7 +17,7 @@ public class A
 		bw.newLine();
 		bw.flush();
 		bw.close();
-		
+
 		System.out.println("done");
 	}
 }

@@ -7,6 +7,8 @@ public class MyFunctionalInterfaceImp2 {
 		MyFunctionalInterface2 welCome = (wel) -> {
 			return wel;
 		};
+		
+		
 		System.out.println(welCome.welComeHello("WECOME TO LAMDA EXPRESSION"));
 	}
 }

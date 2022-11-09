@@ -1,45 +1,34 @@
 //74
 package com.lara.pack08.thlifeCycle;
-class G extends Thread
-{
+
+class G extends Thread {
 	@Override
-	public void run()
-	{
+	public void run() {
 		System.out.println("begin");
-		try
-		{
+		try {
 			Thread.sleep(10000);
-		}
-		catch (InterruptedException e)
-		{
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		System.out.println("end");
 	}
 }
-public class Manager7
-{
-	public static void main(String[] args)
-	{
+
+public class Manager7 {
+	public static void main(String[] args) {
 		G g1 = new G();
 		g1.start();
-		
-		try
-		{
+
+		try {
 			Thread.sleep(1000);
-		} 
-		catch (InterruptedException e)
-		{
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		
+
 		g1.stop();
-		try
-		{
+		try {
 			Thread.sleep(1000);
-		} 
-		catch (InterruptedException e)
-		{
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		System.out.println(g1.getState());

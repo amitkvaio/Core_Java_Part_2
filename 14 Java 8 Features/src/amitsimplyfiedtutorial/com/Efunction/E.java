@@ -7,6 +7,8 @@ public class E {
 		Function<Integer, Double> functionSqrt = n -> Math.sqrt(n);
 		Function<Double, Double> functionDouble = n -> 2.0 * n;
 
+		double res = functionSqrt.apply(30);
+		System.out.println("Res:"+res);
 		double result = functionSqrt.andThen(functionDouble).apply(30);
 		System.out.println("Result with andThen: " + result);
 	}

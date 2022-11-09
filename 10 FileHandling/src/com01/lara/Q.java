@@ -5,10 +5,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Q
-{
-	public static void main(String[] args) throws IOException
-	{
+public class Q {
+	public static void main(String[] args) throws IOException {
 		File f1 = new File("hello123.txt");
 		FileWriter out = new FileWriter(f1);
 		out.write("abc:");

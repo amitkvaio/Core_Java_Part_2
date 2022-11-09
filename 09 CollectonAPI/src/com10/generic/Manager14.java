@@ -30,7 +30,6 @@ public class Manager14 {
 		test1(new V<P>());
 		test1(new V<R>());
 		
-		
 		//test2(new V<Object>());
 		test2(new V<Integer>());
 //		test2(new V<P>());
@@ -42,7 +41,7 @@ public class Manager14 {
 //		test3(new V<R>());
 		
 		
-	//	tes4(new V<Object>());
+		test4(new V<Object>());
 		test4(new V<Integer>());
 		test4(new V<P>());
 		test4(new V<R>());

@@ -6,7 +6,17 @@ public class HashMapMain {
 		Employee emp1 = new Employee("Martin", 27);
 		Map<Employee, String> hm = new HashMap<Employee, String>();
 		hm.put(emp1, "Verified");
+		
+		Employee emp2 = new Employee("Martin", 27);
+		hm.put(emp2, "Verified2");
+		System.out.println(hm);
+		
+		//{Employee [name=Martin, age=27]=Verified2}
+		// We have overrided the hashcode and equal method so its easily identify the uniqueness
+		
 		System.out.println("Before: "+emp1);
+		
+		
 		emp1.setName("John");
 		System.out.println("After : "+emp1);
 		System.out.println(hm.get(emp1));

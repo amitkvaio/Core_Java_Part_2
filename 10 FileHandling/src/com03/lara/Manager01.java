@@ -3,19 +3,17 @@ package com03.lara;
 
 import java.io.*;
 
-class A implements Serializable
-{
+class A implements Serializable {
 	private static final long serialVersionUID = 11L;
 	int i;
 	double j;
-	
-	public A(){
+
+	public A() {
 		System.out.println("-------- A() Constructor ------");
 	}
 }
 
-public class Manager01
-{
+public class Manager01 {
 	public static void main(String[] args) throws Exception {
 		//doSerialization();
 		doDeSerialization();

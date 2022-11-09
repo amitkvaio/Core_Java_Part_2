@@ -16,7 +16,6 @@ class G implements Runnable {
 			System.out.println("from G thread class-" + i);
 		}
 	}
-
 }
 
 public class Manager11 {

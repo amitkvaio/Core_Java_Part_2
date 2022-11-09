@@ -1,7 +1,13 @@
 package amitsimplyfiedtutorial.com.Blambda;
-@FunctionalInterface
+ 
 public interface D {
 	public void test1();
+	default void test() {
+		
+	}
+	public static void main(String[] args) {
+		
+	}
 }
 /*
 --	Inside FunctionalInterface we have to take exactly only one abstract method.

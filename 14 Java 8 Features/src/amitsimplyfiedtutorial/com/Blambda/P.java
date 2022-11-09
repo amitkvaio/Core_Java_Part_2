@@ -10,6 +10,7 @@ public class P {
 				System.out.println("from child thread");
 			}
 		 };
+		 
 		 Thread th = new Thread(run);
 		 th.start();
 		

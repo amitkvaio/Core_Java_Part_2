@@ -1,23 +1,18 @@
 package aic;
 
-public class Manager9
-{
-	public static void main(String[] args)
-	{
-		C c1 = new C()
-		{
+public class Manager9 {
+	public static void main(String[] args) {
+		C c1 = new C() {
 			@Override
-			public void test2()
-			{
+			public void test2() {
 				System.out.println("AIC-TEST1");
-				
+
 			}
-			
+
 			@Override
-			public void test1()
-			{
+			public void test1() {
 				System.out.println("AIC-TEST2");
-				
+
 			}
 		};
 		c1.test1();
@@ -33,17 +28,15 @@ public class Manager9
 
 */
 
-class Imp implements C
-{
+class Imp implements C {
 	@Override
-	public void test1()
-	{
+	public void test1() {
 		System.out.println("----test1------");
 	}
+
 	@Override
-	public void test2()
-	{
+	public void test2() {
 		System.out.println("----test2---");
 	}
-	
+
 }

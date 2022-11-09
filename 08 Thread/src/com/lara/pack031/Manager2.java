@@ -1,9 +1,7 @@
 package com.lara.pack031;
 
-public class Manager2
-{
-	public static void main(String[] args)
-	{
+public class Manager2 {
+	public static void main(String[] args) {
 		System.out.println("main method start*******");
 		Shared s1 = new Shared();
 		Shared s2 = new Shared();

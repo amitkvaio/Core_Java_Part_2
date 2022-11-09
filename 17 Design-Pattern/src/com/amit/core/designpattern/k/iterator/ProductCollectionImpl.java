@@ -1,11 +1,11 @@
 package com.amit.core.designpattern.k.iterator;
 
-public class ProductCollection implements Collection {
+public class ProductCollectionImpl implements Collection {
 
 	int numberOfProducts = 0;
 	Product[] products;
 
-	public ProductCollection() {
+	public ProductCollectionImpl() {
 		products = new Product[10];
 	}
 
@@ -16,6 +16,6 @@ public class ProductCollection implements Collection {
 
 	@Override
 	public Iterator createIterator() {
-		return new ProductIterator(products);
+		return new ProductIteratorImpl(products);
 	}
 }

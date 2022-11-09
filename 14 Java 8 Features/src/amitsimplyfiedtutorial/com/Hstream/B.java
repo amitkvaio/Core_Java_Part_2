@@ -24,3 +24,17 @@ public class B {
 		System.out.println("List of Odd Number is   :"+oddArrayList);
 	}
 }
+
+
+/*
+
+num % 1   =  0
+num % 2   =  0, 1
+num % 3   =  0, 1, 2
+num % 4   =  0, 1, 2 ,3
+num % 5   =  0,1,2,3,4
+
+num % n   = 0,1,2,3,4...(n-1)
+
+
+*/

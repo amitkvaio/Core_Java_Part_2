@@ -17,5 +17,13 @@ public class Manager13 {
 		
 		empList.stream().filter(emp ->emp.getName().charAt(0)=='A')
 		.collect(Collectors.toList()).forEach(x->System.out.println(x));
+		
+		System.out.println("-----------------------------------------");
+		empList.stream().filter(emp ->emp.getName().startsWith("N"))
+		.collect(Collectors.toList()).forEach(x->System.out.println(x));
+		
+		System.out.println("-----------------------------------------");
+		empList.stream().filter(emp ->emp.getName().endsWith("r"))
+		.collect(Collectors.toList()).forEach(x->System.out.println(x));
 	}
 }

@@ -5,8 +5,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class C
-{
+public class C {
 	public static void main(String[] args) {
 		FileWriter out = null;
 		BufferedWriter bout = null;

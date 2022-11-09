@@ -3,8 +3,7 @@ package com03.lara;
 
 import java.io.*;
 
-class B implements Serializable
-{
+class B implements Serializable {
 	int i;
 	String s1;
 	Boolean flag;
@@ -21,14 +20,13 @@ class B implements Serializable
 	}
 }
 
-public class Manager02
-{
+public class Manager02 {
 	public static void main(String[] args) throws Exception {
-		SerializationDemo();
-		//deSerializationDemo();
+		serializationDemo();
+		 deSerializationDemo();
 	}
 
-	public static void SerializationDemo() throws Exception {
+	public static void serializationDemo() throws Exception {
 		B b1 = new B(10, "abc", true);
 
 		FileOutputStream fout = null;
@@ -49,7 +47,6 @@ public class Manager02
 				}
 			} catch (IOException ex) {
 				ex.printStackTrace();
-
 			}
 
 			try {
@@ -57,16 +54,12 @@ public class Manager02
 
 					fout.close();
 					fout = null;
-
 				}
 			} catch (IOException ex) {
 				ex.printStackTrace();
-
 			}
-
 		}
 		System.out.println("Serialization has done successfully!!");
-
 	}
 
 	private static void deSerializationDemo() {

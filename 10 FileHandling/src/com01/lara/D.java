@@ -4,11 +4,9 @@ package com01.lara;
 import java.io.File;
 import java.io.IOException;
 
-public class D
-{
-	public static void main(String[] args) throws IOException 
-	{
-		File f1 = new File("D:/test.txt");
+public class D {
+	public static void main(String[] args) throws IOException {
+		File f1 = new File("D:/test11.txt");
 		System.out.println(f1.createNewFile());
 		System.out.println("done");
 	}

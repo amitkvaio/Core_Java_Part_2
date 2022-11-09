@@ -11,5 +11,7 @@ public class Manager09 {
 		int[] sortedNumArr = Arrays.stream(numArr).boxed().sorted(Collections.reverseOrder())
 				.mapToInt(Integer::intValue).toArray();
 		System.out.println(Arrays.toString(sortedNumArr));
+		
+		
 	}
 }

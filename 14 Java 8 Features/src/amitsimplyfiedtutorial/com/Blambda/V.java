@@ -3,7 +3,6 @@ package amitsimplyfiedtutorial.com.Blambda;
 public class V {
 	public static void main(String[] args) {
 		new Cc()  {
-			
 			@Override
 			public void test5() {
 				// TODO Auto-generated method stub

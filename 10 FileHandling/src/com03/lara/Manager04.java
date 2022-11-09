@@ -9,9 +9,10 @@ class D implements Serializable {
 
 public class Manager04 {
 	public static void main(String[] args) throws Exception {
-		serialize();
+		//serialize();
 		deSerialize();
 	}
+
 	private static void serialize() throws Exception {
 		D d1 = new D();
 		d1.i = 10;
@@ -21,6 +22,7 @@ public class Manager04 {
 		out.writeObject(d1);
 		System.out.println("wrinting is done");
 	}
+
 	private static void deSerialize() throws Exception {
 		FileInputStream fin = new FileInputStream("test3.txt");
 		ObjectInputStream in = new ObjectInputStream(fin);

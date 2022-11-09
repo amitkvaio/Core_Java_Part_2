@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 // How to check if list is empty in Java 8 using Optional, if not null iterate through the 
 //list and print the object?
@@ -24,5 +25,6 @@ public class Manager01 {
 		.filter(str->str!=null)
 		.forEach(System.out::println);
 		System.out.println("Main Finished");
+		
 	}
 }

@@ -12,7 +12,7 @@ public class A {
 		does not have access modifier
  LE is also know as anonymous function
 
-() -->{
+()->{
 
 }
 
