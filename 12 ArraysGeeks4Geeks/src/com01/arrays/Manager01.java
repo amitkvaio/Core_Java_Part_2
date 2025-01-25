@@ -4,47 +4,41 @@ package com01.arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Manager01
-{
-	public static void main(String[] args)
-	{
+public class Manager01 {
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
+
 		do {
 			System.out.println("Enter the size of the Arrays");
-			int arrSize =sc.nextInt();
-			System.out.println("Enter the "+arrSize +" Elements :");
-			int [] arr = new int[arrSize];
-			for (int i = 0; i < arr.length; i++)
-			{
-				arr[i]=sc.nextInt();
+			int arrSize = sc.nextInt();
+			System.out.println("Enter the " + arrSize + " Elements :");
+			int[] arr = new int[arrSize];
+			for (int i = 0; i < arr.length; i++) {
+				arr[i] = sc.nextInt();
 			}
-			
+
 			System.out.println("Your Given Arrays is : " + Arrays.toString(arr));
-			
+
 			System.out.println("How many elements you want ot rotate :");
 			int noRotate = sc.nextInt();
-			int [] arrTemp = new int[noRotate]; 
-			//1
-			for (int j = 0; j < noRotate; j++)
-			{
+			int[] arrTemp = new int[noRotate];
+			// 1
+			for (int j = 0; j < noRotate; j++) {
 				arrTemp[j] = arr[j];
 			}
-			
-			//2
-			for (int i = 0; i < arrSize-noRotate; i++)
-			{
-				arr[i] =arr[noRotate+i];
+
+			// 2
+			for (int i = 0; i < arrSize - noRotate; i++) {
+				arr[i] = arr[noRotate + i];
 			}
-			//3
-			for (int i = 0; i < noRotate; i++)
-			{
-				arr[arrSize-noRotate+i]=arrTemp[i];
+			// 3
+			for (int i = 0; i < noRotate; i++) {
+				arr[arrSize - noRotate + i] = arrTemp[i];
 			}
-			
+
 			System.out.println(Arrays.toString(arr));
 			System.out.println("Enter you choice Y|N:");
-		}while("Y".equalsIgnoreCase(sc.next()));
+		} while ("Y".equalsIgnoreCase(sc.next()));
 	}
 }
 
