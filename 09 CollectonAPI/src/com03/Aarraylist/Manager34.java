@@ -4,28 +4,26 @@ package com03.Aarraylist;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Vector;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Manager34 {
 	public static void main(String[] args) {
-		//failFastIterator();
+		 //failFastIterator();
 		 failSafeIterator();
 	}
 
 	public static void failFastIterator() {
-		List list = new ArrayList<>();
+		List<Object> list = new ArrayList<>();
 		list.add(90);
 		list.add(9);
-		Iterator it = list.iterator();
+		Iterator<Object> it = list.iterator();
 		System.out.println(list);
 		while (it.hasNext()) {
 			System.out.println(it.next());
-			// list.add(99); //concurrentmodificationException - fail-fast
-			//list.remove(new Integer(90));
+			//list.add(99); //concurrentmodificationException - fail-fast
+			//list.remove(Integer.valueOf(90));
 			System.out.println(it.next());
 		}
 		list.add("amit");
@@ -33,15 +31,14 @@ public class Manager34 {
 	}
 
 	public static void failSafeIterator() {
-		CopyOnWriteArrayList list = new CopyOnWriteArrayList<>();
+		CopyOnWriteArrayList<Object> list = new CopyOnWriteArrayList<>();
 		list.add(90);
 		list.add(9);
 		System.out.println(list);
-		Iterator it = list.iterator();
-		list.add(99); // fail - safe
-		list.remove(new Integer(90));
-		System.out.println(list);
+		Iterator<Object> it = list.iterator();
+		 
 		while (it.hasNext()) {
+			list.add(99);
 			System.out.println(it.next());
 		}
 		list.add("amit");
@@ -53,7 +50,7 @@ public class Manager34 {
 		cityCode.put("Delhi", "India");
 		cityCode.put("Moscow", "Russia");
 		cityCode.put("New York", "USA");
-		Iterator iterator = cityCode.keySet().iterator();
+		Iterator<String> iterator = cityCode.keySet().iterator();
 
 		while (iterator.hasNext()) {
 			System.out.println(cityCode.get(iterator.next()));

@@ -16,6 +16,10 @@ public class Student {
 		this.gender = gender;
 		this.age = age;
 	}
+	
+	public Student(String name) {
+		this.name = name;
+	}
 
 	public int getId() {
 		return id;

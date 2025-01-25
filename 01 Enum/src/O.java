@@ -15,4 +15,4 @@ class O {
 	}
 }
 
-//ordinal() is used to print the index values of the enum constants.
+// ordinal() is used to print the index values of the enum constants.

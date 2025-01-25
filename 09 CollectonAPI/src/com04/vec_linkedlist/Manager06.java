@@ -1,11 +1,11 @@
-//82 - FIFO - FIRST IN FIRST OUT
+//82 -Queue implementation using LinkedList FIFO - FIRST IN FIRST OUT
 // Through the linkedList we can achieve the LIFO AND FIFO
 package com04.vec_linkedlist;
 
 import java.util.LinkedList;
 
 class Queue {
-	private LinkedList list = new LinkedList();
+	private LinkedList<Object> list = new LinkedList<>();
 
 	public void add(Object obj) {
 		list.add(obj);
@@ -18,7 +18,6 @@ class Queue {
 	public String toString() {
 		return list.toString();
 	}
-
 }
 
 public class Manager06 {
@@ -39,7 +38,6 @@ public class Manager06 {
 		Object o2 = q1.processElements();
 		System.out.println(o2);
 		System.out.println(q1);
-
 	}
 }
 /*

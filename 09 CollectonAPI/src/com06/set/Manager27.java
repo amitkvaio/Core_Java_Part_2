@@ -12,7 +12,7 @@ class J implements Comparable<Object> {
 
 	@Override
 	public int compareTo(Object obj) {
-		return i - ((J) obj).i;
+		return this.i - ((J) obj).i;
 	}
 
 	@Override

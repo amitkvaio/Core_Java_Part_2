@@ -17,7 +17,7 @@ class M {
 
 public class Manager37 {
 	public static void main(String[] args) {
-		HashMap map = new HashMap();
+		HashMap<Object, Object> map = new HashMap<>();
 		map.put(10, "abc");
 		map.put(10, "xyz");
 		map.put("k1", 200);

@@ -1,19 +1,15 @@
 package com.lara.app2;
 
-class L extends Thread
-{
+class L extends Thread {
 	@Override
-	public void run()
-	{
+	public void run() {
 		System.out.println("L:" + getPriority());
 	}
 }
 
-class M extends Thread
-{
+class M extends Thread {
 	@Override
-	public void run()
-	{
+	public void run() {
 		System.out.println("M:" + getPriority());
 		setPriority(8);
 		L obj = new L();
@@ -21,10 +17,8 @@ class M extends Thread
 	}
 }
 
-public class Manager12
-{
-	public static void main(String[] args)
-	{
+public class Manager12 {
+	public static void main(String[] args) {
 		Thread t1 = Thread.currentThread();
 		t1.setPriority(6);
 		M m1 = new M();

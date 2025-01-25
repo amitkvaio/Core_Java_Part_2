@@ -19,7 +19,6 @@ class C extends Thread {
 public class Manager08 {
 
 	public static void main(String[] args) {
-
 		B b1 = new B();
 		b1.start();
 		C c1 = new C();

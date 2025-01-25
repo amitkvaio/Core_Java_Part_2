@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Manager41 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList(); // non- synchronized version of ArrayList
+		ArrayList<Integer> list = new ArrayList<>(); // non- synchronized version of ArrayList
 		list.add(90);
 		list.add(0);
 		list.add(9);
@@ -16,7 +16,7 @@ public class Manager41 {
 		list.add(7);
 		System.out.println(list);
 
-		List listSyn = Collections.synchronizedList(list);// synchronized version of ArrayList
+		List<Integer> listSyn = Collections.synchronizedList(list);// synchronized version of ArrayList
 		System.out.println("ListSyn:" + listSyn);
 	}
 }

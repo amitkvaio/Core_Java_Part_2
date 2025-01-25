@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Manager05 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();
+		ArrayList<Object> list = new ArrayList<Object>();
 		list.add(90);
 		list.add(0);
 		list.add("xyz");// adding the "xyz" element in the list.
@@ -13,7 +13,6 @@ public class Manager05 {
 
 		list.add(2, "check");
 		System.out.println(list);
-
 	}
 }
 /*

@@ -7,10 +7,10 @@ import java.util.stream.Collectors;
 
 public class A {
 	public static void main(String[] args) {
-		String[] nameList = {"Ram","Shyam","Shiv","Mahesh"};
+		String[] nameList = { "Ram", "Shyam", "Shiv", "Mahesh" };
 		List<String> list = Arrays.asList(nameList);
-		String result=  list.stream().collect(Collectors.joining());
-		System.out.println("Result:"+result);
+		String result = list.stream().collect(Collectors.joining());
+		System.out.println("Result:" + result);
 	}
 }
 

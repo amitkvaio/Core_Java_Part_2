@@ -8,7 +8,7 @@ import java.util.Vector;
 
 public class Manager01 {
 	public static void main(String[] args) {
-		Vector vt = new Vector();
+		Vector<Integer> vt = new Vector<>();
 		vt.add(90);
 		vt.add(910);
 		vt.add(190);
@@ -16,26 +16,24 @@ public class Manager01 {
 		vt.add(390);
 		System.out.println(vt);
 
-		Iterator it = vt.iterator();
+		Iterator<Integer> it = vt.iterator();
 
 		while (it.hasNext()) {
-			it.remove();
 			System.out.println(it.next());
 		}
 
-		/*Enumeration enum1 = vt.elements();
+		System.out.println("***************Enumeration********************");
+		Enumeration<Integer> enum1 = vt.elements();
 		System.out.println("Iterating through the Enumeration");
-		while (enum1.hasMoreElements())
-		{
+		while (enum1.hasMoreElements()) {
 			System.out.println(enum1.nextElement());
 		}
 		System.out.println("Iterating through the ListIterator");
 
-		ListIterator it = vt.listIterator();
-		while (it.hasNext())
-		{
-			System.out.println(it.next());
-		}*/
+		ListIterator<Integer> listIt = vt.listIterator();
+		while (listIt.hasNext()) {
+			System.out.println(listIt.next());
+		}
 	}
 }
 /*
@@ -56,11 +54,11 @@ Vector:- (legacy class introduced in 1.0 version)
 	7) Vector all the methods are synchronized by default.
 	8) Applicable cursors are Iterator,Enumeration,ListIterator.
 
-Vector constructors:-
-Vector();
-Vector(int initialCapacity);
-Vector(int intialCapacity, int increment);
-Vector(java/util/Collection<? extends E>);
+	Vector constructors:-
+	Vector();
+	Vector(int initialCapacity);
+	Vector(int intialCapacity, int increment);
+	Vector(java/util/Collection<? extends E>);
 
 --if we have a requirement of sharing one container to multiple thread we can use
 	vector class consists of same array list methods.

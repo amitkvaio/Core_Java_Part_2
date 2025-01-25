@@ -16,7 +16,6 @@ class DemoClone implements Cloneable {
 	public String toString() {
 		return "DemoClone [i=" + i + "]";
 	}
-
 }
 
 public class Test implements Cloneable {

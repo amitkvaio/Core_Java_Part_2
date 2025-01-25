@@ -16,7 +16,6 @@ public class D {
 /*
  * Open Declaration boolean java.lang.String.equals(Object anObject) equals
  * public boolean equals(Object anObject) equals method got override it will be
- * checking contain of the two string object
- * 
- * /
+ * checking contain of the two string object.
+ *
  */

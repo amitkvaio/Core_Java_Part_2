@@ -21,7 +21,5 @@ public class FilterTestJava81 {
 		// collect the output and convert streams to a List
 		
 		listSubject.forEach(subject -> System.out.println(subject));
-
 	}
-
 }

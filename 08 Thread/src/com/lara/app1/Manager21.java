@@ -14,7 +14,6 @@ public class Manager21 {
 		t1.start();
 		for (int i = 100; i < 200; i++) {
 			System.out.println(i);
-
 		}
 	}
 }

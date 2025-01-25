@@ -3,8 +3,12 @@ package com03.Aarraylist;
 
 import java.util.ArrayList;
 
-public class Manager14 extends ArrayList
-{
+public class Manager14 extends ArrayList<Integer> {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public static void main(String[] args) {
 		// ArrayList list=new ArrayList();
 		Manager14 list = new Manager14();

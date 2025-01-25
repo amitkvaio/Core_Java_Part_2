@@ -1,10 +1,9 @@
 //122
 package com08.treemap;
 
-import java.util.Comparator;
 import java.util.TreeMap;
 
-class D implements Comparable {
+class D implements Comparable<Object> {
 	int i;
 
 	D(int i) {
@@ -36,7 +35,7 @@ class D implements Comparable {
 
 public class Manager07 {
 	public static void main(String[] args) {
-		TreeMap map = new TreeMap();
+		TreeMap<D, String> map = new TreeMap<>();
 		map.put(new D(9), "abc1");
 		map.put(new D(9), "abc2");
 		map.put(new D(9), "abc3");

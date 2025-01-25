@@ -6,7 +6,7 @@ import java.util.Collections;
 
 public class Manager17 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();
+		ArrayList<Integer> list = new ArrayList<>();
 		list.add(90);
 		list.add(20);
 		list.add(73);

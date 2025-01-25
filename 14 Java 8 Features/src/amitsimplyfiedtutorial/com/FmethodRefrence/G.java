@@ -1,9 +1,9 @@
 package amitsimplyfiedtutorial.com.FmethodRefrence;
 
-public class FunctionInterfaceImp1 {
+public class G {
 	public static void main(String[] args) {
 		
-		FunctionInterface1 fi = new FunctionInterface1() {
+		F fi = new F() {
 			@Override
 			public void display() {
 				System.out.println("Function Interface Using Annonimous Inner Class");
@@ -11,19 +11,19 @@ public class FunctionInterfaceImp1 {
 		};
 		fi.display();
 		
-		FunctionInterface1 interface1 = ()-> {
+		F interface1 = ()-> {
 			System.out.println("Function Interface Using Lamda Expression");
 		};
 		interface1.display();
 		System.out.println("************");
 		
-		FunctionInterfaceImp1 imp1 = new FunctionInterfaceImp1();
-		FunctionInterface1 interface12 = imp1::instaceMethod;
+		G imp1 = new G();
+		F interface12 = imp1::displayMethod;
 		interface12.display();
 	}
 	
-	public void instaceMethod(){
-		System.out.println("Function Interface using Instance Method");
+	public void displayMethod(){
+		System.out.println("Function Interface using Instance Method>>>");
 	}
 }
 

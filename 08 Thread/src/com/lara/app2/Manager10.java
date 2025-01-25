@@ -1,12 +1,11 @@
 package com.lara.app2;
-class K extends Thread
-{
-	
+
+class K extends Thread {
+
 }
-public class Manager10
-{
-	public static void main(String[] args)
-	{
+
+public class Manager10 {
+	public static void main(String[] args) {
 		K k1 = new K();
 		System.out.println("Child Thread Priority->"+k1.getPriority());//getting child thread priority
 		Thread t1 = Thread.currentThread();//getting the reference of main thread.

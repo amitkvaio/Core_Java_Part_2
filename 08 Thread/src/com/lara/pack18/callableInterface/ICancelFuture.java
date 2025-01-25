@@ -25,6 +25,7 @@ public class ICancelFuture {
 			double elapsedTimeInSec = (System.nanoTime() - startTime) / 1000000000.0;
 
 			if (elapsedTimeInSec > 1) {
+				System.out.println("Cancel the future>>>>>");
 				future.cancel(true);
 			}
 		}

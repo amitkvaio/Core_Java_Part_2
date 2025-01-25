@@ -11,7 +11,6 @@ public class Manager2 {
 		b1.start();
 		System.out.println("main method end*********");
 	}
-
 }
 
 //output will be simultaneous

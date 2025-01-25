@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Manager16 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();
+		ArrayList<Integer> list = new ArrayList<>();
 		list.add(90);
 		list.add(80);
 		list.add(70);
@@ -13,7 +13,6 @@ public class Manager16 {
 		System.out.println(list);
 		System.out.println(list.contains(80));
 		System.out.println(list.contains(34));
-
 	}
 }
 

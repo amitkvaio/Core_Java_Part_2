@@ -17,7 +17,7 @@ public class F {
 	}
 }
 /*
-iterating the every element of array by using general and enhanced for loop
-
-
+Iterating the every element of array by using general and enhanced for loop
+Once we initialized the array it has been initialized with default values according to the type of array.
+Here type of x array is integer so default value of integer is zero
 */

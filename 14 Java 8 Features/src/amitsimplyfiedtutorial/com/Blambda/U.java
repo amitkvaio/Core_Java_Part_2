@@ -14,7 +14,7 @@ public class U {
 	
 	public static void test3() {
 		int y = 20;
-		R r = () -> {
+		T r = () -> {
 			System.out.println("x->"+x);
 			System.out.println("y->"+y);
 			x=888;

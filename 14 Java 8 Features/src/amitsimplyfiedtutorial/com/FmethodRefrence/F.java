@@ -1,6 +1,6 @@
 package amitsimplyfiedtutorial.com.FmethodRefrence;
 
 @FunctionalInterface
-public interface FunctionInterface1 {
+public interface F {
 	void display();
 }

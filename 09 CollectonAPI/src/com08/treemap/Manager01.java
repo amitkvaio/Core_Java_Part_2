@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 public class Manager01 {
 	public static void main(String[] args) {
-		HashMap map1 = new HashMap<>();
+		HashMap<Object, Object> map1 = new HashMap<>();
 		map1.put("key", 2000);
 		map1.put("abc", 2300);
 		map1.put("hello", 2050);
@@ -16,9 +16,8 @@ public class Manager01 {
 		map1.put("java", 9091);
 		System.out.println("Map:" + map1);
 
-		TreeMap map2 = new TreeMap(map1);
+		TreeMap<Object, Object> map2 = new TreeMap<>(map1);
 		System.out.println("Map2:" + map2);
-
 	}
 }
 /*

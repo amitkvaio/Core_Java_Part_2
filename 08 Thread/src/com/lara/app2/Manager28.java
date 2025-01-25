@@ -1,25 +1,19 @@
 package com.lara.app2;
 
-class Thread2 extends Thread
-{
+class Thread2 extends Thread {
 	@Override
-	public void run()
-	{
-		try
-		{
+	public void run() {
+		try {
 			sleep(10000);
-		} catch (InterruptedException e)
-		{
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println("child thread isinterrupted : -"+isInterrupted());
+		System.out.println("child thread isinterrupted : -" + isInterrupted());
 	}
 }
 
-public class Manager28
-{
-	public static void main(String[] args)
-	{
+public class Manager28 {
+	public static void main(String[] args) {
 		Thread2 t1 = new Thread2();
 		t1.start();
 		System.out.println("Main thread is sleeping for 5 second");

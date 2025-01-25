@@ -35,8 +35,8 @@ class Q {
 }
 
 public class Manager39 {
-	public static void main1(String[] args) {
-		HashMap map = new HashMap();
+	public static void main(String[] args) {
+		HashMap<Object, Object> map = new HashMap<>();
 		map.put(90, "e1");
 		map.put(90, "e2");
 		map.put("abc", "v1");
@@ -49,9 +49,9 @@ public class Manager39 {
 		map.put(new StringBuffer("abc"), "hello6");
 		System.out.println(map);
 	}
-	
-	public static void main(String[] args) {
-		HashMap map = new HashMap();
+
+	public static void main1(String[] args) {
+		HashMap<Object, Object> map = new HashMap<>();
 		map.put(new Q(9), "hello3");
 		map.put(new Q(9), "hello4");
 		map.put(new Q(9), "hello5");

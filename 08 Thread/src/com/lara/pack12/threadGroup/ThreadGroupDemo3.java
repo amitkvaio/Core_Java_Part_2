@@ -26,12 +26,15 @@ public class ThreadGroupDemo3 {
 	
 		System.out.println(pg.activeCount());//2
 		System.out.println(pg.activeGroupCount());//1
-		System.out.println("-------------------------");
+		System.out.println("----------11---------------");
 		pg.list();
+		System.out.println("----------22--------------");
 		Thread.sleep(10000);
 		System.out.println(pg.activeCount());//0
 		System.out.println(pg.activeGroupCount());//1
-		System.out.println("----------------------------");
+		System.out.println(cg.activeGroupCount());//0
+		System.out.println("-----------33-----------------");
 		pg.list();
+		System.out.println("-----------44-----------------");
 	}
 }

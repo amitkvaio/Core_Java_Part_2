@@ -18,6 +18,3 @@ public class E {
 		System.out.println(p.test(set));
 	}
 }
-
-
-// till page no -22/37

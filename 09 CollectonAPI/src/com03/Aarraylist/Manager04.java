@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Manager04 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();
+		ArrayList<Object> list = new ArrayList<Object>();
 		list.add(90);
 		list.add(9.0);
 		list.add(190);
@@ -26,6 +26,5 @@ public class Manager04 {
 		}
 		System.out.println();
 		System.out.println("-------------------");
-
 	}
 }

@@ -11,7 +11,7 @@ public class StreamBuilders3 {
 			list.add(i);
 		}
 		Stream<Integer> stream = list.stream();
-		//Returns a sequential Stream with this collection as its source. 
+		// Returns a sequential Stream with this collection as its source.
 		stream.forEach(p -> System.out.println(p));
 	}
 }

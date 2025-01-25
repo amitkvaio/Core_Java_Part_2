@@ -14,7 +14,7 @@ class Aa {
 
 public class Manager21 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();
+		ArrayList<Object> list = new ArrayList<>();
 		list.add(90);
 		list.add("abc");
 		list.add(new Aa(90));

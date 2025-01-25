@@ -11,7 +11,8 @@ public class Q {
 		System.out.println("Given Student list are>>");
 		studentList.forEach(System.out::println);
 		System.out.println("************************************************");
-		Map<String, List<Student>> stdMap=studentList.stream().collect(Collectors.groupingBy(std->std.getClassName()));
+		Map<String, List<Student>> stdMap = studentList.stream()
+				.collect(Collectors.groupingBy(std -> std.getClassName()));
 		System.out.println(stdMap);
 	}
 }

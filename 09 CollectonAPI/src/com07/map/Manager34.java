@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class Manager34 {
 	public static void main(String[] args) {
-		HashMap map = new HashMap();
+		HashMap<Object, Object> map = new HashMap<>();
 		map.put(null, null);
 		map.put(null, "navi");
 		map.put(null, 8222);

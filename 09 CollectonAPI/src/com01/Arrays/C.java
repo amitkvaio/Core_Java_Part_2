@@ -17,6 +17,5 @@ public class C {
 	}
 }
 /*
-printing the default value and again re-initializing the array with different values and printing it
-
+Printing the default value and again re-initializing the array with different values and printing it
 */

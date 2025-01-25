@@ -6,4 +6,4 @@ public class C {
 		System.out.println(s1.length());
 	}
 }
-// length()method also read the white space also
+// length() method also read the white space also

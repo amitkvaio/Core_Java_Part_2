@@ -10,7 +10,7 @@ public class P {
 		System.out.println("Given Student list are>>");
 		studentList.forEach(System.out::println);
 		System.out.println("************************************************");
-		String name = studentList.stream().map(std->std.getName()).collect(Collectors.joining("|"));
+		String name = studentList.stream().map(std -> std.getName()).collect(Collectors.joining("|"));
 		System.out.println(name);
 	}
 }

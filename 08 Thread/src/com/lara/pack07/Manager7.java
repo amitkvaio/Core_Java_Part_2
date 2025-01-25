@@ -22,10 +22,10 @@ public class Manager7 {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		t1.yield();
 // notify the waiting stage thread through the synchnonized block
 		synchronized (t1) {
 			t1.notify();
 		}
 	}
-
 }

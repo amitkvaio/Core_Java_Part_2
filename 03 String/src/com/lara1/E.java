@@ -13,5 +13,4 @@ public class E {
 /*
  * hashCode() method gives the hascode() number based on the contain of the
  * string object
- * 
  */

@@ -6,7 +6,7 @@ import java.util.ListIterator;
 
 public class Manager38 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();
+		ArrayList<Integer> list = new ArrayList<>();
 		list.add(20);
 		list.add(12);
 		list.add(45);
@@ -14,7 +14,7 @@ public class Manager38 {
 		list.add(57);
 		list.add(45);
 
-		ListIterator it = list.listIterator();
+		ListIterator<Integer> it = list.listIterator();
 		while (it.hasNext()) {
 			System.out.print(it.next() + ",");
 		}

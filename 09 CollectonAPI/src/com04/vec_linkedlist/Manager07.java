@@ -4,7 +4,7 @@ package com04.vec_linkedlist;
 import java.util.LinkedList;
 
 class Stack {
-	private LinkedList list = new LinkedList();
+	private LinkedList<Object> list = new LinkedList<>();
 
 	public void add(Object obj) {
 		list.add(obj);
@@ -17,7 +17,6 @@ class Stack {
 	public String toString() {
 		return list.toString();
 	}
-
 }
 
 public class Manager07 {

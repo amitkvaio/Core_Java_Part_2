@@ -19,7 +19,5 @@ public class Stream03 {
 		System.out.println("Max Price = " + longSummaryStatistics.getMax());
 		System.out.println("Min Price = " + longSummaryStatistics.getMin());
 		System.out.println("Average Price = " + longSummaryStatistics.getAverage());
-
 	}
-
 }

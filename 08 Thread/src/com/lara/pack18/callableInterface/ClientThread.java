@@ -35,5 +35,6 @@ public class ClientThread implements Runnable {
 		}finally {
 			service.shutdown();
 		}
+		System.out.println("Done");
 	}
 }

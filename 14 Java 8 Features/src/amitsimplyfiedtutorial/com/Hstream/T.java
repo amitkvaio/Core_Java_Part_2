@@ -6,11 +6,11 @@ import java.time.Year;
 public class T {
 	public static void main(String[] args) {
 		int y = 2000;
-		Year year = Year.of(y);	
+		Year year = Year.of(y);
 		System.out.println(year);
-		if(year.isLeap()) {
-			System.out.println(y+" is leap year");
-		}else {
+		if (year.isLeap()) {
+			System.out.println(y + " is leap year");
+		} else {
 			System.out.println(y + " is not leap year");
 		}
 	}

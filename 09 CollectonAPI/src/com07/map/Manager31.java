@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class Manager31 {
 	public static void main(String[] args) {
-		HashMap map1 = new HashMap();
+		HashMap<Object, Object> map1 = new HashMap<>();
 		map1.put("abc", "ravi");
 		map1.put('a', 3000);
 		map1.put(30, "nan");
@@ -22,5 +22,6 @@ public class Manager31 {
 /*
  --Duplicate keys are not allowed but values can be duplicated.
  --if we try to enter the duplicate keys it will override the values with the latest one	
-
 */
+
+

@@ -1,17 +1,13 @@
-class Z3
-{
-	enum E
-	{
+class Z3 {
+	enum E {
 		t1, t2, t3, t4;
 
-		void method()
-		{
+		void method() {
 			System.out.println("method");
 		}
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		E e1 = E.t1;
 		System.out.println(e1);
 		e1.method();

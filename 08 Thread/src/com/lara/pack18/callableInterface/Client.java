@@ -40,4 +40,19 @@ and then use future.get() method to retrieve the result of the future.
 
 Note that, the get() method blocks until the task is completed. 
 The Future API also provides an isDone() method to check whether the task is completed or not -
+
+
+ExecutorService is an interface in Java that allows us to manage and control threads.
+
+Executors.newFixedThreadPool(2) creates a fixed thread pool with 2 threads. 
+	This means at most 2 threads can run at the same time, handling tasks we submit to this pool.
+
+By using a thread pool, we don’t have to create and manage threads manually. 
+	The pool will handle threads efficiently, creating and reusing them as needed.
+
+service.submit(...) submits a task to the thread pool for execution.
+
+submit() returns a Future object, which represents the result of an asynchronous computation.
+
+We can call areaOfCircle.get() to retrieve the result when it's ready, blocking the calling thread until the computation is complete.
 */

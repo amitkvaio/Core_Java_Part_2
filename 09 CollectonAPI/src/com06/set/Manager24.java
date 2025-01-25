@@ -6,7 +6,7 @@ import java.util.TreeSet;
 
 public class Manager24 {
 	public static void main(String[] args) {
-		HashSet set = new HashSet();
+		HashSet<Integer> set = new HashSet<>();
 		set.add(90);
 		set.add(9);
 		set.add(0);
@@ -15,7 +15,7 @@ public class Manager24 {
 		set.add(18);
 		set.add(190);
 		System.out.println(set);
-		TreeSet set1 = new TreeSet(set);
+		TreeSet<Integer> set1 = new TreeSet<>(set);
 		System.out.println(set1);
 	}
 }

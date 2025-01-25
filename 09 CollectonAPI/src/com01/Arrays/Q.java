@@ -15,5 +15,5 @@ public class Q {
 }
 
 /*
-defining an array , supplying an array value , and giving a call to the test() method.
+Defining an array , Supplying an array value , and giving a call to the test() method.
 */

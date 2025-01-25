@@ -5,7 +5,7 @@ import java.util.TreeSet;
 
 public class Manager25 {
 	public static void main(String[] args) {
-		TreeSet set = new TreeSet();
+		TreeSet<String> set = new TreeSet<>();
 		set.add("add");
 		set.add("abc");
 		set.add("test");
@@ -31,6 +31,4 @@ public class Manager25 {
 Note : 
 	From 1.7 onwards null is not at all accepted by TreeSet. 
 		If we enforce to add then we will get NullPointerException. Till 1.6 null was accepted only as the first element.
-	
-		
 */

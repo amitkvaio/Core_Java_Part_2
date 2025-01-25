@@ -2,12 +2,11 @@
 package com03.Aarraylist;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class Manager29 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();
+		ArrayList<Integer> list = new ArrayList<>();
 		list.add(9);
 		list.add(0);
 		list.add(5);

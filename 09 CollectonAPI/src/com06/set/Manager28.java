@@ -3,7 +3,7 @@ package com06.set;
 
 import java.util.TreeSet;
 
-class K implements Comparable {
+class K implements Comparable<Object> {
 	int x;
 
 	public K(int x) {
@@ -23,7 +23,7 @@ class K implements Comparable {
 
 public class Manager28 {
 	public static void main(String[] args) {
-		TreeSet set = new TreeSet();
+		TreeSet<K> set = new TreeSet<>();
 		set.add(new K(9));
 		set.add(new K(1));
 		set.add(new K(5));

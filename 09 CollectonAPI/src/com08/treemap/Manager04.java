@@ -19,7 +19,7 @@ class A {
 
 public class Manager04 {
 	public static void main(String[] args) {
-		TreeMap map = new TreeMap();
+		TreeMap<A, String> map = new TreeMap<>();
 		map.put(new A(9), "abc");
 		map.put(new A(90), "abc1");
 		map.put(new A(5), "abc2");

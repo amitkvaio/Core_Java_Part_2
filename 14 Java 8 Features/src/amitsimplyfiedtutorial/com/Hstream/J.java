@@ -14,6 +14,7 @@ public class J {
 
 		Employee emp=listEmp.stream().max((e1,e2)-> Long.valueOf(e1.getSalary()).compareTo(e2.getSalary())).get();
 		System.out.println("Maximum salary  emp  details : "+emp);
+		
 		Employee emp1=listEmp.stream().min((e1,e2)-> Long.valueOf(e1.getSalary()).compareTo(e2.getSalary())).get();
 		System.out.println("Minimum salary  emp  details : "+emp1);
 	}

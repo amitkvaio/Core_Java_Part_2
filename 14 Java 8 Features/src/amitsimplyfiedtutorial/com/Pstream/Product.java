@@ -53,5 +53,4 @@ public class Product {
         productList.add(new Product(4, "Samsung mobile", 40000));
 		return productList;
 	}
-
 }

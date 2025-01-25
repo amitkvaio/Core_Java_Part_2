@@ -26,14 +26,13 @@ class E {
 			return false;
 		if (this.getClass() != obj.getClass())
 			return false;
-		return i == ((E) obj).i;
+		return this.i == ((E) obj).i;
 	}
-
 }
 
 public class Manager19 {
 	public static void main(String[] args) {
-		HashSet set = new HashSet();
+		HashSet<E> set = new HashSet<>();
 		set.add(new E(9));
 		set.add(new E(9));
 		set.add(new E(90));

@@ -10,9 +10,9 @@ public class L {
 		System.out.println("Given Student list are>>");
 		studentList.forEach(System.out::println);
 		System.out.println("*******************************************************************");
-		Optional<Student> optionStd 
-			= studentList.stream().filter(st -> st.getName().equalsIgnoreCase("Amit")).findAny();
-		if(optionStd.isPresent()) {
+		Optional<Student> optionStd = studentList.stream().filter(st -> st.getName().equalsIgnoreCase("Amit"))
+				.findAny();
+		if (optionStd.isPresent()) {
 			System.out.println(optionStd.get());
 		}
 	}

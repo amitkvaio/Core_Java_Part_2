@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 public class Manager04 {
 	public static void main(String[] args) {
-		LinkedList list = new LinkedList();
+		LinkedList<Object> list = new LinkedList<>();
 		list.add(10);
 		list.add(910);
 		list.add(920);

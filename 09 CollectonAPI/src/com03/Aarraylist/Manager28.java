@@ -1,4 +1,4 @@
-//64 in the reverse order binary search will happend in the natural order
+//64 in the reverse order binary search will happen in the natural order
 package com03.Aarraylist;
 
 import java.util.ArrayList;
@@ -7,7 +7,7 @@ import java.util.Comparator;
 
 public class Manager28 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();
+		ArrayList<Integer> list = new ArrayList<>();
 		list.add(20);
 		list.add(23);
 		list.add(65);
@@ -17,7 +17,7 @@ public class Manager28 {
 		list.add(29);
 		list.add(69);
 		System.out.println(list);
-		Comparator ctr = Collections.reverseOrder();
+		Comparator<Integer> ctr = Collections.reverseOrder();
 		Collections.sort(list, ctr);
 		System.out.println(list);
 		System.out.println("...............................");
@@ -27,7 +27,5 @@ public class Manager28 {
 		i = Collections.binarySearch(list, 65, ctr);
 		System.out.println("....................");
 		System.out.println(i);
-
 	}
-
 }

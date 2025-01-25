@@ -30,7 +30,7 @@ public class GfM {
 
         Set<String> collect =
                 list.stream()
-                        .map(x -> x.getBook())                              //  Stream<Set<String>>
+                        .map(x -> x.getBook() )                              //  Stream<Set<String>>
                         .flatMap(x -> x.stream())                           //  Stream<String>
                         .filter(x -> !x.toLowerCase().contains("python"))   //  filter python book
                         .collect(Collectors.toSet());                       //  remove duplicated

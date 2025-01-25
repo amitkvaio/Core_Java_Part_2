@@ -6,20 +6,18 @@ import java.util.ListIterator;
 
 public class Manager37 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();
+		ArrayList<Integer> list = new ArrayList<>();
 		list.add(20);
 		list.add(30);
 		list.add(40);
 		list.add(90);
 
-		ListIterator it = list.listIterator();
+		ListIterator<Integer> it = list.listIterator();
 		//list.add(50); // Concurrent Modification Exception
 		while (it.hasNext()) {
 			System.out.print(it.next() + ",");
 		}
 		System.out.println();
-		System.out.println("-----------");
-
 	}
 }
 /*

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Manager02 {
 	public static void main(String[] args) {
-		ArrayList list1 = new ArrayList();
+		ArrayList<Object> list1 = new ArrayList<Object>();
 		list1.add(90);
 		list1.add(true);
 		int i = (Integer) list1.get(0);

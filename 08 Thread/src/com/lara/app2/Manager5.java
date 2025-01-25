@@ -1,7 +1,6 @@
 package com.lara.app2;
 
 class G extends Thread {
-
 }
 
 public class Manager5 {

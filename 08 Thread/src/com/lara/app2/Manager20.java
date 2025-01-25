@@ -1,35 +1,26 @@
 package com.lara.app2;
 
-class S extends Thread
-{
+class S extends Thread {
 	@Override
-	public void run()
-	{
-		for (int i = 0; i < 3000; i++)
-		{
+	public void run() {
+		for (int i = 0; i < 3000; i++) {
 			System.out.println("run:" + i);
 		}
 	}
 }
 
-public class Manager20
-{
-	public static void main(String[] args)
-	{
+public class Manager20 {
+	public static void main(String[] args) {
 		S s1 = new S();
 		s1.start();
-		try
-		{
+		try {
 			s1.join(10);
-		} catch (InterruptedException e)
-		{
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		for (int i = 0; i < 500; i++)
-		{
+		for (int i = 0; i < 500; i++) {
 			System.out.println("main thread:-" + i);
 		}
-
 	}
 }
 

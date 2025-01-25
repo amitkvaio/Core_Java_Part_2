@@ -3,9 +3,12 @@ package com.lara.pack08.thlifeCycle;
 
 class C extends Thread {
 	public synchronized void run() {
-		System.out.println("begin");
+		System.out.println("Bgin");
 		try {
 			wait();
+			for(int i =1 ; i < 50; i ++) {
+				System.out.println("Child Thread ::" + this.getName() + " : " + i);
+			}
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -23,13 +26,19 @@ public class Manager4 {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println("ci thread before notify call state->" + c1.getState());
+		System.out.println("c1 thread before notify call state->" + c1.getState());
 
 		synchronized (c1) {
-			System.out.println("ci 1 thread after notify call state->" + c1.getState());
+			System.out.println("c1 1 thread after notify call state->" + c1.getState());
 			c1.notify();
-			System.out.println("ci 2 thread after notify call state->" + c1.getState());
+			try {
+				Thread.sleep(50000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.println("c1 >>>>>2 thread after notify call state->" + c1.getState());
 		}
-		System.out.println("ci 3 thread after notify call state->" + c1.getState());
+		System.out.println("c1 3 thread after notify call state->" + c1.getState());
+		System.out.println("c1 4 thread after notify call state->" + c1.getState());
 	}
 }

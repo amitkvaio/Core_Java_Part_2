@@ -10,5 +10,4 @@ class N {
 		}
 	}
 }
-
-//values() methods are used to print all the enum constants.
+// values() methods are used to print all the enum constants.

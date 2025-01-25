@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 public class Manager10 {
 	public static void main(String[] args) {
-		PriorityQueue q = new PriorityQueue();
+		PriorityQueue<Integer> q = new PriorityQueue<>();
 		q.add(10);
 		q.add(null);// nullpoiter exception
 		q.add(4);

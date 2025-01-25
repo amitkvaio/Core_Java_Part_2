@@ -1,5 +1,5 @@
 package com.lara.pack10.threadLocal;
-class ParentsThread extends Thread{
+class ParentsThread extends Thread {
 	public static InheritableThreadLocal tl  = new InheritableThreadLocal() {
 		protected Object childValue(Object parentValue) {
 			return "CC";

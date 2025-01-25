@@ -14,6 +14,5 @@ public class IterationForEachLoop1 {
 	       list.add("NAGAR");
 	       
 	       list.forEach((personName)->System.out.println(personName));
-	       
 	}
 }	

@@ -10,8 +10,8 @@ public class N {
 		System.out.println("Given Student list are>>");
 		studentList.forEach(System.out::println);
 		System.out.println("************************************************");
-		OptionalInt optionstd=studentList.stream().mapToInt(std->std.getAge()).min();
-		if(optionstd.isPresent()) {
+		OptionalInt optionstd = studentList.stream().mapToInt(std -> std.getAge()).min();
+		if (optionstd.isPresent()) {
 			System.out.println(optionstd.getAsInt());
 		}
 	}

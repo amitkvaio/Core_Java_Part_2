@@ -10,14 +10,14 @@ public class Test1122 {
 		 Thread th  = new Thread(
 				 ()->{
 					 for (int i = 0; i < 100; i++) {
-							System.out.println("***********>"+Thread.currentThread().getName() + "i : " +i);
+							System.out.println("***********>"+Thread.currentThread().getName() + " i : " +i);
 						}
 					 }
 				 );
 		 th.start();
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 		for (int i = 0; i < 100; i++) {
-			System.out.println("***********>"+Thread.currentThread().getName() + "i : " +i);
+			System.out.println("***********>"+Thread.currentThread().getName() + " i : " +i);
 		}
 	}
 }

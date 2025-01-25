@@ -9,10 +9,7 @@ public class Steam05 {
 		List<Product> productList = Product.getProductList();
 		// Converting Product List into a Map
 		Map<String, Integer> productPriceMap = productList.stream()
-		                .collect(Collectors.toMap(p -> p.getName(), p -> p.getPrice()));
-
-		        System.out.println(productPriceMap);
-
-
+				.collect(Collectors.toMap(p -> p.getName(), p -> p.getPrice()));
+		System.out.println(productPriceMap);
 	}
 }

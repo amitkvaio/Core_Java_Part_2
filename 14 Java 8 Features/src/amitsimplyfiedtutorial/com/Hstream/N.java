@@ -3,7 +3,7 @@ package amitsimplyfiedtutorial.com.Hstream;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-//# program for to display System Date and time. 
+//# Program for to display System Date and time. 
 public class N {
 	public static void main(String[] args) {
 		LocalDate localDate = LocalDate.now();

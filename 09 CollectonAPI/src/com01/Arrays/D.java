@@ -12,6 +12,6 @@ public class D {
 
 /*
  * 
- * different way of array declaration.
+ * Different way of array declaration and initialization.
  * 
  */

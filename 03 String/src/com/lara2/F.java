@@ -3,7 +3,7 @@ package com.lara2;
 public class F {
 	public static void main(String[] args) {
 		String s1 = "abababab";
-		// 01234567
+				  // 01234567
 		int i = s1.indexOf('b');// 1
 		int j = s1.indexOf('a', 3);// 4
 		int k = s1.lastIndexOf('b');// 7

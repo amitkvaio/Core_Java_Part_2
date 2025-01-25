@@ -13,7 +13,6 @@ class Util {
 
 class Test {
 	int i;
-
 }
 
 class A extends Thread {
@@ -69,7 +68,7 @@ public class Manager {
 
 		A a1 = new A(t1);
 		a1.start();
-		Util.sleep(1500);
+		Util.sleep(15000);
 
 		B b1 = new B(t1);
 		b1.start();
@@ -81,5 +80,4 @@ public class Manager {
 }
 /*
 one Test object is shared with the two different threads
-
 */

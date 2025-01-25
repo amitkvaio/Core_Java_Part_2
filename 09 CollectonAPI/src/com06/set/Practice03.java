@@ -6,7 +6,7 @@ write a program to insert String & StringBuffer object into TreeSet,
 import java.util.Comparator;
 import java.util.TreeSet;
 
-class D implements Comparator{
+class D implements Comparator<Object>{
 	@Override
 	public int compare(Object obj1, Object obj2) {
 		String str1 = obj1.toString();
@@ -27,7 +27,7 @@ class D implements Comparator{
 
 public class Practice03 {
 	public static void main(String[] args) {
-		TreeSet t = new TreeSet(new D());
+		TreeSet<Object> t = new TreeSet<>(new D());
 		t.add("ratan");
 		t.add(new StringBuffer("sravya"));
 		t.add("anu");

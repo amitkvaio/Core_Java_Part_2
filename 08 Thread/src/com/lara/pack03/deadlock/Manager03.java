@@ -1,5 +1,5 @@
 package com.lara.pack03.deadlock;
- 
+
 public class Manager03 {
 	public static void main(String[] args) {
 		DeadLockAvoidExp lock = new DeadLockAvoidExp();
@@ -37,4 +37,3 @@ class Demo4 extends Thread {
 		lock.method2();
 	}
 }
-

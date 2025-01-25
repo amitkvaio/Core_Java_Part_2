@@ -14,12 +14,10 @@ public class C {
 		}
 		
 		Predicate<Integer> pred = i -> (i % 2) == 0;
-		List<Integer> evenNumberList = list.stream().filter(x->pred.test(x)).collect(Collectors.toList());
+		List<Integer> evenNumberList = list.stream().filter(x -> pred.test(x)).collect(Collectors.toList());
 		List<Integer> oddNumberList = list.stream().filter(i -> (i % 2 != 0)).collect(Collectors.toList());
-		System.out.println("Even Number List : "+evenNumberList);
-		System.out.println("Odd Number List : "+oddNumberList);
-		list.stream().filter(i -> i % 2 == 0).collect(Collectors.toList());
-		list.stream().sorted().filter(x->x%2==0).collect(Collectors.toList());
+		System.out.println("Even Number List : " + evenNumberList);
+		System.out.println("Odd Number List : " + oddNumberList);
 	}
 }
 /*
@@ -33,7 +31,7 @@ public class C {
 	 
 	public Stream filter(Predicate<T> t)
 	
-	here (Predicate<T > t ) can be  a boolean valued function/lambda expression 
+	Here (Predicate<T > t ) can be  a boolean valued function/lambda expression 
 	Ex: 
 	Stream s=c.stream(); 
 	Stream s1=s.filter(i -> i%2==0); 

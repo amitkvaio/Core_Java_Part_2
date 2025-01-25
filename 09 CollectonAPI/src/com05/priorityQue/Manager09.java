@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 public class Manager09 {
 	public static void main(String[] args) {
-		PriorityQueue pq = new PriorityQueue();
+		PriorityQueue<Object> pq = new PriorityQueue<>();
 		pq.add("abc");
 		pq.add("xyz");
 		pq.add(10); // not allow multiple type of elements

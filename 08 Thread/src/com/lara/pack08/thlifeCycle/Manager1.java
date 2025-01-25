@@ -8,7 +8,6 @@ public class Manager1 {
 		for (Thread.State s1 : states) {
 			System.out.println(s1);
 		}
-
 	}
 }
 /*

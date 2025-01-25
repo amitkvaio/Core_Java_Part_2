@@ -8,12 +8,11 @@ public class Q {
 		LocalDateTime dateTime = LocalDateTime.now();
 		System.out.println(dateTime);
 		System.out.println("******************");
-		System.out.println("After six month : "+dateTime.plusMonths(6));
-		System.out.println("Before six month : "+dateTime.minusMonths(6));
-		
-		
-		//We can represent a particular Date and Time by using LocalDateTime object 
-		LocalDateTime dt1=LocalDateTime.of(1995,Month.APRIL,28,12,45); 
+		System.out.println("After six month : " + dateTime.plusMonths(6));
+		System.out.println("Before six month : " + dateTime.minusMonths(6));
+
+		// We can represent a particular Date and Time by using LocalDateTime object
+		LocalDateTime dt1 = LocalDateTime.of(1995, Month.APRIL, 28, 12, 45);
 		System.out.println(dt1);
 	}
 }

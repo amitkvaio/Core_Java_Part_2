@@ -29,6 +29,7 @@ public class A {
 
 
 
+
 /**
  * variable can store only one value
  * variable can not store multiple value

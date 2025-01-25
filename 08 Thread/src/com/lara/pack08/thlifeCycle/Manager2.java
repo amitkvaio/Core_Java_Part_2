@@ -5,7 +5,7 @@ class A extends Thread {
 	@Override
 	public void run() {
 		System.out.println("In run>>:-" + this.getState() + " Thrad Name : " + Thread.currentThread().getName());
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 5000; i++) {
 			System.out.println(i);
 		}
 	}

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Manager06 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();
+		ArrayList<Integer> list = new ArrayList<Integer>();
 		list.add(9);
 		list.add(0);
 		list.add(90);
@@ -13,7 +13,7 @@ public class Manager06 {
 		System.out.println(list.toString());
 		System.out.println("..............");
 
-		ArrayList list1 = new ArrayList();
+		ArrayList<Object> list1 = new ArrayList<>();
 		list1.add(100);
 		list1.add(50);
 		list1.add(list);

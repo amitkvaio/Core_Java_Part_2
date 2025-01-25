@@ -9,7 +9,7 @@ public class K {
 		System.out.println("Given Student list are>>");
 		studentList.forEach(System.out::println);
 		System.out.println("***********************************");
-		long count = studentList.stream().filter(std->std.getAge()>21).count();
-		System.out.println("Total Number of student::"+count);
+		long count = studentList.stream().filter(std -> std.getAge() > 21).count();
+		System.out.println("Total Number of student::" + count);
 	}
 }

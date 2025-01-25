@@ -16,13 +16,13 @@ class L {
 		return "(" + i + "," + j + ")";
 	}
 
-	static class A implements Comparator {
+	static class A implements Comparator<Object> {
 		public int compare(Object obj1, Object obj2) {
 			return ((L) obj1).i - ((L) obj2).i;
 		}
 	}
 
-	static class B implements Comparator {
+	static class B implements Comparator<Object> {
 		public int compare(Object obj1, Object obj2) {
 			return ((L) obj1).j - ((L) obj2).j;
 		}
@@ -31,7 +31,7 @@ class L {
 
 public class Manager29 {
 	public static void main(String[] args) {
-		TreeSet set1 = new TreeSet(new L.A());
+		TreeSet<L> set1 = new TreeSet<>(new L.A());
 		set1.add(new L(1, 0));
 		set1.add(new L(3, 7));
 		set1.add(new L(2, 6));
@@ -41,7 +41,7 @@ public class Manager29 {
 		System.out.println(set1);
 		System.out.println("==================");
 
-		TreeSet set2 = new TreeSet(new L.B());
+		TreeSet<L> set2 = new TreeSet<>(new L.B());
 		set2.add(new L(2, 3));
 		set2.add(new L(3, 5));
 		set2.add(new L(8, 4));

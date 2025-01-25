@@ -5,11 +5,10 @@ import java.util.Arrays;
 //24
 public class Y {
 	public static void main(String[] args) {
-		String[] x = { "hello", "blue", "yello", 
-				"white", "pink", "lara", "java" };
+		String[] x = { "hello", "blue", "yello", "white", "pink", "lara", "java" };
 		Arrays.sort(x);
 		System.out.println(Arrays.toString(x));
-			// [blue, hello, java, lara, pink, white, yello]
+		// [blue, hello, java, lara, pink, white, yello]
 		int i = Arrays.binarySearch(x, "abc");
 		System.out.println("abc:" + i);
 		i = Arrays.binarySearch(x, "orange");

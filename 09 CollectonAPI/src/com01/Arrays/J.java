@@ -4,8 +4,8 @@ package com01.Arrays;
 public class J {
 	public static void main(String[] args) {
 		int x[] = new int[2];
-		int y[] = x;// where x is pointing y is also pointing same array object
-		int z[] = y;// similarly
+		int y[] = x;// Where x is pointing y is also pointing same array object
+		int z[] = y;// Similarly
 		// x=y=z
 		x[0] = 10;
 		y[1] = 20;

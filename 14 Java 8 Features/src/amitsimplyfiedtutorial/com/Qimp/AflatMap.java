@@ -17,7 +17,6 @@ public class AflatMap {
 				listOfLists.stream()
 				.flatMap(x -> x.stream())
 				.collect(Collectors.toList());
-
 		System.out.println(listOfAllIntegers);
 	}
 }

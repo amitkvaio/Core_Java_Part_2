@@ -1,18 +1,14 @@
 package com.lara.app2;
 
-class A extends Thread
-{
+class A extends Thread {
 	@Override
-	public void run()
-	{
+	public void run() {
 		System.out.println("DONE");
 	}
 }
 
-public class Manager1
-{
-	public static void main(String[] args)
-	{
+public class Manager1 {
+	public static void main(String[] args) {
 		A a1 = new A();
 		System.out.println("default properties");
 		long id = a1.getId();
@@ -24,7 +20,6 @@ public class Manager1
 		System.out.println(priority);
 		System.out.println(daemonstatus);
 		a1.start();
-
 	}
 }
 

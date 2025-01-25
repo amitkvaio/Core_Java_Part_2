@@ -5,14 +5,13 @@ import java.util.ArrayList;
 
 public class Manager01 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();
+		ArrayList<Object> list = new ArrayList<Object>();
 		list.add(90);
-		list.add(new Integer(14));// in arraylist compiler is taking every element in this way new Integer(14)
+		list.add(Integer.valueOf(14));// in Arraylist compiler is taking every element in this way new Integer(14)
 		list.add(9.9);
 		list.add("abc");
 		list.add(true);
 		list.add("amit");
-
 		System.out.println(list);// all the element up casted to Object type
 	}
 }

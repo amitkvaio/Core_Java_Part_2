@@ -1,48 +1,39 @@
 //62
 package com.lara.pack02;
 
-class Thread1 extends Thread
-{
+class Thread1 extends Thread {
 	Shared s1;
-	
-	Thread1(Shared s1)
-	{
-		this.s1=s1;
+
+	Thread1(Shared s1) {
+		this.s1 = s1;
 	}
-	
+
 	@Override
-	public void run()
-	{
-		s1.test5();//A
+	public void run() {
+		s1.test3();// A
 	}
 }
 
-
-class Thread2 extends Thread
-{
+class Thread2 extends Thread {
 	Shared s1;
-	
-	Thread2(Shared s1)
-	{
-		this.s1=s1;
+
+	Thread2(Shared s1) {
+		this.s1 = s1;
 	}
-	
+
 	@Override
-	public void run()
-	{
-		s1.test5();//B
+	public void run() {
+		s1.test5();// B
 	}
 }
 
-public class Manager1
-{
-	public static void main(String[] args)
-	{
+public class Manager1 {
+	public static void main(String[] args) {
 		Shared s1 = new Shared();
-		
-		Thread1 t1= new Thread1(s1);//C
-		Thread2 t2 = new Thread2(s1);//D
-		
+
+		Thread1 t1 = new Thread1(s1);// C
+		Thread2 t2 = new Thread2(s1);// D
+
 		t1.start();
 		t2.start();
 	}

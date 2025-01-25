@@ -13,7 +13,7 @@ class B{
 					} else {
 						System.out.println(thName + " " + 2);
 					}
-					Thread.sleep(1000);
+					Thread.sleep(500);
 					this.wait();
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -36,11 +36,11 @@ class B{
 						System.out.println(thName + " " + i);
 					} else if ("TWO".equals(thName) && i%3==2 ) {
 						System.out.println(thName + " " + i);
-					}else if ("THREE".equals(thName) && i%3==0 ) {
+					}else if ("THR".equals(thName) && i%3==0 ) {
 						System.out.println(thName + " " + i);
 					}
 					
-					Thread.sleep(1000);
+					Thread.sleep(500);
 					i++;
 					this.wait();
 				} catch (InterruptedException e) {
@@ -70,11 +70,29 @@ public class AoneTwoPrint {
 		A a1 = new A(b);
 		A a2 = new A(b);
 		Thread th1 = new Thread(a1, "ONE");
-		Thread th2 = new Thread(a2, "TWO");
-		Thread th3 = new Thread(a2, "THREE");
+		Thread th2 = new Thread(a1, "TWO");
+		Thread th3 = new Thread(a2, "THR");
 		th1.start();
 		th2.start();
 		th3.start();
 		System.out.println("Finished");
 	}
 }
+/*
+
+5%5 = 0
+6%5 = 1
+7%2 = 2
+
+4%5 = 4
+3%5 = 3
+
+
+
+
+
+*/
+
+
+
+

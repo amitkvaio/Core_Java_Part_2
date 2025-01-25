@@ -11,23 +11,11 @@ public class M {
 		System.out.println("Done");
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-//every class is the subclass is the object class
 /*
+Every class is the subclass is the object class
+
 x reference is assign to y integer array both are homogeneous type
 again y is assign into obj , but here obj is Object type not integer array type 
 so before assign obj in any of the integer array we have to downcast into int array type.
-
 
 */

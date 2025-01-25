@@ -4,8 +4,6 @@ package com03.Aarraylist;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import javax.swing.plaf.synth.SynthScrollBarUI;
-
 public class Manager19 {
 	public static void main(String[] args) {
 		ArrayList list = new ArrayList<>();

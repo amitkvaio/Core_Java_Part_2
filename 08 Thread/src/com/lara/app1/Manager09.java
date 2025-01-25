@@ -1,25 +1,19 @@
 package com.lara.app1;
 
-class L extends Thread
-{
-	public void run()
-	{
+class L extends Thread {
+	public void run() {
 		System.out.println("begin");
 		start();
-		//this.start();
+		// this.start();
 		System.out.println("end");
-		
 	}
 }
 
-public class Manager09
-{
-	public static void main(String[] args)
-	{
+public class Manager09 {
+	public static void main(String[] args) {
 		L l1 = new L();
 		l1.start();
-		for (int i = 0; i < 100; i++)
-		{
+		for (int i = 0; i < 100; i++) {
 
 		}
 		System.out.println("done");

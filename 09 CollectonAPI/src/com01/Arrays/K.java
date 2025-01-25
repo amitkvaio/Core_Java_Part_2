@@ -1,12 +1,10 @@
-//10
+//10 Pass by reference and Pass by value.
 package com01.Arrays;
 
 import java.util.Arrays;
 
-public class K
-{
-	public static void main(String[] args)
-	{
+public class K{
+	public static void main(String[] args)	{
 		int x[] = new int[2];
 		x[0] = 10;
 		x[1] = 50;
@@ -21,18 +19,15 @@ public class K
 		System.out.println("3 not effect the Modification" +Arrays.toString(x));
 	}
 
-	static void test1(int y[])// (int x[]) // x and y both are pointing to the same arrays.
-	{
+	static void test1(int y[]) {// (int x[]) // x and y both are pointing to the same arrays.
 		System.out.println("Befor change=" +Arrays.toString(y));
 		y[0] = 20;// x[o]=20;
 		y[1] = 200;
 		System.out.println("After change=" +Arrays.toString(y));
 	}
 
-	static void test2(int z)// z=x[0]=20;
-	{
+	static void test2(int z) {// z=x[0]=20;
 		System.out.println(z);
 		z = 30;
 	}
-
 }

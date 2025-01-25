@@ -4,14 +4,14 @@ package com05.priorityQue;
 import java.util.Iterator;
 import java.util.PriorityQueue;
 
-class A implements Comparable {
+class A implements Comparable<A> {
 	int i;
 
 	A(int i) {
 		this.i = i;
 	}
 
-	public int compareTo(Object obj) {
+	public int compareTo(A obj) {
 		return i - ((A) obj).i;
 	}
 
@@ -22,7 +22,7 @@ class A implements Comparable {
 
 public class Manager11 {
 	public static void main(String[] args) {
-		PriorityQueue pq = new PriorityQueue();
+		PriorityQueue<A> pq = new PriorityQueue<>();
 		pq.add(new A(90));
 		pq.add(new A(9));
 		pq.add(new A(1));
@@ -32,12 +32,11 @@ public class Manager11 {
 
 		System.out.println(pq);
 
-		Iterator it = pq.iterator();
+		Iterator<A> it = pq.iterator();
 		while (it.hasNext()) {
 			System.out.println(pq.poll());
 			System.out.println(pq);
 		}
-
 	}
 }
 

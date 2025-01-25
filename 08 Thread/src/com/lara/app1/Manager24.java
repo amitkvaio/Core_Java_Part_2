@@ -13,5 +13,4 @@ public class Manager24 {
 			System.out.println("main->" + i);
 		}
 	}
-
 }

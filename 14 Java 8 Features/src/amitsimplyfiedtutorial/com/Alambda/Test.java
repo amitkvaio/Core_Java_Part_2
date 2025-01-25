@@ -10,6 +10,8 @@ public class Test {
 		
 		dev.sort((dev1,dev2)->dev1.getAge()-dev2.getAge());
 		dev.forEach((d)->System.out.println(d));
+		
+		
 		System.out.println("--------------");
 		dev.sort((dev1,dev2)->{
 			return dev1.getName().compareTo(dev2.getName());
@@ -28,6 +30,5 @@ public class Test {
 		result.add(new Developer("Bhupathi", 55000, 55));
 
 		return result;
-
 	}
 }

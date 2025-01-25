@@ -34,7 +34,7 @@ class F {
 
 public class Manager20 {
 	public static void main(String[] args) {
-		HashSet set = new HashSet();
+		HashSet<F> set = new HashSet<>();
 		set.add(new F(1, 2));
 		set.add(new F(1, 2));
 		set.add(new F(2, 1));

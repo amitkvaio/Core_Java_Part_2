@@ -1,21 +1,16 @@
 package com.lara.app2;
 
-class Y extends Thread
-{
+class Y extends Thread {
 	@Override
-	public void run()
-	{
-		for (int i = 0; i < 50000; i++)
-		{
+	public void run() {
+		for (int i = 0; i < 50000; i++) {
 			System.out.println(i + "=;" + isInterrupted());
 		}
 	}
 }
 
-public class Manager25
-{
-	public static void main(String[] args)
-	{
+public class Manager25 {
+	public static void main(String[] args) {
 		Y y1 = new Y();
 		y1.start();
 		ThreadUtil.sleep(1);
@@ -33,4 +28,5 @@ Public void interrupt()
 NOTE:- The interrupt() is effected whenever our thread enters into waiting state or 
 	sleeping state and if the our thread doesn’t enters into the waiting/sleeping state 
 	interrupted call will be wasted.
+
 */

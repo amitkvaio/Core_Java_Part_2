@@ -4,7 +4,7 @@ public class Student {
 	String name;
 	int id;
 
-	public Student( int id,String name) {
+	public Student(int id, String name) {
 		super();
 		this.name = name;
 		this.id = id;
@@ -14,11 +14,11 @@ public class Student {
 	public int hashCode() {
 		int result = 17;
 		System.out.println("from hash code");
-        result = 31 * result + name.hashCode();
-        result = 31 * result + String.valueOf(id).hashCode();
-        return result;
+		result = 31 * result + name.hashCode();
+		result = 31 * result + String.valueOf(id).hashCode();
+		return result;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -39,5 +39,4 @@ public class Student {
 	public int getId() {
 		return id;
 	}
-
 }

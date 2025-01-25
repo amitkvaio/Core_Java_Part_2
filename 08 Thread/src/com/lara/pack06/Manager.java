@@ -38,7 +38,6 @@ class B extends Thread {
 		System.out.println("run begin");
 		obj.test1();
 		System.out.println("run end");
-
 	}
 }
 

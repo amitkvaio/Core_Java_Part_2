@@ -10,8 +10,8 @@ public class J {
 		System.out.println("Given Student list are>>");
 		studentList.forEach(System.out::println);
 		System.out.println("***********************************");
-		List<Student> stdList= studentList.stream().filter(std->std.getAge()>25).collect(Collectors.toList());
-		stdList.forEach(std->System.out.println(std));
+		List<Student> stdList = studentList.stream().filter(std -> std.getAge() > 25).collect(Collectors.toList());
+		stdList.forEach(std -> System.out.println(std));
 		System.out.println("Done");
 	}
 }

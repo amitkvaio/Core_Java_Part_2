@@ -30,7 +30,6 @@ public class C implements Cloneable {
 		System.out.println("C2 Clonned=" + c2);
 
 	}
-
 }
 
 /*

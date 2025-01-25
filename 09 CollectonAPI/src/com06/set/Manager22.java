@@ -28,7 +28,7 @@ class I {
 
 public class Manager22 {
 	public static void main(String[] args) {
-		HashSet set = new HashSet();
+		HashSet<I> set = new HashSet<>();
 		set.add(new I(1, 2));
 		set.add(new I(1, 3));
 		set.add(new I(1, 5));

@@ -1,7 +1,6 @@
 package com.lara.app2;
 
-class I extends Thread
-{
+class I extends Thread {
 	I(String name) {
 		super(name);
 	}
@@ -11,10 +10,8 @@ class I extends Thread
 	}
 }
 
-public class Manager7
-{
-	public static void main(String[] args)
-	{
+public class Manager7 {
+	public static void main(String[] args) {
 		I obj1 = new I();
 		I obj2 = new I("amit");// setting the child thread name
 		System.out.println(obj1.getName());

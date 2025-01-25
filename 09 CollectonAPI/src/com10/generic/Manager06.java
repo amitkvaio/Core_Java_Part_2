@@ -13,10 +13,13 @@ class G<E> {
 public class Manager06 {
 	public static void main(String[] args) {
 		G<String> g1 = new G<String>("abc", 20);
+		System.out.println("g1::" + g1.attr1);
 
 		G<Integer> g2 = new G<Integer>(20, 30);
+		System.out.println("g2::" + g2.attr1);
 
 		G<Double> g3 = new G<Double>(10.20, 20);
+		System.out.println("g3::" + g3.attr1);
 
 		System.out.println("done06");
 	}

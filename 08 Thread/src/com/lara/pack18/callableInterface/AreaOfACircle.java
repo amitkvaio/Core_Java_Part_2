@@ -16,5 +16,4 @@ public class AreaOfACircle implements Callable<Double> {
 		Client.sleep(5000);
 		return Math.PI * rad * rad;
 	}
-
 }

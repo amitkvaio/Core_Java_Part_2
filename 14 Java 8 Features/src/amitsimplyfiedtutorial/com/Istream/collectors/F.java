@@ -7,7 +7,7 @@ public class F {
 	public static void main(String[] args) {
 		List<Person> list = Person.getList();
 		System.out.println("--Join person name--");
-		String result = list.stream().map(p -> p.getName()).collect(Collectors.joining("|","[","]"));
+		String result = list.stream().map(p -> p.getName()).collect(Collectors.joining("|", "[", "]"));
 		System.out.println(result);
 	}
 }

@@ -13,9 +13,9 @@ public class Practice04 {
 		t.add(30);
 		System.out.println(t); // 10 20 30 40
 
-		SortedSet s = t.headSet(40);
+		SortedSet<Integer> s = t.headSet(40);
 		System.out.println("S-->" + s);
-		TreeSet tt = new TreeSet(s);
+		TreeSet<Integer> tt = new TreeSet<>(s);
 		System.out.println(tt); // 10 20
 	}
 }

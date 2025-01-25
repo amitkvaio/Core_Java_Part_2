@@ -1,12 +1,10 @@
 //106
 package com07.map;
-
-import java.util.Collections;
 import java.util.HashMap;
 
 public class Manager30 {
 	public static void main(String[] args) {
-		HashMap map1 = new HashMap();
+		HashMap<String, String> map1 = new HashMap<>();
 		map1.put("a1", "praveen");
 		map1.put("a2", "ravi");
 		map1.put("a3", "navi");

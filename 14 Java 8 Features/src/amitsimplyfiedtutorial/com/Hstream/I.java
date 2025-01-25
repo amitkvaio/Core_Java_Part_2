@@ -21,15 +21,15 @@ public class I {
 				.collect(Collectors.toList());
 		System.out.println("After sorting based on emp Name");
 		display(listEmp1);
+		
+		
 		System.out.println("Sorting based on emp id");
 		List<Employee> listEmp2 = listEmp.stream()
 				.sorted((e1, e2) -> Integer.valueOf(e1.getEmpId()).compareTo(e2.getEmpId()))
 				.collect(Collectors.toList());
 		display(listEmp2);
 		System.out.println("*******888888888888********");
-		List<Employee> listEmp3 = listEmp.stream()
-				.sorted((e1, e2) ->e1.compare(e1, e2))
-				.collect(Collectors.toList());
+		List<Employee> listEmp3 = listEmp.stream().sorted((e1, e2) -> e1.compare(e1, e2)).collect(Collectors.toList());
 		display(listEmp3);
 	}
 

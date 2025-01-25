@@ -7,7 +7,7 @@ import java.util.TreeSet;
 
 public class Practice05 {
 	public static void main(String[] args) {
-		String[] str = { "ratan", "anu", "sravya", "anu" };
+		String[] str = { "ratan", "anu", "sravya", "anu", "zyka" };
 		List<String> list = Arrays.asList(str);
 		TreeSet<String> t = new TreeSet<String>(list);
 		System.out.println(t);

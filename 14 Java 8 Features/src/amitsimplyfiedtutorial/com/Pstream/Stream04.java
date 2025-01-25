@@ -16,6 +16,5 @@ public class Stream04 {
 				.min((product1, product2) -> product1.getPrice() > product2.getPrice() ? 1 : -1).get();
 
 		System.out.println("Min price product = " + minPriceProduct);
-
 	}
 }

@@ -3,7 +3,7 @@ package com.lara.pack31.output;
 public class B implements Runnable{
 
 	public void run() {
-		for (int i = 0; i < 300000; i++) {
+		for (int i = 0; i < 300; i++) {
 			System.out.println("i=" + i + " ,ThreadName=" + Thread.currentThread().getName());
 		}
 	}

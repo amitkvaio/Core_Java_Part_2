@@ -2,8 +2,6 @@
 package com03.Aarraylist;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 
 class Ca {
 	int i;
@@ -19,7 +17,7 @@ class Ca {
 
 public class Manager23 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();
+		ArrayList<Object> list = new ArrayList<>();
 		list.add(new Ca(1));
 		list.add(new Ca(67));
 		list.add(new Ca(23));

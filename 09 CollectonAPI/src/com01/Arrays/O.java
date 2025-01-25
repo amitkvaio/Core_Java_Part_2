@@ -11,7 +11,6 @@ public class O {
 	}
 }
 /*
-straight way to provide the int value to the array.
-declaration, definition and providing list of integer value to the array.
-
+Straight way to provide the integer value to the array.
+Declaration, definition and providing list of integer value to the array.
 */

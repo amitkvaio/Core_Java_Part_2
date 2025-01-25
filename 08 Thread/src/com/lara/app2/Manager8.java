@@ -1,19 +1,14 @@
 package com.lara.app2;
 
-class J implements Runnable
-{
+class J implements Runnable {
 	@Override
-	public void run()
-	{
+	public void run() {
 		// TODO Auto-generated method stub
-
 	}
 }
 
-public class Manager8
-{
-	public static void main(String[] args)
-	{
+public class Manager8 {
+	public static void main(String[] args) {
 		J j1 = new J();
 		Thread t1 = new Thread(j1);
 		Thread t2 = new Thread(j1, "lara");
@@ -25,7 +20,5 @@ public class Manager8
 		System.out.println(t1.getName());
 		System.out.println(t2.getName());
 		System.out.println("..........");
-
 	}
-
 }

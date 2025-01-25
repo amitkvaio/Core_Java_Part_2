@@ -31,14 +31,13 @@ class G {
 
 public class Manager21 {
 	public static void main(String[] args) {
-		HashSet set = new HashSet();
+		HashSet<G> set = new HashSet<>();
 		set.add(new G(1, 1));
 		set.add(new G(1, 1));
 		set.add(new G(2, 1));
 		set.add(new G(1, 2));
 		System.out.println(set);
 		System.out.println(set.size());
-
 	}
 }
 

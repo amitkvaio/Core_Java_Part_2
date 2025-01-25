@@ -10,3 +10,7 @@ public class G {
 		}
 	}
 }
+
+/*
+Default value of String is null.
+*/

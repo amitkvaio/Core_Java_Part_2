@@ -28,6 +28,4 @@ public class Manager02 {
 		});
 		noteLst.forEach(note->System.out.println(note));
 	}
-	
-	
 }

@@ -8,6 +8,5 @@ public class Q {
 		s1 = s1.trim();
 		System.out.println(s2.length());
 		System.out.println(s1.length());
-
 	}
 }

@@ -18,8 +18,6 @@ public class Manager16 {
 		M m1 = new M();
 		for (int i = 100; i < 200; i++) {
 			System.out.println("main=" + i);
-
 		}
 	}
-
 }

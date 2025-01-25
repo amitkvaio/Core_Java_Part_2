@@ -1,28 +1,23 @@
 //64-- enter thread communication
 package com.lara.pack04.threadcommunication;
 
-class Util{
+class Util {
 	public static void sleep(long time) {
-		try
-		{
+		try {
 			Thread.sleep(time);
-		} catch (InterruptedException e)
-		{
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
 }
 
-class A
-{
-	synchronized void test1()
-	{
+class A {
+	synchronized void test1() {
 		System.out.println("test1 begin");
 		Thread t = Thread.currentThread();
-		
-		try
-		{
-			System.out.println(t.getName() + " -is going to waiting stage--");
+
+		try {
+			System.out.println(t.getName() + " -is going to waiting stage--" + this);
 			wait();
 			/*
 				when ever thread is calling wait() method then thread is going into the
@@ -34,71 +29,63 @@ class A
 				but in case of sleep method we specify the time in millisecond due to that is is
 				not released the object lock.
 			*/
-			System.out.println("Resuming remaing task shorlty by thread :"+t.getName());
+			System.out.println("Resuming remaing task shorlty by thread :" + t.getName());
 			Util.sleep(3000);
-			for(int i=0;i<=2;i++) {
-				System.out.println("--from test1-->"+i);
+			for (int i = 0; i <= 2; i++) {
+				System.out.println("--from test1-->" + i);
 			}
-		} 
-		catch (InterruptedException e)
-		{
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		System.out.println("************test1 end**************");
-		
+
 	}
-	synchronized void test2()
-	{
-		System.out.println("from synchronized test2 called and from it notify() method called");
-		this.notify();
+
+	synchronized void test2() {
+		System.out.println("from synchronized test2 called and from it notify() method called" +this);
+		this.notifyAll();
 	}
 }
 
-class Thread1 extends Thread
-{
+class Thread1 extends Thread {
 	A a1;
-	Thread1(A a1)
-	{
-		this.a1=a1;
+
+	Thread1(A a1) {
+		this.a1 = a1;
 	}
-	
+
 	@Override
-	public void run()
-	{
+	public void run() {
 		a1.test1();
 	}
 }
 
-
-class Thread2 extends Thread
-{
+class Thread2 extends Thread {
 	A a1;
-	Thread2(A a1)
-	{
-		this.a1=a1;
+
+	Thread2(A a1) {
+		this.a1 = a1;
 	}
-	
+
 	@Override
-	public void run()
-	{
+	public void run() {
 		a1.test1();
 	}
 }
-public class Manager
-{
-	public static void main(String[] args)
-	{
-		A a1= new A();
+
+public class Manager {
+	public static void main(String[] args) {
+		A a1 = new A();
 		Thread1 t1 = new Thread1(a1);
 		Thread2 t2 = new Thread2(a1);
 		t1.start();
 		t2.start();
-		
+
 		System.out.println("Main thread is sleeping for 10 second");
 		System.out.println("thereafter one sleeping thread willwakeup");
 		Util.sleep(10000);
 		a1.test2();
-		
+
 		System.out.println("AgainMain thread is sleeping for 10 second");
 		System.out.println("thereafter second sleeping thread willwakeup");
 		Util.sleep(10000);
@@ -108,9 +95,6 @@ public class Manager
 }
 /*
 Here two thread went into the waiting stage.
-the object lock is not with the t1 and t2.
-object lock is available inside the object itself.
-
 Main thread is sleeping for 20 second. but the child thread is under the waiting stage.
 
 test2 method is synchronized - main thread required the object lock of a1 and it is available.

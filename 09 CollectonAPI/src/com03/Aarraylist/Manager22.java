@@ -17,7 +17,7 @@ class Ba {
 
 public class Manager22 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();
+		ArrayList<Object> list = new ArrayList<>();
 		list.add(new Ba(90));// calling toString() of the Ba class.
 		list.add(new Ba(100));
 		list.add(200);// calling toString() of the Arraylist class

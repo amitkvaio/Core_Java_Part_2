@@ -6,7 +6,7 @@ import java.util.TreeSet;
 
 public class Manager26 {
 	public static void main(String[] args) {
-		TreeSet set = new TreeSet(Collections.reverseOrder());
+		TreeSet<Double> set = new TreeSet<>(Collections.reverseOrder());
 		set.add(1.9);
 		set.add(1.0);
 		set.add(9.0);
@@ -25,6 +25,4 @@ public class Manager26 {
 -- TreeSet allows homogeneous data, if we are trying to insert heterogeneous data while performing sorting by 
 	using compareTo() JVM will generate java.lang.ClassCastException 
 	(because it is not possible to compare integer data with String) .
-
-
 */

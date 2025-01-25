@@ -14,7 +14,7 @@ public class TestSorting {
 		for (Developer developer : listDevs) {
 			System.out.println(developer);
 		}
-
+		
 		// sort by age
 		Collections.sort(listDevs, new Comparator<Developer>() {
 			@Override

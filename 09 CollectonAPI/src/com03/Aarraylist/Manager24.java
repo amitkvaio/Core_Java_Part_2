@@ -4,7 +4,7 @@ package com03.Aarraylist;
 import java.util.ArrayList;
 import java.util.Collections;
 
-class D implements Comparable {
+class D implements Comparable<Object> {
 	int i;
 
 	D(int i) {

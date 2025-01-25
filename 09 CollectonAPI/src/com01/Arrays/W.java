@@ -12,7 +12,7 @@ public class W {
 }
 
 /*
-without sort() the given array we can not use the binarySearch, if we use
+Without sort() the given array we can not use the binarySearch, if we use
 then we will get  the junk values.
 
 x is the reference of the array, and 25 is value if this value is available then it gives the

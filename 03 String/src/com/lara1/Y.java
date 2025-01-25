@@ -3,7 +3,7 @@ package com.lara1;
 public class Y {
 	public static void main(String[] args) {
 		String s1 = "abcxyz";
-		// 012345
+				   //012345
 		System.out.println(s1.charAt(3));
 		System.out.println(s1.charAt(4));
 	}

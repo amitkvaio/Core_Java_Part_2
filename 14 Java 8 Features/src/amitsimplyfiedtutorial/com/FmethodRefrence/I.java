@@ -4,13 +4,15 @@ interface Fun{
 	public int test();
 }
 
-public class Test {
+public class I {
 	public static void main(String[] args) {
 		Fun f = ()->{return 10;};
-		Fun ff=f::test;
-		
 		System.out.println(f.test());
-		System.out.println(ff.test());
+		System.out.println("***********************");
+		
+		I i = new I();
+		Fun fun = i::test;
+		System.out.println(fun.test());
 	}
 	
 	public int test() {

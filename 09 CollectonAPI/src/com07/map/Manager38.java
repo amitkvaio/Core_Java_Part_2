@@ -5,7 +5,7 @@ import java.util.Hashtable;
 
 public class Manager38 {
 	public static void main(String[] args) {
-		Hashtable tab = new Hashtable();
+		Hashtable<Object, Object> tab = new Hashtable<>();
 		tab.put(null, 200);
 		tab.put("we", null);
 		tab.put("sd", true);

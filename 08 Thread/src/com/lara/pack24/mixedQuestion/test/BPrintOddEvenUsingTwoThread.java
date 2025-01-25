@@ -14,7 +14,7 @@ class D{
 						System.out.println(thName +"-"+i);
 					}
 					i++;
-					Thread.sleep(1000);
+					Thread.sleep(500);
 					this.wait();
 				}
 			} catch (Exception e) {

@@ -13,6 +13,6 @@ public class L {
 	}
 }
 /*
- * first array become abandon array.
+ * First array become abandon array.
  * 
  */
