@@ -15,7 +15,7 @@ public class Manager6 {
 		System.out.println("..............");
 		// setting the child thread name
 		h1.setName("abc");
-		h1.setName("xyz");
+		h2.setName("xyz");
 		// setting the main thread name
 		Thread.currentThread().setName("Initiator");
 		// Retrieving the child thread name

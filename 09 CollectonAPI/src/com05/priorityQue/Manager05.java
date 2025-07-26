@@ -13,7 +13,12 @@ public class Manager05 {
 		numbers.add(2);
 		numbers.add(1);
 		numbers.add(3);
-		System.out.print("PriorityQueue: " + numbers);
+		System.out.println("PriorityQueue: " + numbers);
+		System.out.println(numbers.poll());
+		System.out.println(numbers.poll());
+		System.out.println(numbers.poll());
+		System.out.println(numbers.poll());
+		System.out.println("PriorityQueue: " + numbers);
 	}
 }
 

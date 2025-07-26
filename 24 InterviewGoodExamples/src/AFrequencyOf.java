@@ -1,4 +1,4 @@
-import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /*
@@ -7,10 +7,10 @@ Frequency of each character, VVI
 public class AFrequencyOf {
 	public static void main(String[] args) {
 		String str = "amit kumar";
-		Map<Character, Integer> frequency = str.chars().boxed().filter(x->x!=' ')
-				.collect(Collectors.toMap(k -> 
-				Character.valueOf((char) k.intValue()), v -> 1, Integer::sum));
-		System.out.println(frequency);
-		System.out.println("Done");
+		str.chars()
+		.mapToObj(ch ->(char)ch)
+		.filter(ch-> ch!= ' ')
+		.collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
+		.forEach((k,v)->System.out.println(k + " :" + v));
 	}
 }

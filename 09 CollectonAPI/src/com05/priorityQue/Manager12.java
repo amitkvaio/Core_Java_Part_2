@@ -22,14 +22,12 @@ class C implements Comparator<Object> {
 	public int compare(Object obj1, Object obj2) {
 		return ((B) obj1).i - ((B) obj2).i;
 	}
-
 }
 
 class D implements Comparator<Object> {
 	public int compare(Object obj1, Object obj2) {
 		return ((B) obj1).j - ((B) obj2).j;
 	}
-
 }
 
 public class Manager12 {
@@ -64,5 +62,4 @@ public class Manager12 {
 			System.out.println(pq1);
 		}
 	}
-
 }

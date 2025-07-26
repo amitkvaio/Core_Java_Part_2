@@ -28,6 +28,6 @@ public class Manager23 {
 }
 /*
  * we are overriding the toString() method in the Ca class so it will print the
- * content of the Ba object. [ 1, 67, 23, 34, 36]
+ * content of the Ca object. [ 1, 67, 23, 34, 36]
  * 
  */

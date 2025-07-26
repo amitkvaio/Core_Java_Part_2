@@ -12,7 +12,7 @@ public class Manager01 {
 		map1.put("hello", 2050);
 		map1.put("done", 9090);
 		map1.put("check", 9190);
-		map1.put("test", 9030);
+		map1.put("t234@est", 9030);
 		map1.put("java", 9091);
 		System.out.println("Map:" + map1);
 

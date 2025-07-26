@@ -5,14 +5,14 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-class MyCallable implements Callable{
+class MyCallable implements Callable<Integer>{
 	int num;
 	public MyCallable(int num) {
 		this.num=num;
 	}
 
 	@Override
-	public Object call() throws Exception {
+	public Integer call() throws Exception {
 		String tname = Thread.currentThread().getName();
 		System.out.println(tname + " is responsible to find the sum of first " + num + " numbers");
 		int sum=0;
@@ -35,7 +35,7 @@ public class ExecutorServiceDemo02 {
 							 };
 		ExecutorService service = Executors.newFixedThreadPool(3);
 		for (MyCallable job : jobs) {
-			Future f = service.submit(job);
+			Future<Integer> f = service.submit(job);
 			System.out.println("Sum is : "+f.get());
 		}
 		service.shutdown();

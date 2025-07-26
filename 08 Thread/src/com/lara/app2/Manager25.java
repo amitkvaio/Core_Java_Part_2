@@ -3,8 +3,9 @@ package com.lara.app2;
 class Y extends Thread {
 	@Override
 	public void run() {
-		for (int i = 0; i < 50000; i++) {
+		for (int i = 0; i < 10; i++) {
 			System.out.println(i + "=;" + isInterrupted());
+			ThreadUtil.sleep(5);
 		}
 	}
 }
@@ -13,7 +14,6 @@ public class Manager25 {
 	public static void main(String[] args) {
 		Y y1 = new Y();
 		y1.start();
-		ThreadUtil.sleep(1);
 		y1.interrupt();
 		System.out.println("done");
 	}

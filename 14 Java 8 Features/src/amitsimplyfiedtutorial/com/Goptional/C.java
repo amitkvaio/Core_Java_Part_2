@@ -5,6 +5,9 @@ import java.util.Optional;
 public class C {
 	public static void main(String[] args) {
 		Car c1 = new Car("50000");
+		if(c1!=null) {
+			
+		}
 		Car c2 = null;
 		Optional<Car> opt1 = Optional.ofNullable(c1);
 		System.out.println(opt1);

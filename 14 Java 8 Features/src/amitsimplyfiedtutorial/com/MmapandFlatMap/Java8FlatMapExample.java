@@ -15,9 +15,10 @@ public class Java8FlatMapExample {
 		
 		List<String> listOfCitiesUppercase=listofListOfCities.stream()
 				           .flatMap(citiesByCountries -> citiesByCountries.stream())
-				           .filter(s -> s.startsWith("T"))
+				           //.filter(s -> s.startsWith("T"))
 				           .collect(Collectors.toList());
 		listOfCitiesUppercase.forEach(System.out::println);
+		//.filter(x->x.equals("D")
 	}
 }
 /*

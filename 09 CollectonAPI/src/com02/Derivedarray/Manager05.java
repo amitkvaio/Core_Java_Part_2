@@ -8,9 +8,10 @@ public class Manager05 {
 
 		int[] x = { 10, 20, 40, 30 };
 
-		Integer y[] = { new Integer(9), 19, 20, new Integer(15) };
+		Integer y[] = { Integer.valueOf(9), 19, 20, Integer.valueOf(15)};
 
 		String z[] = { "abd", new String("abc"), "lara", "java" };
+		
 		D d[] = { new D(19), new D(11), new D(20), new D(17), new D(45) };
 
 		System.out.println(Arrays.toString(x));

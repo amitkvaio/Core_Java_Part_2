@@ -1,10 +1,7 @@
-class Az
-{
-    void methodOfA()
-    {
-        abstract class B
-        {
-             
-        }
-    }
+class Az {
+	void methodOfA() {
+		abstract class B {
+
+		}
+	}
 }

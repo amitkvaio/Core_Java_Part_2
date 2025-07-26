@@ -34,5 +34,4 @@ public class Manager25 {
 		Collections.sort(list);
 		System.out.println(list);
 	}
-
 }

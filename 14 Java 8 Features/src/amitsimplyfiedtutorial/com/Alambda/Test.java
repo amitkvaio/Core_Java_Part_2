@@ -1,6 +1,7 @@
 package amitsimplyfiedtutorial.com.Alambda;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Test {
@@ -13,11 +14,16 @@ public class Test {
 		
 		
 		System.out.println("--------------");
-		dev.sort((dev1,dev2)->{
-			return dev1.getName().compareTo(dev2.getName());
-		});
+		
+		
+		dev.sort(Comparator.comparing(Developer::getSalary).reversed());
 		dev.forEach((d)->System.out.println(d));
 		
+		System.out.println("########################");
+		dev.sort((dev1,dev2)-> {
+			return dev1.getName().compareTo(dev2.getName());
+					});
+		dev.forEach((d)->System.out.println(d));
 	}
 	
 	

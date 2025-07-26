@@ -2,13 +2,20 @@ package amitsimplyfiedtutorial.com.Goptional;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Map.Entry;
 
 public class D {
 
 	public static void main(String[] args) {
-		Character c = getNonRepeatedCharacter("SASAS");
-		System.out.println("Non repeated character is :" + c.toString());
+		Character c = getNonRepeatedCharacter("SASASr");
+		Optional<Character> opt = Optional.ofNullable(c);
+		if(opt.isPresent()) {
+			System.out.println("Non repeated character is :" + c.toString());
+		}else {
+			System.out.println("Repeated character is not present.");
+		}
+		
 	}
 
 	// Program to print first non repeated character

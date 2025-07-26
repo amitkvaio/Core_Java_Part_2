@@ -10,9 +10,10 @@ class A {
 		this.i = j;
 		// i is getting initialized
 	}
+
 	@Override
 	public String toString() {
-		return "i=" + i;
+		return "A [i=" + i + "]";
 	}
 }
 
@@ -22,7 +23,7 @@ public class Manager01 {
 		x[0] = new A(90);
 		// first it call the constructor and initialize the 90 to i
 		x[1] = new A(10);
-
+		
 		System.out.println(x);// call the object class toString()- will print the memory address
 		System.out.println(x.toString());
 		System.out.println(Arrays.toString(x)); // calling array class toString();

@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 public class H {
 	public static void main(String[] args) {
 		List<Student> list = Student.getStudentList();
-		Map<String, List<Student>> st = list.stream().collect(Collectors.groupingBy(Student::getClassName));
+		Map<String, List<Student>> st = list.stream().collect(Collectors.groupingBy(student->student.getClassName()));
 
 		st.forEach((k, v) -> {
 			System.out.println(k + "-" + v);

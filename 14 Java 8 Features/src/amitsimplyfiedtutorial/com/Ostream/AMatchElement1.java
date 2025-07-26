@@ -19,5 +19,5 @@ Stream.allMatch(), Stream.anyMatch() and Stream.noneMatch()
 allMatch(): It returns true if all elements of stream matches the given Predicate. 
 anyMatch(): It returns true if any element of stream matches the given Predicate. 
 noneMatch(): It returns true if none of the elements of stream matches the given Predicate. 
-
+//venkat subramaniam 
 */

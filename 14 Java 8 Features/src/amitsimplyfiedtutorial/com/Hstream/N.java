@@ -18,7 +18,7 @@ public class N {
 
 Date and Time API: (Joda-Time API) 
 until java 1.7version the classes present in java.util package to handle Date and Time(like 
-Date,Calendar,TimeZoneetc) are not upto the mark with respect to convenience and performance. 
+Date,Calendar,TimeZone etc) are not upto the mark with respect to convenience and performance. 
  
 To overcome  this problem in the 1.8 version oracle people introduced Joda-Time API . This API 
 developed by joda.org and available in java in the form of java.time package. 

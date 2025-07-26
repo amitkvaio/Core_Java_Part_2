@@ -7,8 +7,9 @@ public interface A {
 		System.out.println("Deault me2()");
 	}
 	
-	default void m3() {
+	default String m3() {
 		System.out.println("Deault me3()");
+		return "";
 	}
 	default void m4() {
 		System.out.println("Deault me4()");

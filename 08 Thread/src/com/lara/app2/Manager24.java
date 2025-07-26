@@ -8,14 +8,22 @@ class ThreadUtil {
 			e.printStackTrace();
 		}
 	}
+	
+	// / 1sec = 1000 ms
+	//1 ms = 1000ns
 }
 
 class W extends Thread {
 	@Override
 	public void run() {
 		for (int i = 0; i < 20; i++) {
-			System.out.println("W-run-:repeat in 1 second-" + i);
+			System.out.println("W-run-:repeat in 1 second-" + i +" :"+Thread.currentThread().getName());
 			ThreadUtil.sleep(1000);
+			try {
+				this.join(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 }
@@ -34,7 +42,7 @@ public class Manager24 {
 	public static void main(String[] args) {
 		W w1 = new W();
 		w1.start();
-
+		
 		X x1 = new X();
 		x1.start();
 

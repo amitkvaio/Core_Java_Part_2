@@ -17,7 +17,7 @@ public class Manager31 {
 			System.out.println(it.next() + ",");
 		}
 		System.out.println(".........");
-
+		
 		while (it.hasNext()) {
 			// this is not going to execute because iterator execute only one time
 			System.out.println(it.next() + ",");

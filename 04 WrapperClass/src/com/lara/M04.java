@@ -3,10 +3,10 @@ package com.lara;
 public class M04 {
 	public static void main(String[] args) {
 		boolean b1 = false;
-		Boolean b2 = new Boolean(b1);
+		Boolean b2 = b1;
 		System.out.println(b2);
 
-		Boolean b3 = new Boolean(true);
+		Boolean b3 = true;
 		System.out.println(b3);
 
 		boolean b4 = b2.booleanValue();

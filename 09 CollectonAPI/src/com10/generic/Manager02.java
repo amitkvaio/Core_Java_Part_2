@@ -1,8 +1,8 @@
 //132
 package com10.generic;
 
-class C<X> {
-	X i;
+class C<Z> {
+	Z i;
 }
 
 class Manager02 {

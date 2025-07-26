@@ -12,6 +12,8 @@ public class Client {
 		System.out.println("**********From Client@main start**********"+thName);
 		ExecutorService service = Executors.newFixedThreadPool(2);
 		Future<Double> areaOfCircle=service.submit(new AreaOfACircle(12.5));
+		
+		
 		System.out.println("Area of Circle is : "+areaOfCircle.get());
 		System.out.println("=========================================");
 		Future<Double> cirmcurOfCircle=service.submit(new CircumOfACircle(10));

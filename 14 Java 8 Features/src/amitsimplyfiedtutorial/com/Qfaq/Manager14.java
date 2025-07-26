@@ -21,7 +21,7 @@ public class Manager14 {
 	public static void main(String[] args) {
 		List<Employee> listEmp = Employee.getListOfEmployee();
 		//listEmp.stream().filter(emp->emp.getSalary() > 30000 && emp.getName().toUpperCase()).collect(Collectors.toList()); 
-		collect = listEmp.stream().filter(emp->emp.getSalary() == 30000)
+		collect = listEmp.stream().filter(emp->emp.getSalary() > 30000)
 				.map(emp->emp.getName().toUpperCase()).collect(Collectors.toList());
 		System.out.println(collect);
 	}

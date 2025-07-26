@@ -19,6 +19,8 @@ class A {
 		try {
 			System.out.println(t.getName() + " -is going to waiting stage--" + this);
 			wait();
+			//wait(5000);
+			//wait(1000, 10);
 			/*
 				when ever thread is calling wait() method then thread is going into the
 				waiting stage and it is not defined how many millisecond.
@@ -38,12 +40,11 @@ class A {
 			e.printStackTrace();
 		}
 		System.out.println("************test1 end**************");
-
 	}
 
 	synchronized void test2() {
 		System.out.println("from synchronized test2 called and from it notify() method called" +this);
-		this.notifyAll();
+		this.notify();
 	}
 }
 

@@ -3,7 +3,7 @@ package com.amit.core.designpattern.a.singleton;
 public class SingleTon01 {
 	public static SingleTon01 sc = new SingleTon01();
 	/*
-		As we know, there is only one copy of the static variables of a class, we can apply this. 
+		As we know, there is only one copy of the static variables of a class.
 		As far as, the client code is using this sc static variable its fine. 
 		But, if the client uses a new operator there would be a new instance of this class.
 	*/

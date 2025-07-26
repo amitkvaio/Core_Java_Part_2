@@ -1,0 +1,73 @@
+✅ PriorityQueue in Java – Explained in Simple Terms
+🔹 What is a PriorityQueue?
+***************************
+    A PriorityQueue is a queue where elements are ordered based on priority, not on insertion order.
+    By default, it sorts elements in natural order (e.g., ascending for numbers).
+    It's part of the java.util package and implements the Queue interface.
+
+
+🔹 Key Points
+***************************
+    It does not allow null values.
+    Duplicate elements are allowed.
+    It uses a binary heap internally.
+    It is not thread-safe (use PriorityBlockingQueue for multi-threading).
+
+🔹 How it works:
+***************************
+    Think of it as a line at a hospital: patients with more serious conditions are seen first, even if others came earlier.
+    Similarly, in PriorityQueue, the "smallest" or "highest priority" element is removed first.
+
+Example
+********
+import java.util.PriorityQueue;
+
+public class Demo {
+    public static void main(String[] args) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        pq.add(30);
+        pq.add(10);
+        pq.add(20);
+
+        System.out.println(pq); // Output may not be sorted visually
+
+        while (!pq.isEmpty()) {
+            System.out.println(pq.poll()); // prints in ascending order: 10, 20, 30
+        }
+    }
+}
+
+Common Methods
+******************
+Method		Description
+add(e)		Inserts element e
+offer(e)	Same as add(), but returns false if fails
+poll()		Retrieves and removes the head
+peek()		Retrieves but does not remove the head
+remove()	Removes a specific element (not head only)
+
+🔹 Custom Sorting (Max Heap)
+********************************
+    By default, it’s a Min Heap (smallest first).
+    We can make it a Max Heap using a custom comparator:
+
+    PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a);
+	maxHeap.add(10);
+	maxHeap.add(30);
+	maxHeap.add(20);
+	
+	System.out.println(maxHeap.poll()); // prints 30
+	
+ Real-World Use Cases
+ ********************
+    CPU Task Scheduling
+    Dijkstra's shortest path algorithm
+    Event simulation systems
+    Huffman encoding
+
+🔹 When to Use
+**************
+    When you want elements to be processed based on priority, not just insertion order.
+    Ideal for problems where you need to always get the minimum or maximum element quickly.
+    

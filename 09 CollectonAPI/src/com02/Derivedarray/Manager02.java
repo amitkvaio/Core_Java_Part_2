@@ -22,6 +22,11 @@ class C1 {
 	C1(int i) {
 		this.i = i;
 	}
+	
+	@Override
+	public String toString() {
+		return super.toString();
+	}
 }
 
 public class Manager02 {

@@ -8,6 +8,7 @@ public class A {
 		 
 		Optional<Car> opt = Optional.empty();
 		System.out.println(opt.empty());
+		System.out.println(opt.isPresent());
 	}
 }
 /*

@@ -31,7 +31,7 @@ public class ExecutorServiceDemo01 {
 				new PrintJob("Job 5"),
 				new PrintJob("Job 6"),
 		};
-		ExecutorService service= Executors.newFixedThreadPool(2);//1 TO 6
+		ExecutorService service= Executors.newFixedThreadPool(3);//1 TO 6
 		for (PrintJob Job : jobs) {
 			service.submit(Job);
 		}

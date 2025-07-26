@@ -23,8 +23,7 @@ public class Manager34 {
 		while (it.hasNext()) {
 			System.out.println(it.next());
 			//list.add(99); //concurrentmodificationException - fail-fast
-			//list.remove(Integer.valueOf(90));
-			System.out.println(it.next());
+			list.remove(Integer.valueOf(90));
 		}
 		list.add("amit");
 		System.out.println(list);
@@ -38,7 +37,7 @@ public class Manager34 {
 		Iterator<Object> it = list.iterator();
 		 
 		while (it.hasNext()) {
-			list.add(99);
+			list.add(99); // list2
 			System.out.println(it.next());
 		}
 		list.add("amit");

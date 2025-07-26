@@ -21,8 +21,9 @@ class D implements Comparable
 	 
 	@Override
 	public int compareTo(Object obj) {
-		D d = (D)obj;
-		return this.i-d.i;
+		D d = (D) obj;
+		System.out.println("*********CompareTo*************");
+		return this.i - d.i;
 	}
 	
 }
