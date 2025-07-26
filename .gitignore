@@ -18,17 +18,18 @@
 *.zip
 *.tar.gz
 *.rar
-*.classpath
 *.prefs
 *.gitignore
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-# Ignore Eclipse/IDEA metadata
+# Ignore Eclipse IDE files everywhere in the project
 .metadata/
-.project
-.settings/
+**/.project
+**/.classpath
+**/.settings/
+
 
 .idea/
 *.iml
